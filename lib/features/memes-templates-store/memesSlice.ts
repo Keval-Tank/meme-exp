@@ -1,14 +1,7 @@
 "use client"
 import { createSlice } from "@reduxjs/toolkit"
 import { fetchTemplates } from "./memesThunk"
-
-interface Template {
-    caption_areas : number
-    height : number
-    name : string
-    url : string
-    width : number
-}
+import { Template } from "./memesThunk"
 
 interface states {
     templates : Array<Template> | null,
@@ -23,7 +16,7 @@ const initialStates : states = {
 }
 
 export const memeTemplateSlice = createSlice({
-    name : "fetched templates",
+    name : "fetched_templates",
     initialState : initialStates,
     reducers : {
 

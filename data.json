@@ -13,7 +13,8 @@
         "keywords": ["rejection", "approval", "Drake", "comparison", "preference", "like vs dislike", "thumbs down", "thumbs up", "split panel"],
         "topics": ["preference comparison", "approval/disapproval", "contrasting choices", "music culture", "binary decisions"],
         "tone": "humorous criticism; dismissive vs approving contrast",
-        "semantic_description": "Two-panel image of rapper Drake in a red jacket. In the top panel he turns away with a disgusted expression and raised hand, rejecting the option shown in the caption. In the bottom panel he smiles and points approvingly toward the option shown there. Used to compare two alternatives where one is rejected and the other is preferred."
+        "semantic_description": "Two-panel image of rapper Drake in a red jacket. In the top panel he turns away with a disgusted expression and raised hand, rejecting the option shown in the caption. In the bottom panel he smiles and points approvingly toward the option shown there. Used to compare two alternatives where one is rejected and the other is preferred.",
+        "tags": ["comparison", "choice", "humorous", "two-panel"]
       },
       {
         "id": "87743020",
@@ -26,7 +27,8 @@
         "keywords": ["dilemma", "two choices", "buttons", "sweating", "indecision", "mutually exclusive", "panic", "hard choice"],
         "topics": ["impossible dilemmas", "hard decisions", "conflicting desires", "anxiety about choices"],
         "tone": "anxious; comedic desperation about picking between bad or conflicting options",
-        "semantic_description": "Comic-style image of a man sweating profusely as he hesitates between pressing one of two large red buttons, each labeled with a different option in the caption. Often used to portray a person facing a difficult or impossible choice between two mutually exclusive actions or opinions."
+        "semantic_description": "Comic-style image of a man sweating profusely as he hesitates between pressing one of two large red buttons, each labeled with a different option in the caption. Often used to portray a person facing a difficult or impossible choice between two mutually exclusive actions or opinions.",
+        "tags": ["choice", "conflict", "panic", "anxious", "decision-making", "multi-panel"]
       },
       {
         "id": "112126428",
@@ -39,7 +41,8 @@
         "keywords": ["cheating", "temptation", "distraction", "relationship", "looking at another girl", "betrayal", "priorities"],
         "topics": ["infidelity", "distraction by novelty", "switching loyalties", "conflicting priorities"],
         "tone": "playfully accusatory; comedic portrayal of temptation or disloyalty",
-        "semantic_description": "Stock photo where a man walking with his girlfriend turns to stare approvingly at another woman passing by, while his girlfriend looks shocked and offended. Captions usually label the man as a subject, the girlfriend as the old priority, and the passing woman as the new, more attractive distraction."
+        "semantic_description": "Stock photo where a man walking with his girlfriend turns to stare approvingly at another woman passing by, while his girlfriend looks shocked and offended. Captions usually label the man as a subject, the girlfriend as the old priority, and the passing woman as the new, more attractive distraction.",
+        "tags": ["temptation", "choice", "playful", "relationships", "choice-based"]
       },
       {
         "id": "222403160",
@@ -52,7 +55,8 @@
         "keywords": ["Bernie Sanders", "campaign", "asking again", "support", "repeated request", "fundraising", "politics"],
         "topics": ["political appeals", "repetition", "resource requests", "fundraisers"],
         "tone": "wry political satire; weary persistence in asking for something again",
-        "semantic_description": "Photo of Bernie Sanders in a winter coat speaking to the camera on a suburban street, originally from a 2020 campaign fundraising video. Used with captions that rephrase “I am once again asking for your financial support” into repeated requests for any resource or favor."
+        "semantic_description": "Photo of Bernie Sanders in a winter coat speaking to the camera on a suburban street, originally from a 2020 campaign fundraising video. Used with captions that rephrase “I am once again asking for your financial support” into repeated requests for any resource or favor.",
+        "tags": ["reaction", "sarcastic", "politics", "rant", "two-panel"]
       },
       {
         "id": "131087935",
@@ -65,7 +69,8 @@
         "keywords": ["childhood", "balloon", "loss", "perspective", "growing up", "letting go"],
         "topics": ["childhood priorities", "perceived vs real importance", "emotional attachment", "loss"],
         "tone": "bittersweet; reflective on how trivial things can feel huge to someone",
-        "semantic_description": "Panel-style image where a child chases a red balloon that has slipped away and is floating upward, while adults or other elements appear indifferent. Often labeled to contrast what feels important to one person with how insignificant it seems to others."
+        "semantic_description": "Panel-style image where a child chases a red balloon that has slipped away and is floating upward, while adults or other elements appear indifferent. Often labeled to contrast what feels important to one person with how insignificant it seems to others.",
+        "tags": ["realization", "melancholic", "contrast", "self-reflection", "multi-panel", "progression"]
       },
       {
         "id": "124822590",
@@ -78,7 +83,8 @@
         "keywords": ["off ramp", "swerve", "exit", "last-minute decision", "avoid responsibility", "escape"],
         "topics": ["sudden changes of plan", "impulse decisions", "avoiding commitments", "diverting from main path"],
         "tone": "fast, impulsive, reckless but humorous",
-        "semantic_description": "Photo of a car on a highway making a sharp swerve to take a left exit at the last possible moment, with the overhead sign and the straight lane usually labeled in the caption. Used to depict a person or entity suddenly choosing an unexpected or irresponsible option over the reasonable default."
+        "semantic_description": "Photo of a car on a highway making a sharp swerve to take a left exit at the last possible moment, with the overhead sign and the straight lane usually labeled in the caption. Used to depict a person or entity suddenly choosing an unexpected or irresponsible option over the reasonable default.",
+        "tags": ["choice", "playful", "decision-making", "cope", "choice-based"]
       },
       {
         "id": "217743513",
@@ -91,7 +97,8 @@
         "keywords": ["UNO", "draw 25", "punishment", "penalty", "tough choice", "game rules"],
         "topics": ["punitive consequences", "refusing to compromise", "stubbornness", "trade-offs"],
         "tone": "playful but harsh; comedic exaggeration of penalties for choices",
-        "semantic_description": "Meme showing a player in UNO faced with the choice to either do something (e.g., admit a truth or comply) or draw 25 cards; the joke is that the person chooses to draw 25 instead of doing the reasonable thing. Used to illustrate situations where someone would rather accept huge penalties than give in."
+        "semantic_description": "Meme showing a player in UNO faced with the choice to either do something (e.g., admit a truth or comply) or draw 25 cards; the joke is that the person chooses to draw 25 instead of doing the reasonable thing. Used to illustrate situations where someone would rather accept huge penalties than give in.",
+        "tags": ["choice", "temptation", "playful", "two-panel"]
       },
       {
         "id": "135256802",
@@ -104,7 +111,8 @@
         "keywords": ["alliance", "handshake", "agreement", "common ground", "Arm wrestling", "Predator"],
         "topics": ["unlikely alliances", "shared beliefs", "overlapping interests", "team-ups"],
         "tone": "celebratory solidarity; highlighting unexpected agreement",
-        "semantic_description": "Frame from the movie Predator showing two muscular arms clasped in a strong handshake. Captions typically label each arm with different groups or ideas and the handshake area with what they agree on, emphasizing a surprising point of unity."
+        "semantic_description": "Frame from the movie Predator showing two muscular arms clasped in a strong handshake. Captions typically label each arm with different groups or ideas and the handshake area with what they agree on, emphasizing a surprising point of unity.",
+        "tags": ["agreement", "wholesome", "choice-based"]
       },
       {
         "id": "97984",
@@ -117,7 +125,8 @@
         "keywords": ["smug", "chaos", "fire", "disaster", "mischief", "guilty pleasure"],
         "topics": ["controlled chaos", "schadenfreude", "causing trouble", "indirect responsibility"],
         "tone": "darkly mischievous; suggesting someone is satisfied by the disaster",
-        "semantic_description": "Photo of a young girl in the foreground smiling slyly at the camera while a house burns in the background, with firefighters responding. Used to imply that the person labeled as the girl is secretly responsible for, or pleased with, the chaos represented by the burning building."
+        "semantic_description": "Photo of a young girl in the foreground smiling slyly at the camera while a house burns in the background, with firefighters responding. Used to imply that the person labeled as the girl is secretly responsible for, or pleased with, the chaos represented by the burning building.",
+        "tags": ["mockery", "smug", "dark", "reaction-image"]
       },
       {
         "id": "131940431",
@@ -130,7 +139,8 @@
         "keywords": ["plan", "step-by-step", "backfire", "Gru", "Despicable Me", "presentation"],
         "topics": ["flawed planning", "unintended consequences", "self-own plans", "strategy sequences"],
         "tone": "ironic; humorous breakdown of a plan that ends in embarrassment",
-        "semantic_description": "Four panels of Gru from Despicable Me presenting a sequence of steps on a flipchart. In the original meme, the third panel reveals a step that ruins his own plan, and in the final panel he stares awkwardly at the realization. Used to show multi-step plans that backfire, especially when the last step undermines the earlier ones."
+        "semantic_description": "Four panels of Gru from Despicable Me presenting a sequence of steps on a flipchart. In the original meme, the third panel reveals a step that ruins his own plan, and in the final panel he stares awkwardly at the realization. Used to show multi-step plans that backfire, especially when the last step undermines the earlier ones.",
+        "tags": ["failure", "ironic", "self-own", "multi-panel", "progression"]
       },
       {
         "id": "252600902",
@@ -143,7 +153,8 @@
         "keywords": ["astronaut", "revelation", "conspiracy", "it always was", "hidden truth", "gun"],
         "topics": ["sudden realization", "hidden structures", "conspiracies", "retrospective insight"],
         "tone": "deadpan; slightly dark but intellectual revelation humor",
-        "semantic_description": "Space illustration with two astronauts. One is looking at Earth (or another object) and says “Wait, it's all X?” in reference to some surprising truth. The other astronaut aims a gun at him and replies “Always has been.” Used to express that a supposedly new realization has always been the case."
+        "semantic_description": "Space illustration with two astronauts. One is looking at Earth (or another object) and says “Wait, it's all X?” in reference to some surprising truth. The other astronaut aims a gun at him and replies “Always has been.” Used to express that a supposedly new realization has always been the case.",
+        "tags": ["realization", "dark", "revelation", "two-panel"]
       },
       {
         "id": "80707627",
@@ -156,7 +167,8 @@
         "keywords": ["lonely", "waiting", "sadness", "Narcos", "Pablo Escobar", "boredom"],
         "topics": ["loneliness", "anticlimax", "emptiness", "waiting for something that never happens"],
         "tone": "melancholic; quiet, almost existential sadness",
-        "semantic_description": "Three stills of Pablo Escobar from the series Narcos sitting alone on a swing, at a table, and by a pool, looking contemplative and depressed. Used to depict lonely waiting, disappointment, or feeling abandoned."
+        "semantic_description": "Three stills of Pablo Escobar from the series Narcos sitting alone on a swing, at a table, and by a pool, looking contemplative and depressed. Used to depict lonely waiting, disappointment, or feeling abandoned.",
+        "tags": ["waiting", "melancholic", "failure", "multi-panel"]
       },
       {
         "id": "322841258",
@@ -169,7 +181,8 @@
         "keywords": ["Anakin", "Padme", "Star Wars", "false assumption", "tragic misunderstanding"],
         "topics": ["miscommunication", "assumptions vs reality", "dark twists", "relationship expectations"],
         "tone": "tragic-ironic; starts hopeful and ends in unnerving realization",
-        "semantic_description": "Four-panel scene from Star Wars: Attack of the Clones showing Padme smiling and asking a follow-up question, while Anakin looks serious. The common structure is: Anakin states something; Padme smiles and asks for clarification assuming a positive; the last panel reveals that the clarification is not what she hoped, often left unspoken but implied with her blank or horrified expression."
+        "semantic_description": "Four-panel scene from Star Wars: Attack of the Clones showing Padme smiling and asking a follow-up question, while Anakin looks serious. The common structure is: Anakin states something; Padme smiles and asks for clarification assuming a positive; the last panel reveals that the clarification is not what she hoped, often left unspoken but implied with her blank or horrified expression.",
+        "tags": ["escalation", "dark", "awkward", "realization", "multi-panel"]
       },
       {
         "id": "4087833",
@@ -182,7 +195,8 @@
         "keywords": ["waiting forever", "skeleton", "too long", "eternity", "still waiting"],
         "topics": ["extreme delays", "unrealistic expectations", "patience", "procrastination"],
         "tone": "darkly humorous; exaggeration of how long something takes",
-        "semantic_description": "Skeleton sitting on a bench or chair, sometimes with cobwebs, implying that the person waited until they died and decomposed. Used to exaggerate extremely long waits or delays."
+        "semantic_description": "Skeleton sitting on a bench or chair, sometimes with cobwebs, implying that the person waited until they died and decomposed. Used to exaggerate extremely long waits or delays.",
+        "tags": ["waiting", "dark", "humorous", "two-panel"]
       },
       {
         "id": "129242436",
@@ -195,7 +209,8 @@
         "keywords": ["debate", "hot take", "controversial opinion", "prove me wrong", "table sign"],
         "topics": ["online discourse", "opinionated claims", "inviting debate", "stance-taking"],
         "tone": "provocative but playful; invites argument",
-        "semantic_description": "Conservative podcaster Steven Crowder sitting at a folding table on a campus with a sign reading something like “X is Y. Change my mind.” The sign text is replaced in memes with any strong opinion, signaling that the speaker welcomes (or pretends to welcome) challenges."
+        "semantic_description": "Conservative podcaster Steven Crowder sitting at a folding table on a campus with a sign reading something like “X is Y. Change my mind.” The sign text is replaced in memes with any strong opinion, signaling that the speaker welcomes (or pretends to welcome) challenges.",
+        "tags": ["debate", "hot-take", "conflict", "reaction-image"]
       },
       {
         "id": "188390779",
@@ -208,7 +223,8 @@
         "keywords": ["argument", "cat at table", "angry woman", "miscommunication", "pet reaction"],
         "topics": ["one-sided arguments", "overreactions", "confusion", "pet vs human dynamic"],
         "tone": "highly dramatic on one side; deadpan confusion on the other",
-        "semantic_description": "Split meme: on the left, a crying and yelling woman being held back (from Real Housewives); on the right, a white cat sitting at a dinner table looking confused in front of a salad plate. Used to depict an intense, emotional outburst directed at someone or something that doesn't understand or care."
+        "semantic_description": "Split meme: on the left, a crying and yelling woman being held back (from Real Housewives); on the right, a white cat sitting at a dinner table looking confused in front of a salad plate. Used to depict an intense, emotional outburst directed at someone or something that doesn't understand or care.",
+        "tags": ["conflict", "dramatic", "humorous", "awkward", "dialogue"]
       },
       {
         "id": "161865971",
@@ -221,7 +237,8 @@
         "keywords": ["Facebook", "marked safe", "disaster", "survived", "event", "notification"],
         "topics": ["overblown events", "fake emergencies", "internet culture", "social media reactions"],
         "tone": "tongue-in-cheek; trivializes or mocks drama by treating it as a disaster",
-        "semantic_description": "Parody of Facebook's 'Marked Safe' notification card used during disasters, with customizable text. Memes replace the disaster name with trivial or humorous events (“Marked safe from [annoying trend]”)."
+        "semantic_description": "Parody of Facebook's 'Marked Safe' notification card used during disasters, with customizable text. Memes replace the disaster name with trivial or humorous events (“Marked safe from [annoying trend]”).",
+        "tags": ["mockery", "sarcastic", "internet-culture", "humorous", "reaction-image"]
       },
       {
         "id": "438680",
@@ -234,7 +251,8 @@
         "keywords": ["slap", "shut up", "Batman", "Robin", "correcting", "harsh reality"],
         "topics": ["calling out nonsense", "brutal honesty", "impatient corrections"],
         "tone": "aggressively corrective; comedic violence used to snap someone out of delusion",
-        "semantic_description": "Comic panel where Batman slaps Robin mid-sentence. The top speech bubble usually shows Robin saying a naive or clichéd statement, and Batman’s bubble interrupts with a blunt correction. Used when forcefully rejecting a common opinion."
+        "semantic_description": "Comic panel where Batman slaps Robin mid-sentence. The top speech bubble usually shows Robin saying a naive or clichéd statement, and Batman’s bubble interrupts with a blunt correction. Used when forcefully rejecting a common opinion.",
+        "tags": ["mockery", "aggressive", "call-out", "dialogue", "reaction-image"]
       },
       {
         "id": "91538330",
@@ -247,7 +265,8 @@
         "keywords": ["everywhere", "Buzz Lightyear", "Woody", "too many", "ubiquity", "flooded with"],
         "topics": ["oversaturation", "overused trends", "ubiquitous phenomena"],
         "tone": "weary amusement; pointing out how common something has become",
-        "semantic_description": "Frame from Toy Story where Woody looks distressed as Buzz Lightyear gestures expansively, usually captioned as “X, X everywhere.” The X stands for some trend, problem, or object that appears to be present in overwhelming quantity."
+        "semantic_description": "Frame from Toy Story where Woody looks distressed as Buzz Lightyear gestures expansively, usually captioned as “X, X everywhere.” The X stands for some trend, problem, or object that appears to be present in overwhelming quantity.",
+        "tags": ["mockery", "sarcastic", "internet-culture", "reaction-image", "two-panel"]
       },
       {
         "id": "247375501",
@@ -260,7 +279,8 @@
         "keywords": ["Doge", "Cheems", "strong vs weak", "then vs now", "comparison", "Shiba Inu"],
         "topics": ["then-versus-now", "strength vs incompetence", "ideal vs reality", "power comparisons"],
         "tone": "mocking yet playful; celebrates competence while ridiculing weakness",
-        "semantic_description": "Side-by-side meme of a muscular, confident Doge (buff Doge) and a small, anxious Cheems dog. Captions usually contrast something powerful, impressive, or serious on the buff side with something pathetic, silly, or downgraded on the Cheems side."
+        "semantic_description": "Side-by-side meme of a muscular, confident Doge (buff Doge) and a small, anxious Cheems dog. Captions usually contrast something powerful, impressive, or serious on the buff side with something pathetic, silly, or downgraded on the Cheems side.",
+        "tags": ["comparison", "contrast", "humorous", "playful", "multi-panel"]
       },
       {
         "id": "102156234",
@@ -273,7 +293,8 @@
         "keywords": ["mocking", "sarcasm", "chicken pose", "alternate caps", "SpongeBob"],
         "topics": ["ridiculing quotes", "childish mockery", "repeating others' words"],
         "tone": "purely mocking; childish and intentionally annoying",
-        "semantic_description": "Frame of SpongeBob bent over with his beak-like mouth out and eyes looking in different directions, mimicking a chicken. Often combined with alternating uppercase/lowercase text to represent someone being mocked or a statement repeated in a sarcastic tone."
+        "semantic_description": "Frame of SpongeBob bent over with his beak-like mouth out and eyes looking in different directions, mimicking a chicken. Often combined with alternating uppercase/lowercase text to represent someone being mocked or a statement repeated in a sarcastic tone.",
+        "tags": ["mockery", "sarcastic", "playful", "reaction-image", "two-panel"]
       },
       {
         "id": "309868304",
@@ -286,7 +307,8 @@
         "keywords": ["trade offer", "you receive", "I receive", "deal", "negotiation", "unequal exchange"],
         "topics": ["lopsided deals", "bargains", "social exchanges", "unfair trades"],
         "tone": "deadpan negotiation; comedic emphasis on how unfair or absurd a deal is",
-        "semantic_description": "Template from a TikTok meme showing a man in a suit with two labeled columns: 'I receive:' and 'You receive:'. Used to describe trades or deals, often highlighting how one party benefits disproportionately."
+        "semantic_description": "Template from a TikTok meme showing a man in a suit with two labeled columns: 'I receive:' and 'You receive:'. Used to describe trades or deals, often highlighting how one party benefits disproportionately.",
+        "tags": ["choice-based", "playful", "debate", "reaction-image"]
       },
       {
         "id": "178591752",
@@ -299,7 +321,8 @@
         "keywords": ["formal", "fancy version", "classy", "evolution", "Pooh", "elegant"],
         "topics": ["simple vs sophisticated", "upgraded versions", "casual vs formal"],
         "tone": "lightly smug; celebrating refined versions of things",
-        "semantic_description": "Two-panel meme of Winnie the Pooh: the first shows regular Pooh looking indifferent, while the second shows Pooh in a tuxedo, sometimes with a monocle, looking elegant. Captions contrast a basic or informal phrase with a more sophisticated or 'fancy' version."
+        "semantic_description": "Two-panel meme of Winnie the Pooh: the first shows regular Pooh looking indifferent, while the second shows Pooh in a tuxedo, sometimes with a monocle, looking elegant. Captions contrast a basic or informal phrase with a more sophisticated or 'fancy' version.",
+        "tags": ["comparison", "smug", "humorous", "before-after", "two-panel"]
       },
       {
         "id": "61544",
@@ -312,7 +335,8 @@
         "keywords": ["small victory", "achievement", "fist pump", "win", "accomplishment", "satisfied"],
         "topics": ["personal wins", "tiny successes", "overcoming minor obstacles"],
         "tone": "wholesome triumph; optimistic and celebratory",
-        "semantic_description": "Photo of a toddler on a beach with a clenched fist and determined expression, often paired with captions about small but meaningful successes (like narrowly avoiding a problem or gaining a small advantage)."
+        "semantic_description": "Photo of a toddler on a beach with a clenched fist and determined expression, often paired with captions about small but meaningful successes (like narrowly avoiding a problem or gaining a small advantage).",
+        "tags": ["success", "wholesome", "celebration", "reaction-image", "two-panel"]
       },
       {
         "id": "124055727",
@@ -325,7 +349,8 @@
         "keywords": ["craving", "addiction", "need more", "Y'all got any more of", "desperation"],
         "topics": ["habits", "consumption", "addictive behavior", "insatiable demand"],
         "tone": "desperately humorous; exaggerated neediness",
-        "semantic_description": "Image of a character based on Tyrone Biggums from Chappelle’s Show, with bugged eyes and cracked lips, wearing a beanie and scratching his neck. Commonly captioned with 'Y’all got any more of that X?' to express humorous addiction or craving for something."
+        "semantic_description": "Image of a character based on Tyrone Biggums from Chappelle’s Show, with bugged eyes and cracked lips, wearing a beanie and scratching his neck. Commonly captioned with 'Y’all got any more of that X?' to express humorous addiction or craving for something.",
+        "tags": ["temptation", "panic", "playful", "reaction-image", "two-panel"]
       },
       {
         "id": "224015000",
@@ -338,7 +363,8 @@
         "keywords": ["once again asking", "Bernie", "support", "repeat request", "fundraiser"],
         "topics": ["persistent requests", "recurring needs", "political messaging"],
         "tone": "wearily persistent; gently self-aware plea",
-        "semantic_description": "Similar Bernie fundraising meme, often with the caption 'I am once again asking for your support' altered to some other repeated request—like help, attention, or resources—used to highlight how often someone has to ask."
+        "semantic_description": "Similar Bernie fundraising meme, often with the caption 'I am once again asking for your support' altered to some other repeated request—like help, attention, or resources—used to highlight how often someone has to ask.",
+        "tags": ["reaction", "sarcastic", "politics", "rant", "two-panel"]
       },
       {
         "id": "93895088",
@@ -351,7 +377,8 @@
         "keywords": ["galaxy brain", "brain expansion", "enlightenment", "escalation", "tiers of thinking"],
         "topics": ["idea escalation", "increasing absurdity", "hierarchies of thought"],
         "tone": "progressively more absurd; faux-intellectual",
-        "semantic_description": "Vertical sequence of four images showing a human brain with increasing levels of glow and cosmic imagery. Each level is labeled with a different idea, implying they become more enlightened, though often the 'highest' idea is the most nonsensical."
+        "semantic_description": "Vertical sequence of four images showing a human brain with increasing levels of glow and cosmic imagery. Each level is labeled with a different idea, implying they become more enlightened, though often the 'highest' idea is the most nonsensical.",
+        "tags": ["escalation", "ironic", "humorous", "progression", "multi-panel"]
       },
       {
         "id": "61579",
@@ -364,7 +391,8 @@
         "keywords": ["Boromir", "Lord of the Rings", "not simply", "difficulty", "impossible"],
         "topics": ["underestimating difficulty", "complex tasks", "naive assumptions"],
         "tone": "dramatic admonishment; warning against oversimplification",
-        "semantic_description": "Still from The Lord of the Rings: The Fellowship of the Ring with Boromir holding up his hand, originally saying “One does not simply walk into Mordor.” In memes, the phrase 'One does not simply X' introduces tasks that are much harder than people think."
+        "semantic_description": "Still from The Lord of the Rings: The Fellowship of the Ring with Boromir holding up his hand, originally saying “One does not simply walk into Mordor.” In memes, the phrase 'One does not simply X' introduces tasks that are much harder than people think.",
+        "tags": ["mockery", "dramatic", "humorous", "reaction-image", "two-panel"]
       },
       {
         "id": "79132341",
@@ -377,7 +405,8 @@
         "keywords": ["self sabotage", "falling", "blame others", "victim mentality", "bike accident"],
         "topics": ["self-inflicted problems", "misplaced blame", "immature reactions"],
         "tone": "self-own; mocking people who cause their own problems then blame others",
-        "semantic_description": "Simple cartoon of a cyclist riding peacefully, then sticking a stick into their own front wheel, crashing, and then blaming someone or something else in the last frame. Captions describe how the person causes their own downfall."
+        "semantic_description": "Simple cartoon of a cyclist riding peacefully, then sticking a stick into their own front wheel, crashing, and then blaming someone or something else in the last frame. Captions describe how the person causes their own downfall.",
+        "tags": ["failure", "self-own", "mockery", "multi-panel", "progression"]
       },
       {
         "id": "110163934",
@@ -390,7 +419,8 @@
         "keywords": ["overthinking", "relationship fears", "intrusive thoughts", "bedtime speculation"],
         "topics": ["insecurity", "misaligned priorities", "mental overanalysis"],
         "tone": "humorous contrast; anxious speculation vs trivial reality",
-        "semantic_description": "Image of a couple in bed, the woman facing away looking worried with text like “I bet he’s thinking about other women,” while the man is actually thinking something trivial or absurd. Used to highlight the gap between someone’s paranoid assumption and reality."
+        "semantic_description": "Image of a couple in bed, the woman facing away looking worried with text like “I bet he’s thinking about other women,” while the man is actually thinking something trivial or absurd. Used to highlight the gap between someone’s paranoid assumption and reality.",
+        "tags": ["contrast", "humorous", "relationships", "ironic", "before-after"]
       },
       {
         "id": "101470",
@@ -403,7 +433,8 @@
         "keywords": ["aliens", "unexplained", "conspiracy", "pseudo-science", "Giorgio Tsoukalos"],
         "topics": ["supernatural explanations", "over-the-top theories", "mystification"],
         "tone": "mock-credulous; parodies wild explanations for mundane things",
-        "semantic_description": "Close-up of TV personality Giorgio A. Tsoukalos with wild hair and hands gesturing, usually captioned to imply 'Aliens' as the explanation. Used ironically for ridiculous or overcomplicated explanations."
+        "semantic_description": "Close-up of TV personality Giorgio A. Tsoukalos with wild hair and hands gesturing, usually captioned to imply 'Aliens' as the explanation. Used ironically for ridiculous or overcomplicated explanations.",
+        "tags": ["mockery", "sarcastic", "ironic", "reaction-image", "two-panel"]
       },
       {
         "id": "427308417",
@@ -416,7 +447,8 @@
         "keywords": ["safety counter", "0 days without incident", "The Simpsons", "Lenny", "reset"],
         "topics": ["recurring failures", "ongoing problems", "workplace accidents"],
         "tone": "resigned; darkly comedic about recurrence of issues",
-        "semantic_description": "Parody of a workplace 'X days without an accident' sign, often reset back to 0. Frequently used to joke that a particular bad event happens so frequently that the counter never increases."
+        "semantic_description": "Parody of a workplace 'X days without an accident' sign, often reset back to 0. Frequently used to joke that a particular bad event happens so frequently that the counter never increases.",
+        "tags": ["failure", "dark", "humorous", "work", "reaction-image"]
       },
       {
         "id": "252758727",
@@ -429,7 +461,8 @@
         "keywords": ["neglect", "priorities", "ignoring problems", "dark humor", "drowning child"],
         "topics": ["neglectful attention", "overlooking serious issues", "prioritizing trivial things"],
         "tone": "dark satire; criticizes how people ignore major problems to focus on minor ones",
-        "semantic_description": "Multi-panel meme showing a child drowning in a pool while the mother pays attention to someone else or posts online. Often labeled to show how people ignore serious problems while engaging with superficial matters."
+        "semantic_description": "Multi-panel meme showing a child drowning in a pool while the mother pays attention to someone else or posts online. Often labeled to show how people ignore serious problems while engaging with superficial matters.",
+        "tags": ["contrast", "dark", "mockery", "multi-panel"]
       },
       {
         "id": "370867422",
@@ -442,7 +475,8 @@
         "keywords": ["peeking", "sneaking look", "Megamind", "curiosity", "observing secretly"],
         "topics": ["watching from the sidelines", "nosiness", "secret interest"],
         "tone": "sly; subtle mischievous curiosity",
-        "semantic_description": "Close-up of Megamind leaning in from the side of the frame looking curious and sneaky. Used when someone is quietly watching or listening in on something that interests them."
+        "semantic_description": "Close-up of Megamind leaning in from the side of the frame looking curious and sneaky. Used when someone is quietly watching or listening in on something that interests them.",
+        "tags": ["playful", "awkward", "reaction-image", "two-panel"]
       },
       {
         "id": "180190441",
@@ -455,7 +489,8 @@
         "keywords": ["Pam", "The Office", "corporate asks", "difference", "same picture"],
         "topics": ["false distinctions", "brand similarity", "things that are effectively identical"],
         "tone": "dry; undercuts attempts to differentiate things that are alike",
-        "semantic_description": "Scene from The Office where corporate asks Pam to find the difference between two pictures, but she says 'They’re the same picture.' Used to claim that two supposedly different concepts, choices, or products are effectively identical."
+        "semantic_description": "Scene from The Office where corporate asks Pam to find the difference between two pictures, but she says 'They’re the same picture.' Used to claim that two supposedly different concepts, choices, or products are effectively identical.",
+        "tags": ["comparison", "contrast", "sarcastic", "ironic", "reaction-image"]
       },
       {
         "id": "3218037",
@@ -468,7 +503,8 @@
         "keywords": ["no achievements", "empty shelf", "trophy", "lack of recognition", "failure"],
         "topics": ["unmet goals", "absence of success", "self-deprecating humor"],
         "tone": "self-deprecating; laments not having achieved something",
-        "semantic_description": "Screencap from The Fairly OddParents showing a character pointing to an empty shelf saying ‘This is where I’d put my trophy... if I had one.’ Used to complain humorously about lacking some reward, item, or recognition."
+        "semantic_description": "Screencap from The Fairly OddParents showing a character pointing to an empty shelf saying ‘This is where I’d put my trophy... if I had one.’ Used to complain humorously about lacking some reward, item, or recognition.",
+        "tags": ["failure", "humorous", "self-own", "reaction-image", "two-panel"]
       },
       {
         "id": "100777631",
@@ -481,7 +517,8 @@
         "keywords": ["misidentification", "incorrect classification", "anime", "confused question"],
         "topics": ["mistaking things", "naive mislabeling", "ignorance of categories"],
         "tone": "gently mocking; highlights clueless misunderstandings",
-        "semantic_description": "Frame from the anime The Brave Fighter of Sun Fighbird where a man in glasses gestures toward a butterfly and asks, 'Is this a pigeon?' Used to represent people who completely misidentify or misunderstand obvious things."
+        "semantic_description": "Frame from the anime The Brave Fighter of Sun Fighbird where a man in glasses gestures toward a butterfly and asks, 'Is this a pigeon?' Used to represent people who completely misidentify or misunderstand obvious things.",
+        "tags": ["mockery", "confusion", "awkward", "reaction-image", "choice-based"]
       },
       {
         "id": "148909805",
@@ -494,7 +531,8 @@
         "keywords": ["awkward", "side-eye", "caught", "pretend nothing happened", "uncomfortable silence"],
         "topics": ["social awkwardness", "being exposed", "evasive reactions"],
         "tone": "quietly panicked; comedic discomfort",
-        "semantic_description": "Close-up of an orangish monkey puppet looking forward, then sideways with wide eyes and a stiff smile. Used as a reaction image when someone is caught in hypocrisy or an embarrassing situation and tries to pretend nothing is wrong."
+        "semantic_description": "Close-up of an orangish monkey puppet looking forward, then sideways with wide eyes and a stiff smile. Used as a reaction image when someone is caught in hypocrisy or an embarrassing situation and tries to pretend nothing is wrong.",
+        "tags": ["awkward", "playful", "call-out", "reaction-image", "two-panel"]
       },
       {
         "id": "28251713",
@@ -507,7 +545,8 @@
         "keywords": ["everyone gets", "distribution", "Oprah", "gifts for all", "mass giveaway"],
         "topics": ["abundance", "universal allocation", "spreading something widely"],
         "tone": "enthusiastically generous; often used ironically",
-        "semantic_description": "Scene from The Oprah Winfrey Show in which Oprah stands excitedly pointing to the audience saying 'You get a car! You get a car!' In memes, the object is replaced to show something being given to everyone, often humorously negative (e.g., 'You get a bug, you all get bugs')."
+        "semantic_description": "Scene from The Oprah Winfrey Show in which Oprah stands excitedly pointing to the audience saying 'You get a car! You get a car!' In memes, the object is replaced to show something being given to everyone, often humorously negative (e.g., 'You get a bug, you all get bugs').",
+        "tags": ["escalation", "ironic", "humorous", "reaction-image", "two-panel"]
       },
       {
         "id": "27813981",
@@ -520,7 +559,8 @@
         "keywords": ["forced smile", "inner pain", "repressed feelings", "Harold", "masking sadness"],
         "topics": ["emotional masking", "burnout", "pretending to be fine"],
         "tone": "bleakly comedic; smiles through suffering",
-        "semantic_description": "Stock photo of an older man (nicknamed Harold) with a pained smile and distant eyes, often holding a mug or working on a laptop. Used to show someone hiding significant discomfort or sadness behind an outwardly positive demeanor."
+        "semantic_description": "Stock photo of an older man (nicknamed Harold) with a pained smile and distant eyes, often holding a mug or working on a laptop. Used to show someone hiding significant discomfort or sadness behind an outwardly positive demeanor.",
+        "tags": ["failure", "melancholic", "awkward", "reaction-image", "two-panel"]
       },
       {
         "id": "177682295",
@@ -533,7 +573,8 @@
         "keywords": ["unpaid labor", "exploitation", "shock", "compensation gap"],
         "topics": ["wage inequality", "unpaid expectations", "surprise at others being paid"],
         "tone": "bitterly humorous; calls out unfair compensation",
-        "semantic_description": "Image macro of a character reacting with surprised realization, captioned 'You guys are getting paid?' Used when someone finds out others are being compensated for work they themselves have done for free."
+        "semantic_description": "Image macro of a character reacting with surprised realization, captioned 'You guys are getting paid?' Used when someone finds out others are being compensated for work they themselves have done for free.",
+        "tags": ["mockery", "work", "call-out", "reaction-image", "two-panel"]
       },
       {
         "id": "67452763",
@@ -546,7 +587,8 @@
         "keywords": ["watching others have fun", "FOMO", "Squidward", "window", "jealous observation"],
         "topics": ["envy", "fear of missing out", "observing from outside"],
         "tone": "melancholy envy; quietly resentful",
-        "semantic_description": "Shot from SpongeBob SquarePants where Squidward looks out of his window while SpongeBob and Patrick are happily playing outside. Used to represent someone watching others have fun or succeed while feeling left out."
+        "semantic_description": "Shot from SpongeBob SquarePants where Squidward looks out of his window while SpongeBob and Patrick are happily playing outside. Used to represent someone watching others have fun or succeed while feeling left out.",
+        "tags": ["failure", "melancholic", "self-reflection", "reaction-image", "two-panel"]
       },
       {
         "id": "55311130",
@@ -559,7 +601,8 @@
         "keywords": ["denial", "coping", "fire", "disaster acceptance", "calm in chaos"],
         "topics": ["pretending everything is okay", "burnout", "overwhelming situations"],
         "tone": "deadpan; darkly optimistic in the worst way",
-        "semantic_description": "Panel from KC Green’s webcomic 'Gunshow' showing a dog sitting calmly at a table with a mug of coffee while the room burns around him, saying 'This is fine.' Used when people act like everything is normal amid obvious crisis."
+        "semantic_description": "Panel from KC Green’s webcomic 'Gunshow' showing a dog sitting calmly at a table with a mug of coffee while the room burns around him, saying 'This is fine.' Used when people act like everything is normal amid obvious crisis.",
+        "tags": ["failure", "dark", "cope", "reaction-image", "two-panel"]
       },
       {
         "id": "259237855",
@@ -572,7 +615,8 @@
         "keywords": ["Leonardo DiCaprio", "laughing", "pointing", "The Wolf of Wall Street", "mocking laughter"],
         "topics": ["finding something hilarious", "mocking reactions", "connoisseur laughter"],
         "tone": "smug laughter; amused superiority",
-        "semantic_description": "Leonardo DiCaprio in character holding a drink and laughing while pointing at something off-screen. Used as a reaction image to represent recognizing something as funny or ridiculous."
+        "semantic_description": "Leonardo DiCaprio in character holding a drink and laughing while pointing at something off-screen. Used as a reaction image to represent recognizing something as funny or ridiculous.",
+        "tags": ["mockery", "smug", "humorous", "reaction-image", "two-panel"]
       },
       {
         "id": "195515965",
@@ -585,7 +629,8 @@
         "keywords": ["clowning yourself", "progressive foolishness", "escalating bad decisions", "makeup"],
         "topics": ["self-deception", "increasingly bad choices", "becoming a clown"],
         "tone": "self-critical; highlights the process of turning oneself into a fool",
-        "semantic_description": "Four-panel sequence of a person gradually applying clown makeup, wig, and costume. Each step is usually labeled with a decision or belief, culminating in the final 'full clown' representing the end result of foolish reasoning."
+        "semantic_description": "Four-panel sequence of a person gradually applying clown makeup, wig, and costume. Each step is usually labeled with a decision or belief, culminating in the final 'full clown' representing the end result of foolish reasoning.",
+        "tags": ["escalation", "self-own", "failure", "multi-panel", "progression"]
       },
       {
         "id": "234202281",
@@ -598,7 +643,8 @@
         "keywords": ["WWE", "AJ Styles", "The Undertaker", "confrontation", "showdown"],
         "topics": ["showdowns", "dramatic confrontations", "face-offs"],
         "tone": "dramatic; big-match energy",
-        "semantic_description": "Stills from a WWE segment featuring AJ Styles and The Undertaker facing off. Typically labeled to depict a dramatic confrontation between two forces, ideas, or people."
+        "semantic_description": "Stills from a WWE segment featuring AJ Styles and The Undertaker facing off. Typically labeled to depict a dramatic confrontation between two forces, ideas, or people.",
+        "tags": ["conflict", "dramatic", "competition", "reaction-image", "two-panel"]
       },
       {
         "id": "166969924",
@@ -611,7 +657,8 @@
         "keywords": ["quick fix", "band-aid solution", "Flex Tape", "infomercial", "slap on fix"],
         "topics": ["patching over deeper issues", "temporary solutions", "cosmetic fixes"],
         "tone": "infomercial parody; exaggerates how a simple fix 'solves everything'",
-        "semantic_description": "Images from the Flex Tape commercial where a man slaps thick tape over a large leak or broken container, instantly stopping the water. Used to represent simplistic or superficial solutions to serious underlying problems."
+        "semantic_description": "Images from the Flex Tape commercial where a man slaps thick tape over a large leak or broken container, instantly stopping the water. Used to represent simplistic or superficial solutions to serious underlying problems.",
+        "tags": ["mockery", "sarcastic", "ironic", "multi-panel"]
       },
       {
         "id": "1035805",
@@ -624,7 +671,8 @@
         "keywords": ["bad idea", "punished for good suggestion", "boardroom", "corporate", "thrown out window"],
         "topics": ["rejecting sensible ideas", "toxic management", "groupthink"],
         "tone": "cynically comedic; shows punishment for reason",
-        "semantic_description": "Four-panel comic where a boss asks for ideas in a meeting, two give on-brand suggestions, and the last person offers a sensible but unwanted idea. The boss then throws that employee out the window. Used to depict environments hostile to good suggestions."
+        "semantic_description": "Four-panel comic where a boss asks for ideas in a meeting, two give on-brand suggestions, and the last person offers a sensible but unwanted idea. The boss then throws that employee out the window. Used to depict environments hostile to good suggestions.",
+        "tags": ["failure", "dark", "work", "mockery", "multi-panel"]
       },
       {
         "id": "77045868",
@@ -637,7 +685,8 @@
         "keywords": ["lowball offer", "negotiation", "Pawn Stars", "bargaining", "undervaluing"],
         "topics": ["haggling", "underpayment", "cheap offers"],
         "tone": "dry bargaining humor; emphasizes unreasonably low offers",
-        "semantic_description": "Image of Rick Harrison from Pawn Stars saying something to the effect of 'Best I can do is X.' Used to parody people who severely undervalue something in negotiations."
+        "semantic_description": "Image of Rick Harrison from Pawn Stars saying something to the effect of 'Best I can do is X.' Used to parody people who severely undervalue something in negotiations.",
+        "tags": ["reaction", "humorous", "internet-culture", "reaction-image", "two-panel"]
       },
       {
         "id": "505705955",
@@ -650,7 +699,8 @@
         "keywords": ["absolute cinema", "film bro", "overpraise", "everyday scenes as art"],
         "topics": ["cinephile culture", "pretentious praise", "elevating mundane media"],
         "tone": "ironic reverence; treats trivial content as high art",
-        "semantic_description": "Template typically using a reaction like someone deeply moved and labeling a scene, joke, or shot as 'Absolute cinema.' Used to either sincerely or ironically treat something as high-level filmmaking."
+        "semantic_description": "Template typically using a reaction like someone deeply moved and labeling a scene, joke, or shot as 'Absolute cinema.' Used to either sincerely or ironically treat something as high-level filmmaking.",
+        "tags": ["ironic", "mockery", "sarcastic", "internet-culture", "reaction-image"]
       },
       {
         "id": "284929871",
@@ -663,7 +713,8 @@
         "keywords": ["secret knowledge", "they don't know", "social event", "outsider insight"],
         "topics": ["hidden achievements", "inside jokes", "private experiences"],
         "tone": "smugly introspective; quietly proud or ashamed of a secret",
-        "semantic_description": "Comic showing someone standing at a party thinking 'They don't know X' while everyone else is oblivious. Used when a person carries some knowledge, obsession, or issue that others around them are unaware of."
+        "semantic_description": "Comic showing someone standing at a party thinking 'They don't know X' while everyone else is oblivious. Used when a person carries some knowledge, obsession, or issue that others around them are unaware of.",
+        "tags": ["smug", "awkward", "self-reflection", "reaction-image", "two-panel"]
       },
       {
         "id": "119139145",
@@ -676,7 +727,8 @@
         "keywords": ["big red button", "pressing urge", "impulse", "trigger", "instant reaction"],
         "topics": ["irresistible impulses", "immediate reactions", "tempting options"],
         "tone": "energetic; amplifies the urgency to act impulsively",
-        "semantic_description": "Close-up of a hand slapping a big blue 'NUT' button (often recolored or relabeled with other text). Used to show an immediate, almost reflexive response to some stimulus or desire."
+        "semantic_description": "Close-up of a hand slapping a big blue 'NUT' button (often recolored or relabeled with other text). Used to show an immediate, almost reflexive response to some stimulus or desire.",
+        "tags": ["temptation", "playful", "reaction-image", "two-panel"]
       },
       {
         "id": "171305372",
@@ -689,7 +741,8 @@
         "keywords": ["protection", "sacrifice", "shielding", "soldier", "guardian"],
         "topics": ["self-sacrifice", "protecting innocence", "taking hits for others"],
         "tone": "heroic and sentimental",
-        "semantic_description": "Illustration of a soldier lying between a sleeping child and incoming threats (like projectiles or dangers) while shielding them. Used to symbolize someone taking harm or responsibility to protect someone unaware or vulnerable."
+        "semantic_description": "Illustration of a soldier lying between a sleeping child and incoming threats (like projectiles or dangers) while shielding them. Used to symbolize someone taking harm or responsibility to protect someone unaware or vulnerable.",
+        "tags": ["success", "wholesome", "dramatic", "multi-panel"]
       },
       {
         "id": "206151308",
@@ -702,7 +755,8 @@
         "keywords": ["three Spider-Men", "mutual pointing", "multi-way blame", "Spider-Verse"],
         "topics": ["shared guilt", "circular blame", "multiple similar actors"],
         "tone": "chaotic but playful; emphasizes tangled responsibility",
-        "semantic_description": "Meme variant featuring three Spider-Men all pointing at each other in confusion or accusation, derived from the Spider-Man pointing meme but expanded. Used when several similar parties all blame or call out each other."
+        "semantic_description": "Meme variant featuring three Spider-Men all pointing at each other in confusion or accusation, derived from the Spider-Man pointing meme but expanded. Used when several similar parties all blame or call out each other.",
+        "tags": ["comparison", "confusion", "humorous", "multi-panel"]
       },
       {
         "id": "533936279",
@@ -715,7 +769,8 @@
         "keywords": ["IQ bell curve", "mid vs extremes", "average", "statistics", "distribution"],
         "topics": ["intelligence stereotypes", "extremes vs norm", "statistical distributions"],
         "tone": "gatekeepy or tongue-in-cheek; often mocks mid-tier understanding",
-        "semantic_description": "Graph-shaped template based on a bell curve, usually with low-IQ and high-IQ characters on either side agreeing on something while a 'mid' intelligent character in the middle holds a more conventional or wrong view. Used to contrast 'simple wisdom' vs overthinking."
+        "semantic_description": "Graph-shaped template based on a bell curve, usually with low-IQ and high-IQ characters on either side agreeing on something while a 'mid' intelligent character in the middle holds a more conventional or wrong view. Used to contrast 'simple wisdom' vs overthinking.",
+        "tags": ["comparison", "contrast", "smug", "multi-panel"]
       },
       {
         "id": "119215120",
@@ -728,7 +783,8 @@
         "keywords": ["headache types", "migraine", "cluster", "stress", "new category"],
         "topics": ["pain classification", "ranking discomfort", "comparative suffering"],
         "tone": "relatable pain; hyperbolic explanation of what 'hurts the most'",
-        "semantic_description": "Chart-like image showing different types of headaches (e.g., migraine, cluster) highlighted on head diagrams, with a custom fourth panel for some new comedic 'type of headache' labeled by the meme creator."
+        "semantic_description": "Chart-like image showing different types of headaches (e.g., migraine, cluster) highlighted on head diagrams, with a custom fourth panel for some new comedic 'type of headache' labeled by the meme creator.",
+        "tags": ["escalation", "dark", "humorous", "choice-based"]
       },
       {
         "id": "89370399",
@@ -741,7 +797,8 @@
         "keywords": ["smart thinking", "life hack", "pointing to temple", "logic", "self-justification"],
         "topics": ["dubious reasoning", "rationalization", "pseudo-clever strategies"],
         "tone": "smug; often ironically 'smart' but actually flawed logic",
-        "semantic_description": "Image of a man tapping his temple and smiling knowingly. Captions articulate some 'clever' reasoning that justifies bad behavior or a loophole, often ironically pointing out that the logic is silly."
+        "semantic_description": "Image of a man tapping his temple and smiling knowingly. Captions articulate some 'clever' reasoning that justifies bad behavior or a loophole, often ironically pointing out that the logic is silly.",
+        "tags": ["mockery", "smug", "sarcastic", "reaction-image", "two-panel"]
       },
       {
         "id": "316466202",
@@ -754,7 +811,8 @@
         "keywords": ["where monkey", "missing element", "expectation vs reality", "confused demand"],
         "topics": ["unmet expectations", "searching for something", "fixation on one thing"],
         "tone": "childish and fixated; comedic obsession with a specific thing",
-        "semantic_description": "Typical format shows a person or character looking disappointed or confused with a simple, badly phrased question like 'where monkey,' representing someone obsessively expecting a specific element that isn't present."
+        "semantic_description": "Typical format shows a person or character looking disappointed or confused with a simple, badly phrased question like 'where monkey,' representing someone obsessively expecting a specific element that isn't present.",
+        "tags": ["failure", "humorous", "awkward", "reaction-image", "two-panel"]
       },
       {
         "id": "216523697",
@@ -767,7 +825,8 @@
         "keywords": ["all my homies hate", "collective dislike", "group opinion", "friends"],
         "topics": ["shared grievances", "group identity", "us vs them sentiment"],
         "tone": "tribal but comedic; asserts collective hatred toward something",
-        "semantic_description": "Image of a group of guys with a caption 'All my homies hate X.' Commonly used to exaggerate a collective dislike within a friend group or community for some phenomenon, product, or person."
+        "semantic_description": "Image of a group of guys with a caption 'All my homies hate X.' Commonly used to exaggerate a collective dislike within a friend group or community for some phenomenon, product, or person.",
+        "tags": ["mockery", "playful", "agreement", "reaction-image", "two-panel"]
       },
       {
         "id": "226297822",
@@ -780,7 +839,8 @@
         "keywords": ["panic", "calm down", "false reassurance", "panic cycle"],
         "topics": ["anxiety", "reassurance that backfires", "emotional roller coaster"],
         "tone": "chaotic; depicts up-down-up emotional responses",
-        "semantic_description": "Three-frame meme featuring a mannequin-like head. First panel: 'Panik', second: 'Kalm', third: 'Panik' again, each with corresponding facial expressions. Used when an initial panic is briefly relieved, only to return worse."
+        "semantic_description": "Three-frame meme featuring a mannequin-like head. First panel: 'Panik', second: 'Kalm', third: 'Panik' again, each with corresponding facial expressions. Used when an initial panic is briefly relieved, only to return worse.",
+        "tags": ["panic", "anxious", "escalation", "progression", "multi-panel"]
       },
       {
         "id": "101956210",
@@ -793,7 +853,8 @@
         "keywords": ["whispering", "goosebumps", "telling secrets", "intense statement"],
         "topics": ["revealing powerful truths", "goosebump-inducing lines", "dramatic speech"],
         "tone": "earnest or dramatic; emphasizes the impact of what's said",
-        "semantic_description": "Template usually showing someone whispering something into another's ear, paired with a panel of an arm or body showing goosebumps. Used to connect a line of dialogue or revelation with how emotionally intense or resonant it feels."
+        "semantic_description": "Template usually showing someone whispering something into another's ear, paired with a panel of an arm or body showing goosebumps. Used to connect a line of dialogue or revelation with how emotionally intense or resonant it feels.",
+        "tags": ["reaction", "dramatic", "realization", "dialogue", "reaction-image"]
       },
       {
         "id": "354700819",
@@ -806,7 +867,8 @@
         "keywords": ["perspective", "optimism vs pessimism", "bus", "view difference"],
         "topics": ["mindset", "perception of reality", "attitude differences"],
         "tone": "philosophical; juxtaposes positive and negative outlooks",
-        "semantic_description": "Drawing of two men on a bus: one sitting on the side facing a gloomy rock wall looking sad, the other facing a scenic view looking happy. Captions label each to show how different perspectives on the same situation change experience."
+        "semantic_description": "Drawing of two men on a bus: one sitting on the side facing a gloomy rock wall looking sad, the other facing a scenic view looking happy. Captions label each to show how different perspectives on the same situation change experience.",
+        "tags": ["contrast", "dramatic", "self-reflection", "before-after", "two-panel"]
       },
       {
         "id": "208915813",
@@ -819,7 +881,8 @@
         "keywords": ["George W. Bush", "9/11", "reading book", "awkward moment", "historic event"],
         "topics": ["political history", "crisis moments", "awkward leadership scenes"],
         "tone": "often dark or conspiratorial; politically charged",
-        "semantic_description": "Snapshot of George W. Bush in a classroom reading a children's book at the moment he was informed about the 9/11 attacks. Used in dark humor or critique about leadership and awareness."
+        "semantic_description": "Snapshot of George W. Bush in a classroom reading a children's book at the moment he was informed about the 9/11 attacks. Used in dark humor or critique about leadership and awareness.",
+        "tags": ["reaction", "dark", "politics", "reaction-image", "two-panel"]
       },
       {
         "id": "99683372",
@@ -832,7 +895,8 @@
         "keywords": ["I sleep", "real shit", "Shaquille O'Neal", "wake up", "prioritization"],
         "topics": ["indifference vs alarm", "what people care about", "reaction thresholds"],
         "tone": "contrasting apathy and overreaction; comedic prioritization",
-        "semantic_description": "Two-panel meme with Shaq: first panel eyes closed, 'I sleep'; second panel glowing eyes, 'Real shit.' Used to juxtapose things that don't elicit concern vs things that suddenly command full attention."
+        "semantic_description": "Two-panel meme with Shaq: first panel eyes closed, 'I sleep'; second panel glowing eyes, 'Real shit.' Used to juxtapose things that don't elicit concern vs things that suddenly command full attention.",
+        "tags": ["comparison", "contrast", "playful", "before-after", "two-panel"]
       },
       {
         "id": "137501417",
@@ -845,7 +909,8 @@
         "keywords": ["friendship ended", "new best friend", "drama", "Pakistani meme"],
         "topics": ["relationship switching", "loyalty", "falling out", "new alliances"],
         "tone": "overly dramatic; satirizes sudden loyalty shifts",
-        "semantic_description": "Photoshopped image from a viral Pakistani Facebook post: 'Friendship ended with Mudasir, now Salman is my best friend.' Used to humorously announce that someone or something has been replaced by a new favorite."
+        "semantic_description": "Photoshopped image from a viral Pakistani Facebook post: 'Friendship ended with Mudasir, now Salman is my best friend.' Used to humorously announce that someone or something has been replaced by a new favorite.",
+        "tags": ["mockery", "dramatic", "relationships", "reaction-image", "two-panel"]
       },
       {
         "id": "187102311",
@@ -858,7 +923,8 @@
         "keywords": ["three-headed dragon", "two serious, one goofy", "quality tiers"],
         "topics": ["tier lists", "inconsistent quality", "odd one out"],
         "tone": "mocking one weak member among strong ones",
-        "semantic_description": "Image of a three-headed dragon where two heads look fierce and the third looks derpy or goofy. Used to label three items where two are strong/serious and one is incompetent or ridiculous."
+        "semantic_description": "Image of a three-headed dragon where two heads look fierce and the third looks derpy or goofy. Used to label three items where two are strong/serious and one is incompetent or ridiculous.",
+        "tags": ["comparison", "mockery", "playful", "multi-panel"]
       },
       {
         "id": "114585149",
@@ -871,7 +937,8 @@
         "keywords": ["screaming", "escalation", "seagull", "all caps", "intensity"],
         "topics": ["raising volume", "emotional escalation", "dramatic emphasis"],
         "tone": "loud and over-the-top; comedic escalation of emphasis",
-        "semantic_description": "Sequence of a seagull moving from normal posture to throwing its head back and screaming. Captions often show text starting normal and ending in all caps to represent shouting or intensifying emotion."
+        "semantic_description": "Sequence of a seagull moving from normal posture to throwing its head back and screaming. Captions often show text starting normal and ending in all caps to represent shouting or intensifying emotion.",
+        "tags": ["escalation", "aggressive", "dramatic", "multi-panel", "progression"]
       },
       {
         "id": "371619279",
@@ -884,7 +951,8 @@
         "keywords": ["no bitches", "Megamind", "social failure", "loneliness", "roast"],
         "topics": ["romantic/sexual failure", "insults", "internet roasts"],
         "tone": "harsh mocking; calls out perceived loser status",
-        "semantic_description": "Close-up of Megamind with a smug but somewhat sad expression, usually paired with text 'No bitches?' and additional context. Used to roast people as being lonely or socially unsuccessful."
+        "semantic_description": "Close-up of Megamind with a smug but somewhat sad expression, usually paired with text 'No bitches?' and additional context. Used to roast people as being lonely or socially unsuccessful.",
+        "tags": ["mockery", "aggressive", "call-out", "reaction-image", "two-panel"]
       },
       {
         "id": "247113703",
@@ -897,7 +965,8 @@
         "keywords": ["colliding forces", "unstoppable vs vulnerable", "disaster impact"],
         "topics": ["crash scenarios", "overwhelming force", "cause and catastrophic effect"],
         "tone": "dark; hyperbolic depiction of destructive interactions",
-        "semantic_description": "Illustration where a fast-moving train crashes into a school bus. Captions usually label train and bus as two interacting forces, with the train representing something overwhelmingly strong and the bus something fragile or unprepared."
+        "semantic_description": "Illustration where a fast-moving train crashes into a school bus. Captions usually label train and bus as two interacting forces, with the train representing something overwhelmingly strong and the bus something fragile or unprepared.",
+        "tags": ["escalation", "dark", "conflict", "before-after", "two-panel"]
       },
       {
         "id": "221578498",
@@ -910,7 +979,8 @@
         "keywords": ["dancing on grave", "Grant Gustin", "The Flash", "celebrating demise"],
         "topics": ["replacing old things", "mocking the past", "gloating"],
         "tone": "petty celebratory; rejoicing over the end of something",
-        "semantic_description": "Photo of actor Grant Gustin (The Flash) posing and smiling next to a gravestone. Used to show someone or something celebrating or thriving after killing/replacing something else labeled on the grave."
+        "semantic_description": "Photo of actor Grant Gustin (The Flash) posing and smiling next to a gravestone. Used to show someone or something celebrating or thriving after killing/replacing something else labeled on the grave.",
+        "tags": ["mockery", "aggressive", "celebration", "reaction-image", "two-panel"]
       },
       {
         "id": "91545132",
@@ -923,7 +993,8 @@
         "keywords": ["Donald Trump", "executive order", "signing document", "policy change"],
         "topics": ["big decisions", "official approval", "policy actions"],
         "tone": "political; can be serious or satirical depending on captions",
-        "semantic_description": "Image of Donald Trump sitting at a desk holding up a signed document to the camera. The document contents are usually edited to represent whatever 'new policy' the meme creator wants to joke about."
+        "semantic_description": "Image of Donald Trump sitting at a desk holding up a signed document to the camera. The document contents are usually edited to represent whatever 'new policy' the meme creator wants to joke about.",
+        "tags": ["reaction", "politics", "sarcastic", "reaction-image", "two-panel"]
       },
       {
         "id": "224514655",
@@ -936,7 +1007,8 @@
         "keywords": ["hiding", "threat", "anime girl", "terminator", "danger nearby"],
         "topics": ["fear of consequences", "avoiding confrontation", "underpowered vs unstoppable"],
         "tone": "anxious; comedic mismatch between threat and hider",
-        "semantic_description": "Image of an anime girl hiding behind a wall while a Terminator robot stalks nearby with a weapon. Used to represent someone weak hiding from a huge and relentless threat."
+        "semantic_description": "Image of an anime girl hiding behind a wall while a Terminator robot stalks nearby with a weapon. Used to represent someone weak hiding from a huge and relentless threat.",
+        "tags": ["panic", "dark", "comparison", "reaction-image", "two-panel"]
       },
       {
         "id": "5496396",
@@ -949,7 +1021,8 @@
         "keywords": ["cheers", "toast", "Gatsby", "celebration", "acknowledgement"],
         "topics": ["congratulations", "shared jokes", "acknowledging statements"],
         "tone": "friendly celebratory; appreciative nod",
-        "semantic_description": "Scene from The Great Gatsby where Leonardo DiCaprio raises a champagne glass toward the camera with a smile. Used to toast, acknowledge, or salute something in a celebratory way."
+        "semantic_description": "Scene from The Great Gatsby where Leonardo DiCaprio raises a champagne glass toward the camera with a smile. Used to toast, acknowledge, or salute something in a celebratory way.",
+        "tags": ["agreement", "wholesome", "celebration", "reaction-image", "two-panel"]
       },
       {
         "id": "61556",
@@ -962,7 +1035,8 @@
         "keywords": ["elderly confusion", "technology gap", "grandma", "internet noob"],
         "topics": ["tech illiteracy", "generation gap", "overreactions to tech"],
         "tone": "gentle ridicule; pokes fun at older people learning tech",
-        "semantic_description": "Stock photo of an elderly woman with glasses at a computer looking confused or concerned. Captions highlight naive misunderstandings of internet or computer concepts."
+        "semantic_description": "Stock photo of an elderly woman with glasses at a computer looking confused or concerned. Captions highlight naive misunderstandings of internet or computer concepts.",
+        "tags": ["mockery", "awkward", "technology", "reaction-image", "two-panel"]
       },
       {
         "id": "155067746",
@@ -975,7 +1049,8 @@
         "keywords": ["shock at predictable outcome", "Pokemon", "Pikachu face", "fake surprise"],
         "topics": ["cause and effect", "foreseeable consequences", "denial of responsibility"],
         "tone": "mock-surprised; highlights how predictable outcomes still 'shock' people",
-        "semantic_description": "Zoomed-in image of Pikachu with a wide-eyed, open-mouthed expression of surprise. Typically used after describing someone's actions followed by an obvious consequence, then the Surprised Pikachu panel to mock their faux surprise."
+        "semantic_description": "Zoomed-in image of Pikachu with a wide-eyed, open-mouthed expression of surprise. Typically used after describing someone's actions followed by an obvious consequence, then the Surprised Pikachu panel to mock their faux surprise.",
+        "tags": ["mockery", "sarcastic", "ironic", "realization", "reaction-image"]
       },
       {
         "id": "61520",
@@ -988,7 +1063,8 @@
         "keywords": ["not sure if", "Fry squinting", "uncertainty", "suspicion"],
         "topics": ["ambiguous situations", "doubt", "multiple explanations"],
         "tone": "skeptical; mild confusion and distrust",
-        "semantic_description": "Frame from Futurama showing Fry squinting suspiciously. Caption typically reads 'Not sure if X or Y.' Used to express uncertainty between two interpretations of a situation."
+        "semantic_description": "Frame from Futurama showing Fry squinting suspiciously. Caption typically reads 'Not sure if X or Y.' Used to express uncertainty between two interpretations of a situation.",
+        "tags": ["confusion", "awkward", "choice-based", "reaction-image", "two-panel"]
       },
       {
         "id": "145139900",
@@ -1001,7 +1077,8 @@
         "keywords": ["unmasking", "Scooby-Doo", "reveal true identity", "villain behind mask"],
         "topics": ["exposing hidden causes", "revealing true culprits"],
         "tone": "light dramatic; comedic revelation of what's 'really' behind something",
-        "semantic_description": "Scene from Scooby-Doo where Fred pulls off a villain's mask to reveal the person underneath. Captions label the mask as a surface explanation and the real face as the underlying cause or responsible party."
+        "semantic_description": "Scene from Scooby-Doo where Fred pulls off a villain's mask to reveal the person underneath. Captions label the mask as a surface explanation and the real face as the underlying cause or responsible party.",
+        "tags": ["reveal", "ironic", "mockery", "multi-panel"]
       },
       {
         "id": "72525473",
@@ -1012,9 +1089,10 @@
         "box_count": 3,
         "captions": 30750,
         "keywords": ["say the line", "Bart Simpson", "forced repetition", "catchphrase"],
-        "topics": ["overused jokes", "audience expectations", "cliché lines"],
+        "topics": ["overused jokes", "audience expectations", "clichéd lines"],
         "tone": "meta-humor; mocks how audiences demand the same lines or bits",
-        "semantic_description": "Scene from The Simpsons where classmates demand Bart 'say the line,' and he reluctantly says a familiar catchphrase, after which the class cheers. Used to show people pressuring someone to repeat an overused joke or phrase."
+        "semantic_description": "Scene from The Simpsons where classmates demand Bart 'say the line,' and he reluctantly says a familiar catchphrase, after which the class cheers. Used to show people pressuring someone to repeat an overused joke or phrase.",
+        "tags": ["mockery", "ironic", "internet-culture", "multi-panel", "dialogue"]
       },
       {
         "id": "84341851",
@@ -1027,7 +1105,8 @@
         "keywords": ["inner me", "evil me", "dark impulse", "self-sabotage", "Kermit hood"],
         "topics": ["internal conflicts", "temptation", "self-destructive choices"],
         "tone": "tempting; comedic depiction of giving in to worst impulses",
-        "semantic_description": "Image of Kermit the Frog facing a hooded, evil-looking version of himself (like Emperor Palpatine). Regular Kermit expresses a reasonable thought; 'Evil Kermit' counters with a selfish, petty, or destructive alternative."
+        "semantic_description": "Image of Kermit the Frog facing a hooded, evil-looking version of himself (like Emperor Palpatine). Regular Kermit expresses a reasonable thought; 'Evil Kermit' counters with a selfish, petty, or destructive alternative.",
+        "tags": ["temptation", "conflict", "playful", "choice-based", "dialogue"]
       },
       {
         "id": "558880671",
@@ -1040,7 +1119,8 @@
         "keywords": ["Squid Game", "Netflix", "survival game", "death games", "Korean drama"],
         "topics": ["extreme stakes", "economic desperation", "gamified survival"],
         "tone": "dark and tense; often used for high-stakes metaphors",
-        "semantic_description": "Still from the Netflix show Squid Game, usually involving the contestants in green tracksuits or masked guards. Captions map real-world struggles to deadly children's games to emphasize harsh competition."
+        "semantic_description": "Still from the Netflix show Squid Game, usually involving the contestants in green tracksuits or masked guards. Captions map real-world struggles to deadly children's games to emphasize harsh competition.",
+        "tags": ["dark", "dramatic", "competition", "conflict", "reaction-image"]
       },
       {
         "id": "162372564",
@@ -1053,7 +1133,8 @@
         "keywords": ["small event big consequences", "domino chain", "cause and effect"],
         "topics": ["ripple effects", "unintended consequences", "historical chains"],
         "tone": "analytic and sometimes fatalistic; shows how minor actions escalate",
-        "semantic_description": "Image of a series of dominoes arranged from small to very large, with arrows or labels showing how a tiny initial event leads to a massive outcome as the line progresses."
+        "semantic_description": "Image of a series of dominoes arranged from small to very large, with arrows or labels showing how a tiny initial event leads to a massive outcome as the line progresses.",
+        "tags": ["escalation", "contrast", "progression"]
       },
       {
         "id": "29617627",
@@ -1066,7 +1147,8 @@
         "keywords": ["attention seeking", "Captain Phillips", "I'm the captain now"],
         "topics": ["power shifts", "control", "asserting dominance"],
         "tone": "assertive; sometimes threatening in a humorous way",
-        "semantic_description": "Frame from Captain Phillips where the pirate says 'Look at me, I'm the captain now.' Used to represent someone taking control or demanding recognition as the one in charge."
+        "semantic_description": "Frame from Captain Phillips where the pirate says 'Look at me, I'm the captain now.' Used to represent someone taking control or demanding recognition as the one in charge.",
+        "tags": ["escalation", "aggressive", "playful", "reaction-image", "two-panel"]
       },
       {
         "id": "101288",
@@ -1079,7 +1161,8 @@
         "keywords": ["skeptical child", "are you serious", "doubt", "suspicious look"],
         "topics": ["questioning privilege", "calling out nonsense"],
         "tone": "pointedly skeptical; exposes naive or privileged statements",
-        "semantic_description": "Photo of a young African boy giving a skeptical side-eye to a woman talking to him. Captions often highlight disbelief at unrealistic or condescending statements."
+        "semantic_description": "Photo of a young African boy giving a skeptical side-eye to a woman talking to him. Captions often highlight disbelief at unrealistic or condescending statements.",
+        "tags": ["mockery", "call-out", "playful", "reaction-image", "two-panel"]
       },
       {
         "id": "135678846",
@@ -1092,7 +1175,8 @@
         "keywords": ["blame shifting", "denial of responsibility", "Hannibal", "shoot then ask"],
         "topics": ["hypocrisy", "deflection", "bad faith blaming"],
         "tone": "ironic; calls out people who cause problems then act innocent",
-        "semantic_description": "Scene from TV show The Eric Andre Show where Eric shoots Hannibal, then turns to the camera and asks 'Who killed Hannibal?' Used when someone causes harm and then pretends to wonder who is responsible."
+        "semantic_description": "Scene from TV show The Eric Andre Show where Eric shoots Hannibal, then turns to the camera and asks 'Who killed Hannibal?' Used when someone causes harm and then pretends to wonder who is responsible.",
+        "tags": ["mockery", "dark", "call-out", "multi-panel", "dialogue"]
       },
       {
         "id": "20007896",
@@ -1105,7 +1189,8 @@
         "keywords": ["poke with stick", "do something", "waiting for action"],
         "topics": ["stagnation", "impatience", "frustration with inactivity"],
         "tone": "bored frustration; gently mocking inactivity",
-        "semantic_description": "Simple line drawing of a stick figure poking something with a stick saying 'C’mon, do something.' Used when something (a team, market, project, etc.) feels stagnant or underperforming."
+        "semantic_description": "Simple line drawing of a stick figure poking something with a stick saying 'C'mon, do something.' Used when something (a team, market, project, etc.) feels stagnant or underperforming.",
+        "tags": ["failure", "humorous", "waiting", "reaction-image", "two-panel"]
       },
       {
         "id": "14371066",
@@ -1118,7 +1203,8 @@
         "keywords": ["Yoda wisdom", "Star Wars", "cryptic advice", "force"],
         "topics": ["philosophy", "training", "Jedi-like wisdom"],
         "tone": "sage and archaic; sometimes parodied as pseudo-deep",
-        "semantic_description": "Image of Yoda delivering a line of wisdom. Captions often mimic his unusual syntax to convey advice or mock pseudo-profound statements."
+        "semantic_description": "Image of Yoda delivering a line of wisdom. Captions often mimic his unusual syntax to convey advice or mock pseudo-profound statements.",
+        "tags": ["reaction", "dramatic", "ironic", "reaction-image", "two-panel"]
       },
       {
         "id": "134797956",
@@ -1131,7 +1217,8 @@
         "keywords": ["screaming match", "American Chopper", "back-and-forth argument", "escalating debate"],
         "topics": ["heated debates", "miscommunication", "passionate disagreements"],
         "tone": "loud and emotional but comedic; dramatic back-and-forth",
-        "semantic_description": "Series of frames from the reality show American Chopper showing a father and son yelling at each other and throwing a chair. Each panel is captioned with parts of an argument that escalates and sometimes resolves."
+        "semantic_description": "Series of frames from the reality show American Chopper showing a father and son yelling at each other and throwing a chair. Each panel is captioned with parts of an argument that escalates and sometimes resolves.",
+        "tags": ["conflict", "aggressive", "escalation", "dialogue", "multi-panel"]
       },
       {
         "id": "50421420",
@@ -1144,7 +1231,8 @@
         "keywords": ["expectation vs reality", "shock then disappointment", "bait-and-switch"],
         "topics": ["letdowns", "disillusionment", "false hope"],
         "tone": "let down; moves from excited to crushed",
-        "semantic_description": "Two-panel meme: first shows a black man smiling excitedly at something, second shows him immediately afterward with a displeased, disappointed face when reality differs from what he expected."
+        "semantic_description": "Two-panel meme: first shows a black man smiling excitedly at something, second shows him immediately afterward with a displeased, disappointed face when reality differs from what he expected.",
+        "tags": ["failure", "contrast", "humorous", "before-after", "two-panel"]
       },
       {
         "id": "129315248",
@@ -1157,7 +1245,8 @@
         "keywords": ["changing answer", "reluctant acceptance", "initial refusal", "then agreement"],
         "topics": ["change of heart", "giving in", "negotiation outcomes"],
         "tone": "reluctantly positive; shows progression from opposition to acceptance",
-        "semantic_description": "Simple two-panel format where the top shows 'No.' and the bottom shows 'Yes.' with the same character, often to depict someone initially refusing something and then later accepting it."
+        "semantic_description": "Simple two-panel format where the top shows 'No.' and the bottom shows 'Yes.' with the same character, often to depict someone initially refusing something and then later accepting it.",
+        "tags": ["choice-based", "dramatic", "progression", "before-after", "two-panel"]
       },
       {
         "id": "6235864",
@@ -1170,7 +1259,8 @@
         "keywords": ["comforting", "explaining", "serious talk", "childlike wonder"],
         "topics": ["gentle explanations", "lowering expectations", "soft truths"],
         "tone": "empathetic; softens harsh realities with whimsical framing",
-        "semantic_description": "Scene from the film Finding Neverland: adult character sitting with a boy, often with the adult speaking a sober line and the child reacting. Used to frame gentle but sobering explanations in a sentimental context."
+        "semantic_description": "Scene from the film Finding Neverland: adult character sitting with a boy, often with the adult speaking a sober line and the child reacting. Used to frame gentle but sobering explanations in a sentimental context.",
+        "tags": ["dramatic", "wholesome", "melancholic", "dialogue", "multi-panel"]
       },
       {
         "id": "104893621",
@@ -1183,7 +1273,8 @@
         "keywords": ["Grim Reaper", "death visits", "sequence of victims", "inevitability"],
         "topics": ["fatalism", "chain of destruction", "ongoing elimination"],
         "tone": "dark; grim but playful visualization of death visiting targets",
-        "semantic_description": "Comic-style image of the Grim Reaper going door to door, leaving a trail of blood behind. Each door is usually labeled to show successive targets being 'claimed', implying something systematically eliminating items in a category."
+        "semantic_description": "Comic-style image of the Grim Reaper going door to door, leaving a trail of blood behind. Each door is usually labeled to show successive targets being 'claimed', implying something systematically eliminating items in a category.",
+        "tags": ["dark", "escalation", "aggressive", "multi-panel", "progression"]
       },
       {
         "id": "21735",
@@ -1196,7 +1287,8 @@
         "keywords": ["The Rock car", "unexpected response", "turning head", "twist"],
         "topics": ["shock at answer", "subverted expectations", "miscommunication"],
         "tone": "comic surprise; driver is caught off guard by passenger response",
-        "semantic_description": "Two-panel still from a movie scene where Dwayne 'The Rock' Johnson is driving a car; in the first panel he asks a question while looking forward, and in the second he looks back in shock at an unexpected answer from the passenger."
+        "semantic_description": "Two-panel still from a movie scene where Dwayne 'The Rock' Johnson is driving a car; in the first panel he asks a question while looking forward, and in the second he looks back in shock at an unexpected answer from the passenger.",
+        "tags": ["reaction", "humorous", "surprise", "dialogue", "before-after"]
       },
       {
         "id": "142009471",
@@ -1209,7 +1301,8 @@
         "keywords": ["mislabeling", "is this a", "anime guy", "pigeon/butterfly confusion"],
         "topics": ["category errors", "ignorant labeling", "cluelessness"],
         "tone": "gently mocking; emphasizes ignorance of basic distinctions",
-        "semantic_description": "Variant of the 'Is This a Pigeon?' anime meme where the character points at something mislabeled as a butterfly/pigeon. The item is usually something obviously not fitting the category used in the caption."
+        "semantic_description": "Variant of the 'Is This a Pigeon?' anime meme where the character points at something mislabeled as a butterfly/pigeon. The item is usually something obviously not fitting the category used in the caption.",
+        "tags": ["mockery", "confusion", "playful", "reaction-image", "choice-based"]
       },
       {
         "id": "309668311",
@@ -1222,7 +1315,8 @@
         "keywords": ["fork in the road", "two options", "decision", "path choice"],
         "topics": ["life choices", "decision making", "contrasting philosophies"],
         "tone": "contemplative or comedic; frames choices starkly",
-        "semantic_description": "Simple drawing of a road that splits into two paths, often with each path labeled differently. A person or arrow may be shown choosing one. Used to represent binary choices between approaches or lifestyles."
+        "semantic_description": "Simple drawing of a road that splits into two paths, often with each path labeled differently. A person or arrow may be shown choosing one. Used to represent binary choices between approaches or lifestyles.",
+        "tags": ["choice", "choice-based", "decision-making", "contrast"]
       },
       {
         "id": "110133729",
@@ -1235,7 +1329,8 @@
         "keywords": ["same person", "hypocrisy", "Spider-Man meme", "identical entities"],
         "topics": ["mutual similarity", "calling out hypocrites", "duplicated roles"],
         "tone": "humorous confrontation; points out that two sides are the same",
-        "semantic_description": "Classic Spider-Man cartoon frame with two Spider-Men pointing at each other in confusion. Used when two people or groups are functionally identical or guilty of the same behavior while accusing each other."
+        "semantic_description": "Classic Spider-Man cartoon frame with two Spider-Men pointing at each other in confusion. Used when two people or groups are functionally identical or guilty of the same behavior while accusing each other.",
+        "tags": ["comparison", "contrast", "humorous", "mockery", "reaction-image"]
       },
       {
         "id": "360597639",
@@ -1248,7 +1343,8 @@
         "keywords": ["competition anxiety", "opponent stronger", "intimidated", "fear of losing"],
         "topics": ["self-doubt", "being outclassed", "high stakes competition"],
         "tone": "self-deprecating anxiety; comedic fear in competitive settings",
-        "semantic_description": "Meme format showing an individual reacting fearfully or nervously upon realizing their opponent is far more skilled, prepared, or intense than expected. Often used with gaming or sports context."
+        "semantic_description": "Meme format showing an individual reacting fearfully or nervously upon realizing their opponent is far more skilled, prepared, or intense than expected. Often used with gaming or sports context.",
+        "tags": ["panic", "anxious", "failure", "competition", "reaction-image"]
       },
       {
         "id": "589636832",
@@ -1261,7 +1357,8 @@
         "keywords": ["Doakes", "Dexter", "surprised confrontation", "I knew it"],
         "topics": ["suspicion confirmed", "calling someone out", "dramatic reveals"],
         "tone": "intense; confrontational satisfaction at being right",
-        "semantic_description": "Detective Doakes from Dexter, often captioned with lines suggesting he always suspected something ('Surprise, motherf***er'). Used when someone finally confronts or confirms a suspicion about another."
+        "semantic_description": "Detective Doakes from Dexter, often captioned with lines suggesting he always suspected something ('Surprise, motherf***er'). Used when someone finally confronts or confirms a suspicion about another.",
+        "tags": ["realization", "dramatic", "reveal", "call-out", "reaction-image"]
       },
       {
         "id": "123999232",
@@ -1274,7 +1371,8 @@
         "keywords": ["unpleasant truth", "scroll", "rejecting facts", "ignored wisdom"],
         "topics": ["truth people don't want to accept", "cognitive dissonance"],
         "tone": "didactic yet comedic; forces a truth on someone who prefers denial",
-        "semantic_description": "Cartoon of a character discovering an ancient scroll labeled with a truth, reading it, and then angrily discarding it. Used to show how people react when confronted with an uncomfortable but accurate statement."
+        "semantic_description": "Cartoon of a character discovering an ancient scroll labeled with a truth, reading it, and then angrily discarding it. Used to show how people react when confronted with an uncomfortable but accurate statement.",
+        "tags": ["reveal", "mockery", "ironic", "reaction-image"]
       },
       {
         "id": "342785297",
@@ -1287,7 +1385,8 @@
         "keywords": ["we are not the same", "Gus Fring", "Breaking Bad", "standards"],
         "topics": ["superiority", "different values", "contrast in discipline"],
         "tone": "sternly elitist; emphasizes being on a higher level",
-        "semantic_description": "Gus Fring from Breaking Bad in a serious pose, often captioned 'We are not the same, I X.' Used to contrast one’s strict standards or discipline with someone else’s perceived laxness."
+        "semantic_description": "Gus Fring from Breaking Bad in a serious pose, often captioned 'We are not the same, I X.' Used to contrast one's strict standards or discipline with someone else's perceived laxness.",
+        "tags": ["contrast", "smug", "dramatic", "multi-panel"]
       },
       {
         "id": "92084495",
@@ -1300,7 +1399,8 @@
         "keywords": ["conspiracy board", "Pepe Silvia", "Charlie Day", "corkboard", "strings everywhere"],
         "topics": ["overcomplicated theories", "paranoia", "connecting random dots"],
         "tone": "frantic and unhinged; comedic paranoia",
-        "semantic_description": "Scene from It’s Always Sunny in Philadelphia showing Charlie in front of a corkboard covered with papers and string, gesturing wildly. Used to depict someone presenting an overly complicated, conspiracy-like explanation or pattern."
+        "semantic_description": "Scene from It's Always Sunny in Philadelphia showing Charlie in front of a corkboard covered with papers and string, gesturing wildly. Used to depict someone presenting an overly complicated, conspiracy-like explanation or pattern.",
+        "tags": ["escalation", "dark", "ironic", "humorous", "reaction-image"]
       }
     ]
   }
