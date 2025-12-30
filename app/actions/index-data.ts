@@ -126,6 +126,38 @@ export async function indexData(user_prompt: string): Promise<Template[] | null>
         //     console.log("Failed to write", err)
         // })
         const query = await generateEmbeddings(user_prompt)
+        const {text : context} = await generateText({
+            model : groq('openai/gpt-oss-120b'),
+            prompt: `You are an expert at analyzing text to extract emotional context, tone, and narrative intent. 
+Your job is to deconstruct user input and produce structured context that a meme caption writer can use to generate FUNNY, RELEVANT captions.
+
+Think step-by-step:
+1. IDENTIFY: What is the core situation or scenario the user is describing?
+2. EMOTION: What emotional state(s) are present? (frustration, joy, sarcasm, irony, desperation, etc.)
+3. TONE: What voice should captions have? (dark humor, sarcastic, witty, relatable, absurd, etc.)
+4. THEMES: What are the underlying themes or pain points? (work stress, relationships, technology, procrastination, etc.)
+5. RELATABLE ANGLE: How can this resonate with others? What's the universal aspect?
+6. MEME NARRATIVE: What's the "story" or "contrast" that a meme template could play on?
+
+USER INPUT: "${user_prompt}"
+
+Analyze this step-by-step and output ONLY valid JSON with NO markdown, NO comments, NO extra text:
+
+{
+  "situation": "brief description of what's happening (1-2 sentences)",
+  "primary_emotion": "dominant emotion (e.g., frustration, sarcasm, resignation, overwhelm)",
+  "secondary_emotions": ["secondary emotion if any"],
+  "tone_for_captions": "voice/style for meme captions (e.g., dark humor, self-deprecating, witty, painfully relatable)",
+  "core_themes": ["theme1", "theme2", "theme3"],
+  "pain_points": ["specific frustration or contradiction"],
+  "relatable_angle": "why others would find this funny/relatable",
+  "contrast_or_irony": "the core contrast/contradiction that makes it meme-worthy",
+  "suggested_narrative": "how a meme template could play into this (e.g., 'approving good thing vs rejecting bad thing')",
+  "keywords_for_captions": ["keyword1", "keyword2", "keyword3", "keyword4"],
+  "caption_direction": "brief direction for what the captions should emphasize"
+}`
+        })
+        // console.log("context -> ", context)
         const result = await pineconeIndex.query({
             topK: 10,
             vector: query,
@@ -142,30 +174,50 @@ export async function indexData(user_prompt: string): Promise<Template[] | null>
             }
             const caption_blocks = dbData[0].box_count
             const meme_captions: Array<string> = []
-            const prompt = `You are a master meme caption writer. Write SHORT captions ONLY.
+            const prompt = `You are an expert meme caption writer. Generate SHORT, PUNCHY captions that match the template's scenario and the user's context.
 
-MEME: ${dbData[0].name}
-TONE: ${dbData[0].tone}
-BLOCKS: ${caption_blocks}
+RULES (CRITICAL - FOLLOW EXACTLY):
+✓ MAXIMUM 3-5 words per caption
+✓ Simple, easy-to-understand English
+✓ Align with template's meme mechanics
+✓ Match the ${dbData[0].tone} tone exactly
+✓ Make it funny by playing on the template's scenario
+✓ Output captions ONLY, separated by "|"
+✓ No explanations, hashtags, or extra text
 
-CONTEXT: ${user_prompt}
+Must use this context along with further provided meme template data for generating captions
+context : ${JSON.stringify(context)}
 
-STRICT RULES:
-✓ MAX 5 WORDS per caption
-✓ Fuse [template mechanic] + [context]
-✓ Use "|" separator only
-✓ Match ${dbData[0].tone} tone
-✓ Make it punchy and funny
+EXAMPLE 1:
+Template: Drake Hotline Bling (shows Drake rejecting/approving things)
+User Context: avoiding a tough project deadline
+Output: Scrolling TikTok|Actually starting work
 
-TEMPLATE: ${dbData[0].name}
+EXAMPLE 2:
+Template: Distracted Boyfriend (guy checks out new thing while girlfriend is upset)
+User Context: choosing between sleep and debugging code
+Output: Sleep|Finding that one bug
 
-KEYWORDS: ${dbData[0].keywords.slice(0, 2).join(', ')}
+EXAMPLE 3:
+Template: Woman Yelling at Cat (woman angry, cat confused)
+User Context: git merge conflicts
+Output: Git merge messages|My perfectly working code
 
-OUTPUT CAPTIONS ONLY:
-Caption1|Caption2${caption_blocks > 2 ? '|Caption3' : ''}`
+---
+
+NOW GENERATE CAPTIONS FOR AND KEEP ABOVE PROVIDED CONTEXT IN MIND:
+Template: ${dbData[0].name}
+Template Description: ${dbData[0].description} (This is the template's scenario)
+Tone: ${dbData[0].tone}
+User Context: ${user_prompt}
+Keywords to use: ${dbData[0].keywords.slice(0, 3).join(', ')}
+Number of captions: ${caption_blocks}
+Must Follow the given output format and avoid any kind of additional content or text (output must be just captions and nothing else and separate captions using coma(',').)
+
+Output Format (STRICT) (caption1|caption2${caption_blocks > 2 ? '|caption3' : ''}):`
 
             const { text } = await generateText({
-                model: groq('llama-3.1-8b-instant'),
+                model: groq('moonshotai/kimi-k2-instruct-0905'),
                 prompt: prompt
             })
             // dbData[0].captions.push(captions.split('|'))

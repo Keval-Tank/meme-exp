@@ -20,6 +20,10 @@ import {
   FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
+import TemplateCanvas from "@/components/TemplateCanvas";
+import FabricTemplateCanvas from "@/components/FabricTemplateCanvas";
+
+
  
 const formSchema = z.object({
   prompt: z.string().min(2).max(500),
@@ -79,10 +83,12 @@ export default function Home() {
       }
       {
         templates && templates.map((template : Template) => {
-          return (<div key={template.id} className="h-[500px] w-[500px]">
-            <div className="grid grid-cols-2 w-full">
-              <Image src={template.url!} alt={template.name!} width={template.width} height={template.height}/>
-              <div className="w-[500px]">{template.meme_captions}</div>
+          return (<div key={template.id} className="h-[500px] w-[500px] grid grid-cols-2">
+            <div className="w-full">
+              {/* <Image src={template.url!} alt={template.name!} width={template.width} height={template.height}/>
+              <div className="w-[500px]">{template.meme_captions?.join(", ")}</div> */}
+              {/* <TemplateCanvas template={template}/> */}
+              <FabricTemplateCanvas template={template}/>
             </div>
           </div>)
         })
