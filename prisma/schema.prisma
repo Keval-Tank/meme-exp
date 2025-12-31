@@ -25,6 +25,6 @@ model Templates {
   topics         String[]
   keywords       String[]
   tone           String
-  
+  caption_areas  Json         @db.JsonB
   @@map("templates")
 }

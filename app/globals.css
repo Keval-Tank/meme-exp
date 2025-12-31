@@ -123,3 +123,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* styles.css */
+.color-swatch {
+  width: 1rem;
+  height: 1rem;
+  background-color: var(--swatch-color);
+  border-radius: 0.25rem;
+  border: 1px solid #ccc;
+}

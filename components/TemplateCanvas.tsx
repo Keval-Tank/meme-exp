@@ -38,9 +38,6 @@ const getTextPosition = (clickX:number, clickY:number, captions : MemeCaption[],
 
 export const TemplateCanvas = ({ template }: any) => {
     const canvasRef = useRef<HTMLCanvasElement>(null)
-    const [captions, setCaptions] = useState<MemeCaption>()
-    const [draggedIndex, setDraggedIndex] = useState<number | null>(null)
-
 
     useEffect(() => {
         if (!template.url) return;

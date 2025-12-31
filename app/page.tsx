@@ -22,9 +22,20 @@ import {
 import { Input } from "@/components/ui/input"
 import TemplateCanvas from "@/components/TemplateCanvas";
 import FabricTemplateCanvas from "@/components/FabricTemplateCanvas";
+import {
+  AlertDialog,
+  AlertDialogAction,
+  AlertDialogCancel,
+  AlertDialogContent,
+  AlertDialogDescription,
+  AlertDialogFooter,
+  AlertDialogHeader,
+  AlertDialogTitle,
+  AlertDialogTrigger,
+} from "@/components/ui/alert-dialog"
 
 
- 
+
 const formSchema = z.object({
   prompt: z.string().min(2).max(500),
 })
@@ -32,7 +43,7 @@ const formSchema = z.object({
 
 
 export default function Home() {
-  const {loading, templates, error} : {loading : boolean, templates : Template[] | null, error : string | null} = useSelector((state : RootState) => state.fetchTemplates)
+  const { loading, templates, error }: { loading: boolean, templates: Template[] | null, error: string | null } = useSelector((state: RootState) => state.fetchTemplates)
   const dispatch = useDispatch<AppDispatch>()
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
@@ -57,43 +68,61 @@ export default function Home() {
     // </div>
     <div className="w-full">
       <Form {...form}>
-      <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
-        <FormField
-          control={form.control}
-          name="prompt"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Username</FormLabel>
-              <FormControl>
-                <Input placeholder="Enter your prompt" {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        />
-        <Button type="submit">Submit</Button>
-      </form>
-    </Form>
-    <div className="bg-black text-white w-full">
-      {
-        error && "Error occured"
-      }
-      {
-        loading && "Data is loading..."
-      }
-      {
-        templates && templates.map((template : Template) => {
-          return (<div key={template.id} className="h-[500px] w-[500px] grid grid-cols-2">
-            <div className="w-full">
-              {/* <Image src={template.url!} alt={template.name!} width={template.width} height={template.height}/>
+        <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
+          <FormField
+            control={form.control}
+            name="prompt"
+            render={({ field }) => (
+              <FormItem>
+                <FormLabel>Username</FormLabel>
+                <FormControl>
+                  <Input placeholder="Enter your prompt" {...field} />
+                </FormControl>
+                <FormMessage />
+              </FormItem>
+            )}
+          />
+          <Button type="submit">Submit</Button>
+        </form>
+      </Form>
+      <div className="bg-black text-white w-full">
+        {
+          error && "Error occured"
+        }
+        {
+          loading && "Data is loading..."
+        }
+        {
+          templates && templates.map((template: Template) => {
+            return (<div key={template.id} className="h-[500px] w-[500px] grid grid-cols-2">
+              <div className="w-full">
+                {/* <Image src={template.url!} alt={template.name!} width={template.width} height={template.height}/>
               <div className="w-[500px]">{template.meme_captions?.join(", ")}</div> */}
-              {/* <TemplateCanvas template={template}/> */}
-              <FabricTemplateCanvas template={template}/>
-            </div>
-          </div>)
-        })
-      }
-    </div>
+                {/* <TemplateCanvas template={template}/> */}
+                <FabricTemplateCanvas template={template} />
+              </div>
+              <AlertDialog>
+                <AlertDialogTrigger>Edit</AlertDialogTrigger>
+                <AlertDialogContent>
+                  <AlertDialogHeader>
+                    <AlertDialogTitle>Edit Meme</AlertDialogTitle>
+                    <AlertDialogDescription>
+                    <div className="grid grid-cols-2 min-w-fit">
+                      <div>edit form</div>
+                      <div><FabricTemplateCanvas template={template}/></div>
+                    </div>
+                    </AlertDialogDescription>
+                  </AlertDialogHeader>
+                  <AlertDialogFooter>
+                    <AlertDialogCancel>Cancel</AlertDialogCancel>
+                    <AlertDialogAction>Continue</AlertDialogAction>
+                  </AlertDialogFooter>
+                </AlertDialogContent>
+              </AlertDialog>
+            </div>)
+          })
+        }
+      </div>
     </div>
 
   );
