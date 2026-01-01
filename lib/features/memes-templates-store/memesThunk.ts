@@ -15,7 +15,8 @@ export interface Template {
     tone?: string,
     description?: string,
     tags?: string[],
-    meme_captions? : string[]
+    meme_captions? : string[],
+    caption_areas? : any[]
 }
 
 export const fetchTemplates = createAsyncThunk("fetchTemplateThunk/fetch", async (prompt: string, thunkAPI): Promise<any> => {

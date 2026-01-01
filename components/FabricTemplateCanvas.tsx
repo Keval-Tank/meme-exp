@@ -76,10 +76,12 @@ export const FabricTemplateCanvas = ({ template }: any) => {
         fabricRef.current = canvas
         async function main() {
             const img = await FabricImage.fromURL(template.url)
-            const scale = Math.max((canvas.getWidth() / template.width), (canvas.getHeight() / template.height))
+            const scale = Math.min((canvas.getWidth() / template.width), (canvas.getHeight() / template.height))
+            const scaledWidth = template.width * scale
+            const scaledHeight = template.height * scale
             img.set({
-                left: 0,
-                top: 0,
+                left: (canvas.getWidth() - scaledWidth)/2,
+                top: (canvas.getHeight() - scaledHeight)/2,
                 originX: 'left',
                 originY: 'top',
                 scaleX: scale,
@@ -88,17 +90,35 @@ export const FabricTemplateCanvas = ({ template }: any) => {
             })
             canvas.add(img)
             let start = 50
-            template.meme_captions.forEach((caption: string) => {
-                canvas.add(new FabricIText(caption, {
-                    left: canvas.getWidth() / 2,
-                    top: start,
+            // console.log("positions -> ", template.caption_areas)
+            const caption_scale = Math.min(500/template.width, 500/template.height)
+            const offsetX = (500 - template.width * caption_scale)/2 
+            const offsetY = (500 - template.height * caption_scale)/2
+            template.meme_captions.forEach((caption: string, index:number) => {
+                const positions = template.caption_areas[index]
+                console.log("X -> ", positions.x)
+                console.log("Y -> ", positions.y)
+                console.log("width -> ", positions.width)
+                console.log("height -> ", positions.height)
+                if(!positions){
+                    console.log("caption areas not found for ", template.name)
+                    return
+                }
+                const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2) 
+                
+                canvas.add(new FabricText(caption, {
+                    left: offsetX + positions.x * caption_scale,
+                    top: offsetY + positions.y * caption_scale,
+                    width : positions.width * scale,
+                    height : positions.height * scale,
                     fill: '#ffffff',
-                    fontSize: 28,
+                    fontSize: Math.max(14, Math.min(maxFontSize, 40)),
                     fontFamily: 'Impact',
                     stroke: 'black',
                     strokeWidth: 2,
                     textAlign: 'center',
-                    originX: 'center'
+                    originX: positions.position.split("_")[0]  || "center",
+                    splitByGrapheme : true
                 }))
                 start += 50
             })
@@ -174,7 +194,7 @@ export const FabricTemplateCanvas = ({ template }: any) => {
     }, [fontColor, fontSize, fontStyle, fontBorderColor])
 
     return <>
-        <canvas ref={canvasRef} width={300} height={300} />
+        <canvas ref={canvasRef} width={500} height={500} />
         {
             activeText && (<div>
                 <Select onValueChange={(color) => setFontColor(color)}>

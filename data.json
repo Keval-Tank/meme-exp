@@ -30,7 +30,11 @@
             "position": "bottom_center",
             "description": "Drake approving"
           }
-        ]
+        ],
+        "semantic_description": "Two stacked panels of rapper Drake in an orange puffer jacket on a flat yellow background, where the top panel shows him turning away with a disgusted expression to reject one option and the bottom panel shows him smiling and pointing approvingly at a different option. This template is used to contrast a bad or outdated choice with a preferred or upgraded alternative, visually encoding a clear before/after preference.",
+        "tone": ["humorous", "playful", "mocking", "light-hearted", "sarcastic"],
+        "topics": ["preferences", "comparisons", "upgrades vs downgrades", "old vs new choices", "personal taste", "tech choices", "lifestyle decisions"],
+        "tags": ["reaction", "comparison", "decision", "expectation_vs_reality", "preference", "format_2panel"]
       },
       {
         "id": "87743020",
@@ -69,7 +73,11 @@
             "position": "bottom_center",
             "description": "Bottom center caption"
           }
-        ]
+        ],
+        "semantic_description": "Vertical comic-style image where the top shows two red buttons side by side, each representing a different option, and the bottom shows a sweating cartoon man in a red shirt wiping his forehead in panic as he tries to decide which button to press. This template is used to depict someone torn between two equally problematic or tempting choices, emphasizing indecision, pressure, and the stress of mutually exclusive options.",
+        "tone": ["anxious", "humorous", "dramatic", "self-deprecating"],
+        "topics": ["tough decisions", "mutually exclusive choices", "moral dilemmas", "product decisions", "social situations", "procrastination"],
+        "tags": ["dilemma", "decision", "reaction", "stress", "format_2panel", "relatable"]
       },
       {
         "id": "112126428",
@@ -108,7 +116,11 @@
             "position": "right_center",
             "description": "Other woman/new distraction caption"
           }
-        ]
+        ],
+        "semantic_description": "Stock photo on a sunny city street where a young man turns his head to stare admiringly at a passing woman in red while his girlfriend, holding his hand, glares at him in shock and outrage. This template encodes a three-way relationship between a current commitment, a new distraction, and the person shifting attention, and is used to show people or entities abandoning their existing priority in favor of a more attractive but often shallow alternative.",
+        "tone": ["humorous", "ironic", "playful", "slightly scandalous"],
+        "topics": ["priorities", "temptations", "switching focus", "new trends vs old habits", "brand loyalty", "feature comparisons"],
+        "tags": ["comparison", "relationship", "betrayal", "trend", "format_3label", "relatable"]
       },
       {
         "id": "222403160",
@@ -138,7 +150,11 @@
             "position": "bottom_center",
             "description": "Context/punchline caption"
           }
-        ]
+        ],
+        "semantic_description": "Outdoor shot of Bernie Sanders in a winter coat, scarf, and gloves, looking earnestly into the camera on a quiet suburban street. The template is used to represent someone who keeps coming back with the same request, demand, or reminder—often about attention, money, help, or behavior—highlighting repetition, persistence, and mild exasperation at having to ask yet again.",
+        "tone": ["pleading", "humorous", "resigned", "slightly frustrated"],
+        "topics": ["repeated requests", "reminders", "nagging issues", "recurring problems", "fundraising", "feature requests"],
+        "tags": ["request", "loop", "relatable", "reaction", "format_2panel"]
       },
       {
         "id": "131087935",
@@ -170,6 +186,7 @@
           },
           {
             "id": 3,
+            "id": 3,
             "x": 50,
             "y": 230,
             "width": 400,
@@ -195,7 +212,11 @@
             "position": "bottom_center",
             "description": "Panel 5 conclusion"
           }
-        ]
+        ],
+        "semantic_description": "Tall five-panel comic where a child accidentally lets go of a balloon and watches it float away into the sky, initially reacting with sadness and sense of loss, but later reframing the situation by imagining the balloon joyfully escaping. The template is used to show a narrative that starts from a negative interpretation of an event and ends with a more positive or philosophical perspective, ideal for explaining emotional reframing or personal growth over multiple beats.",
+        "tone": ["bittersweet", "reflective", "wholesome", "hopeful"],
+        "topics": ["coping with loss", "changing perspective", "personal growth", "breakups or failures", "reframing setbacks", "acceptance"],
+        "tags": ["story", "progression", "introspective", "wholesome", "format_5panel"]
       },
       {
         "id": "124822590",
@@ -234,7 +255,11 @@
             "position": "bottom_center",
             "description": "Bottom caption"
           }
-        ]
+        ],
+        "semantic_description": "Highway photo where a blue car violently swerves across lanes to take a sharp left exit while the overhead sign shows the straight-ahead route and the left exit labeled differently. This template represents someone abruptly abandoning their sensible or expected path to pursue a more impulsive, chaotic, or tempting alternative, perfect for highlighting last‑minute decisions and irrational pivots.",
+        "tone": ["chaotic", "humorous", "impulsive", "exaggerated"],
+        "topics": ["sudden decisions", "distractions", "changing plans", "productivity vs procrastination", "priorities", "temptations"],
+        "tags": ["decision", "impulse", "comparison", "reaction", "format_3label"]
       },
       {
         "id": "217743513",
@@ -264,7 +289,11 @@
             "position": "top_right",
             "description": "Right option caption"
           }
-        ]
+        ],
+        "semantic_description": "Two-panel photo where the first panel shows an UNO card on the table forcing a player to either do an action or draw 25 cards, and the second panel shows a man smugly holding an absurd number of cards, clearly choosing the extreme punishment over complying. This template captures stubbornness, pettiness, or commitment to a bad habit even when an easier option exists.",
+        "tone": ["petty", "humorous", "defiant", "stubborn"],
+        "topics": ["refusing to compromise", "toxic habits", "principled stands", "social drama", "ego vs common sense"],
+        "tags": ["decision", "self_sabotage", "stubborn", "reaction", "format_2panel"]
       },
       {
         "id": "135256802",
@@ -303,7 +332,11 @@
             "position": "right_center",
             "description": "Right arm/group caption"
           }
-        ]
+        ],
+        "semantic_description": "Cropped still of two extremely muscular forearms from different men gripping each other in a firm handshake, veins bulging, in front of a blurred background. The template is used to label two very different groups or ideas on the arms that nonetheless strongly agree on a specific shared point labeled at the handshake, highlighting unlikely alliances or unexpected common ground.",
+        "tone": ["emphatic", "humorous", "celebratory"],
+        "topics": ["shared opinions", "unlikely alliances", "cross‑fandom agreements", "industry consensus", "mutual struggles"],
+        "tags": ["agreement", "comparison", "collaboration", "reaction", "format_3label"]
       },
       {
         "id": "97984",
@@ -333,7 +366,11 @@
             "position": "bottom_center",
             "description": "Girl/culprit caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of a young girl in the foreground glancing at the camera with a subtle smirk while a house burns fiercely in the background, fire trucks and smoke visible. This template suggests someone taking credit for or enjoying chaos, used for scenarios where a person’s actions indirectly cause a disaster or where they are unbothered by a mess unfolding behind them.",
+        "tone": ["darkly humorous", "mischievous", "ironic"],
+        "topics": ["chaos you caused", "unintended consequences", "sabotage", "trolling", "problem creation vs ownership"],
+        "tags": ["disaster", "villain", "reaction", "smug", "format_2panel"]
       },
       {
         "id": "131940431",
@@ -381,7 +418,11 @@
             "position": "bottom_right",
             "description": "Panel 4 caption"
           }
-        ]
+        ],
+        "semantic_description": "Four-panel sequence from Despicable Me where Gru proudly presents a multi‑step plan on a flipchart, grinning as he points to the first two panels, only for the third panel to reveal an unexpected or self‑defeating outcome, leaving him in the last panel staring in stunned silence. This template is perfect for describing plans that unintentionally sabotage themselves or reveal an embarrassing final step.",
+        "tone": ["humorous", "self-deprecating", "ironic"],
+        "topics": ["bad planning", "unintended consequences", "flawed strategies", "product decisions", "corporate policies"],
+        "tags": ["story", "planning", "backfire", "format_4panel", "irony"]
       },
       {
         "id": "252600902",
@@ -411,7 +452,11 @@
             "position": "right_center",
             "description": "Second astronaut caption"
           }
-        ]
+        ],
+        "semantic_description": "Stylized panel of two astronauts in space suits looking at Earth from behind; one notices a surprising truth about what they’re seeing, while the other stands behind pointing a gun at them with the realization that it “always has been” that way. The template is used to show someone discovering a shocking fact and another person revealing that this has secretly been true all along, often for meta or cynical truths.",
+        "tone": ["cynical", "revelatory", "darkly humorous"],
+        "topics": ["hidden truths", "long‑standing realities", "industry norms", "unspoken rules", "meta commentary"],
+        "tags": ["reveal", "twist", "meta", "reaction", "format_2panel"]
       },
       {
         "id": "80707627",
@@ -450,7 +495,11 @@
             "position": "bottom_right",
             "description": "Third scene caption"
           }
-        ]
+        ],
+        "semantic_description": "Three scenes from Narcos featuring Pablo Escobar alone—sitting on a swing, standing by a pool, and sitting at a table—each with a blank, distant expression in otherwise calm surroundings. This template conveys emptiness, boredom, and endless waiting, typically used to dramatize how long someone has been waiting for a response, update, or event.",
+        "tone": ["melancholic", "humorous", "lonely", "deadpan"],
+        "topics": ["waiting for replies", "slow updates", "abandoned plans", "social isolation", "delayed gratification"],
+        "tags": ["waiting", "lonely", "relatable", "reaction", "format_3panel"]
       },
       {
         "id": "322841258",
@@ -489,7 +538,11 @@
             "position": "bottom_center",
             "description": "Reveal caption"
           }
-        ]
+        ],
+        "semantic_description": "Four-panel Star Wars meme where Anakin confidently makes a statement, Padme smiles and follows up with a clarifying question, and in the final pair of panels her expression turns worried when she realizes he never considered the problematic implication of what he said. This template is used to highlight naive optimism or overconfidence that collapses when someone asks the critical follow‑up question.",
+        "tone": ["humorous", "awkward", "ironic"],
+        "topics": ["false assumptions", "edge cases", "untested ideas", "bad plans", "overlooked costs"],
+        "tags": ["conversation", "logic", "irony", "format_4panel"]
       },
       {
         "id": "4087833",
@@ -519,7 +572,11 @@
             "position": "bottom_center",
             "description": "Duration caption"
           }
-        ]
+        ],
+        "semantic_description": "Image of a skeleton in tattered clothes sitting on a bench or chair in a grassy area, leaning on one arm as if it has been waiting there for ages. This template exaggerates the length of time someone has been waiting for something to happen, from replies and downloads to life goals and promises.",
+        "tone": ["darkly humorous", "exaggerated", "cynical"],
+        "topics": ["delays", "slow processes", "missed deadlines", "unfulfilled promises", "corporate bureaucracy"],
+        "tags": ["waiting", "exaggeration", "reaction", "relatable", "format_2panel"]
       },
       {
         "id": "129242436",
@@ -549,7 +606,11 @@
             "position": "right_center",
             "description": "Steven Crowder caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of a man (Steven Crowder) sitting behind a foldout table on a campus-like sidewalk, with a sign in front inviting people to disagree with his bold printed statement and 'Change My Mind'. The template is used to present a strong or controversial opinion as if it were a provocative challenge, inviting arguments while implying stubborn confidence.",
+        "tone": ["provocative", "confident", "humorous", "argumentative"],
+        "topics": ["hot takes", "unpopular opinions", "fandom debates", "tech wars", "political or social commentary"],
+        "tags": ["opinion", "debate", "statement", "format_2panel"]
       },
       {
         "id": "188390779",
@@ -579,7 +640,11 @@
             "position": "right_center",
             "description": "Cat reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Side‑by‑side composite where the left shows a blonde woman sobbing and screaming across a dinner table while being restrained, and the right shows a white cat sitting at a table looking unimpressed at a plate of food. This meme template represents an emotional, over‑the‑top argument on one side and a deadpan, unbothered reaction on the other, ideal for mismatched intensity between two parties.",
+        "tone": ["dramatic", "humorous", "overreacting vs deadpan"],
+        "topics": ["online arguments", "customer vs support", "boomers vs zoomers", "over‑explaining vs indifference"],
+        "tags": ["argument", "reaction", "contrast", "format_2panel", "relatable"]
       },
       {
         "id": "161865971",
@@ -609,7 +674,11 @@
             "position": "bottom_center",
             "description": "Status caption"
           }
-        ]
+        ],
+        "semantic_description": "Static graphic mimicking Facebook’s 'Marked Safe' notification, with a blue flag icon and text layout declaring safety from some event. This template is used to ironically mark oneself as safe from trends, memes, disasters, or annoyances, framing them as catastrophes you’ve successfully avoided.",
+        "tone": ["sarcastic", "playful", "meta"],
+        "topics": ["avoiding trends", "not participating", "dodging drama", "escaping crises", "social commentary"],
+        "tags": ["status", "meta", "trend", "reaction", "format_2panel"]
       },
       {
         "id": "438680",
@@ -639,7 +708,11 @@
             "position": "bottom_center",
             "description": "Batman correction"
           }
-        ]
+        ],
+        "semantic_description": "Classic comic panel where Batman forcefully slaps Robin mid-sentence, cutting him off while Robin’s head is whipped to the side. The template is used when one idea or statement (Robin) is being harshly corrected or shut down by a more 'correct' or unforgiving counterpoint (Batman), ideal for calling out naive takes.",
+        "tone": ["aggressive", "corrective", "humorous", "blunt"],
+        "topics": ["bad takes", "misconceptions", "calling out hypocrisy", "tech myths", "political hot takes"],
+        "tags": ["argument", "correction", "reaction", "format_2panel", "punchline"]
       },
       {
         "id": "91538330",
@@ -669,7 +742,11 @@
             "position": "right_center",
             "description": "Buzz gesture caption"
           }
-        ]
+        ],
+        "semantic_description": "Scene from Toy Story where Buzz Lightyear gestures expansively into the distance while Woody stares ahead with a distressed expression. This template is used to highlight that a certain phenomenon, problem, or meme is present “everywhere,” often with a mix of amazement and horror.",
+        "tone": ["exasperated", "humorous", "dramatic"],
+        "topics": ["overused memes", "spammy content", "bugs everywhere", "ads everywhere", "trend saturation"],
+        "tags": ["trend", "exaggeration", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "247375501",
@@ -717,7 +794,11 @@
             "position": "bottom_right",
             "description": "Cheems lower caption"
           }
-        ]
+        ],
+        "semantic_description": "Side‑by‑side Doge meme where a hyper‑muscular, upright Doge on the left represents a strong, heroic or idealized version, contrasted with a small, anxious‑looking Cheems dog on the right representing a weak, compromised, or modern version. Often split into top/bottom to show 'then vs now' or 'X vs Y' in terms of strength, competence, or seriousness.",
+        "tone": ["humorous", "nostalgic", "mocking", "comparative"],
+        "topics": ["old vs new", "strong policies vs watered‑down ones", "classic vs modern games", "skills comparison"],
+        "tags": ["comparison", "era_vs_era", "power", "format_4panel", "relatable"]
       },
       {
         "id": "102156234",
@@ -747,7 +828,11 @@
             "position": "bottom_center",
             "description": "mOcKiNg TeXt caption"
           }
-        ]
+        ],
+        "semantic_description": "Crouched SpongeBob with bent arms and a contorted face, eyes pointing in different directions and mouth open mid‑word, captured mid‑mock. The template pairs a statement with a distorted 'mocking' version of the same text to imitate someone parroting another’s words in a derisive, sarcastic tone.",
+        "tone": ["mocking", "sarcastic", "childish", "humorous"],
+        "topics": ["bad arguments", "excuses", "corporate speak", "hypocrisy", "double standards"],
+        "tags": ["mocking", "reaction", "sarcasm", "format_2panel", "relatable"]
       },
       {
         "id": "309868304",
@@ -786,7 +871,11 @@
             "position": "bottom_center",
             "description": "Deal context caption"
           }
-        ]
+        ],
+        "semantic_description": "Vertical image of a long‑haired man in a purple suit standing in front of a geometric background, hands clasped as if making a formal business proposition. Text typically labels 'I receive' on one side and 'You receive' on the other, describing a lopsided or humorous trade, making this template ideal for mocking unfair deals and exploitative exchanges.",
+        "tone": ["mock‑serious", "humorous", "satirical"],
+        "topics": ["unfair trades", "exploitative contracts", "corporate deals", "social exchanges", "time vs reward"],
+        "tags": ["deal", "comparison", "negotiation", "format_3label", "relatable"]
       },
       {
         "id": "178591752",
@@ -816,7 +905,11 @@
             "position": "right_center",
             "description": "Fancy Pooh caption"
           }
-        ]
+        ],
+        "semantic_description": "Two horizontal images of Winnie the Pooh: the first shows him slouched in his red shirt with a neutral expression; the second shows him in a tuxedo with a smug, satisfied look. This template is used to show a basic or crude version of something versus a refined, fancy, or over‑engineered version representing the same concept in a 'fancier' way.",
+        "tone": ["playful", "ironic", "mock‑formal"],
+        "topics": ["naming conventions", "over‑engineering", "enterprise vs indie", "simple vs fancy solutions"],
+        "tags": ["comparison", "upgrade", "branding", "format_2panel", "relatable"]
       },
       {
         "id": "61544",
@@ -846,7 +939,11 @@
             "position": "bottom_center",
             "description": "Victory caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up of a toddler on a beach in a green and white shirt, fist clenched with a determined expression as if celebrating a small win. The template expresses satisfaction at overcoming minor obstacles or enjoying small, everyday victories.",
+        "tone": ["wholesome", "celebratory", "optimistic"],
+        "topics": ["small achievements", "lucky breaks", "debugging wins", "everyday successes", "petty victories"],
+        "tags": ["victory", "reaction", "wholesome", "format_2panel", "relatable"]
       },
       {
         "id": "124055727",
@@ -876,7 +973,11 @@
             "position": "bottom_center",
             "description": "Desperate plea caption"
           }
-        ]
+        ],
+        "semantic_description": "Image of a man in a beanie and red jacket scratching his neck, leaning forward with desperate eyes and a pleading expression. The template represents craving or addiction to something—content, features, snacks, or attention—and is used to dramatize an intense need for more.",
+        "tone": ["needy", "humorous", "exaggerated"],
+        "topics": ["binge‑watching", "feature addiction", "refreshing feeds", "game grinding", "sugar or caffeine cravings"],
+        "tags": ["craving", "reaction", "addiction", "relatable", "format_2panel"]
       },
       {
         "id": "224514655",
@@ -906,7 +1007,11 @@
             "position": "bottom_center",
             "description": "Context caption"
           }
-        ]
+        ],
+        "semantic_description": "Poster‑like crop of Bernie Sanders in his winter coat standing outdoors, framed with empty space for text that emphasizes his recurring line 'I am once again asking…'. This cleaner graphic version is optimized for overlaying repeated pleas or reminders, such as asking for updates, feedback, or money again and again.",
+        "tone": ["pleading", "resigned", "humorous"],
+        "topics": ["funding requests", "repeated feature asks", "survey reminders", "nagging team or users"],
+        "tags": ["request", "loop", "meta", "format_2panel"]
       },
       {
         "id": "93895088",
@@ -954,7 +1059,11 @@
             "position": "bottom_center",
             "description": "Level 4 galaxy brain caption"
           }
-        ]
+        ],
+        "semantic_description": "Vertical stack of four increasingly dramatic images of brains, starting from a normal brain scan and evolving into glowing, cosmic, over‑the‑top visuals. Each level is captioned with a different idea, representing a progression from simple or naive thinking to absurdly 'enlightened' or overcomplicated 'galaxy brain' takes.",
+        "tone": ["satirical", "escalating", "absurd", "humorous"],
+        "topics": ["overthinking", "pseudo‑intellectualism", "hacky solutions vs obvious ones", "hot takes ranked", "API design jokes"],
+        "tags": ["hierarchy", "escalation", "comparison", "format_4panel", "meta"]
       },
       {
         "id": "61579",
@@ -984,7 +1093,11 @@
             "position": "bottom_center",
             "description": "Boromir objection caption"
           }
-        ]
+        ],
+        "semantic_description": "Still from Lord of the Rings showing Boromir leaning forward, hand raised in emphasis, mid‑speech. The template is used to reject the idea that something is simple or trivial by starting with 'One does not simply…', ideal for highlighting tasks that outsiders underestimate.",
+        "tone": ["dramatic", "slightly pedantic", "humorous"],
+        "topics": ["underestimated complexity", "software engineering pain", "Ops realities", "learning curves", "political simplifications"],
+        "tags": ["statement", "warning", "complexity", "reaction", "format_2panel"]
       },
       {
         "id": "79132341",
@@ -1023,7 +1136,11 @@
             "position": "bottom_center",
             "description": "Blaming others caption"
           }
-        ]
+        ],
+        "semantic_description": "Three-panel comic of a stick‑figure man happily riding a bike, then intentionally jamming a stick in his own front wheel, crashing to the ground, and finally lying on the ground blaming someone or something else. It’s used to show self‑sabotage and the tendency to externalize blame for problems created by one’s own actions.",
+        "tone": ["critical", "humorous", "self‑aware or accusatory"],
+        "topics": ["self‑inflicted bugs", "tech debt", "bad life choices", "mismanagement", "toxic behavior"],
+        "tags": ["self_sabotage", "blame", "story", "format_3panel", "relatable"]
       },
       {
         "id": "110163934",
@@ -1053,7 +1170,11 @@
             "position": "right_center",
             "description": "Man's actual thought caption"
           }
-        ]
+        ],
+        "semantic_description": "Bedroom scene with a couple lying back‑to‑back in bed; the woman looks troubled and overthinking while the man stares into the distance. The template contrasts the woman’s imagined deep or romantic concerns about what he’s thinking with the man’s often trivial or random actual thoughts, ideal for showing mismatched assumptions.",
+        "tone": ["humorous", "relatable", "lightly introspective"],
+        "topics": ["anxiety vs reality", "relationship misunderstandings", "user assumptions vs developer reality", "customer vs engineer mindset"],
+        "tags": ["expectation_vs_reality", "relationship", "thoughts", "format_2panel"]
       },
       {
         "id": "101470",
@@ -1083,7 +1204,11 @@
             "position": "bottom_center",
             "description": "Aliens answer caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up of the Ancient Aliens TV host with wild hair and a knowing expression, hands gesturing toward the viewer. The template is associated with attributing any unexplained event or phenomenon to 'aliens,' and is used to mock conspiracy‑level explanations or overblown theories.",
+        "tone": ["satirical", "conspiratorial", "humorous"],
+        "topics": ["tinfoil hat theories", "overattribution", "blaming 'the algorithm'", "mystery bugs", "superstitious thinking"],
+        "tags": ["conspiracy", "explanation", "reaction", "format_2panel", "meta"]
       },
       {
         "id": "427308417",
@@ -1113,7 +1238,11 @@
             "position": "bottom_center",
             "description": "Reset reason caption"
           }
-        ]
+        ],
+        "semantic_description": "Simpsons‑style scene of a factory safety sign reading '0 DAYS WITHOUT AN ACCIDENT' with a worker standing nearby. The template is used to show that some failure, incident, or embarrassment happens so frequently that the counter is constantly reset, emphasizing recurring problems.",
+        "tone": ["resigned", "humorous", "cynical"],
+        "topics": ["recurring outages", "regular drama", "daily bugs", "constant regressions", "habitual mistakes"],
+        "tags": ["loop", "failure", "status", "reaction", "format_2panel"]
       },
       {
         "id": "252758727",
@@ -1161,7 +1290,11 @@
             "position": "bottom_right",
             "description": "Fourth element caption"
           }
-        ]
+        ],
+        "semantic_description": "Four‑panel pool scene where a child is shown drowning and reaching for help while a woman lounges nearby, paying attention elsewhere, followed by a skeleton underwater representing the long‑ignored person. This template illustrates neglected responsibilities and misaligned priorities, especially when something serious is ignored in favor of trivial distractions.",
+        "tone": ["darkly humorous", "critical", "sarcastic"],
+        "topics": ["ignored bugs", "management priorities", "user safety vs metrics", "support backlogs", "technical debt"],
+        "tags": ["neglect", "priorities", "story", "format_4panel", "critique"]
       },
       {
         "id": "370867422",
@@ -1191,7 +1324,11 @@
             "position": "bottom_center",
             "description": "Secret interest caption"
           }
-        ]
+        ],
+        "semantic_description": "Close crop of Megamind’s blue face peeking from below or behind an edge, eyes wide and slightly mischievous, as if secretly watching something. The template is used to depict someone quietly lurking, observing drama or content without participating.",
+        "tone": ["sneaky", "playful", "humorous"],
+        "topics": ["lurkers in chats", "silent stakeholders", "secret fans", "watching drama unfold"],
+        "tags": ["lurking", "reaction", "observation", "format_2panel"]
       },
       {
         "id": "180190441",
@@ -1230,7 +1367,11 @@
             "position": "bottom_center",
             "description": "Pam's conclusion caption"
           }
-        ]
+        ],
+        "semantic_description": "Frame from The Office where Pam sits at a desk holding two printed photos while a caption says the boss wants her to find the difference, followed by her deadpan conclusion that 'they're the same picture.' The template shows that two seemingly different things are effectively identical.",
+        "tone": ["deadpan", "humorous", "matter‑of‑fact"],
+        "topics": ["rebrands", "shallow redesigns", "duplicate features", "copycat products", "marketing spins"],
+        "tags": ["comparison", "equivalence", "reaction", "format_3panel", "critique"]
       },
       {
         "id": "3218037",
@@ -1260,7 +1401,11 @@
             "position": "bottom_center",
             "description": "Self-deprecating caption"
           }
-        ]
+        ],
+        "semantic_description": "Cartoon of a muscular character pointing angrily at an empty display shelf while declaring where he would place his trophy if he had one. The meme template expresses lack of recognition, zero wins, or having nothing to show despite effort.",
+        "tone": ["self‑deprecating", "humorous", "resentful"],
+        "topics": ["no awards", "lack of appreciation", "zero stars", "low engagement metrics", "ignored contributions"],
+        "tags": ["failure", "recognition", "reaction", "format_2panel"]
       },
       {
         "id": "100777631",
@@ -1299,7 +1444,11 @@
             "position": "bottom_center",
             "description": "Question caption"
           }
-        ]
+        ],
+        "semantic_description": "Anime frame showing a bespectacled man in a suit holding his hand out toward a butterfly while asking 'Is this a pigeon?'. The template is used for mislabeling or misunderstanding concepts, especially when someone confidently identifies something in a completely wrong way.",
+        "tone": ["mocking", "humorous", "critical"],
+        "topics": ["misconceptions", "misused jargon", "bad hot takes", "wrong labels", "media misinterpretations"],
+        "tags": ["misidentification", "logic", "reaction", "format_3panel", "critique"]
       },
       {
         "id": "148909805",
@@ -1329,7 +1478,11 @@
             "position": "center",
             "description": "Side-eye caption"
           }
-        ]
+        ],
+        "semantic_description": "Two frames of a brown monkey puppet: first looking straight ahead with a neutral expression, then glancing sideways with wide eyes. The template conveys awkwardness and being caught off guard or guilty when someone realizes they’re implicated in what’s being talked about.",
+        "tone": ["awkward", "humorous", "subtle"],
+        "topics": ["calling yourself out", "hypocrisy", "hidden guilt", "uncomfortable truths", "team jokes"],
+        "tags": ["reaction", "awkward", "self_own", "format_2panel", "relatable"]
       },
       {
         "id": "28251713",
@@ -1359,7 +1512,11 @@
             "position": "bottom_center",
             "description": "Recipient caption"
           }
-        ]
+        ],
+        "semantic_description": "Stage shot of Oprah Winfrey mid‑gesture, excitedly pointing at the audience during her famous giveaway episode. The template is used to show something being generously or indiscriminately given to everyone—good or bad—like features, bugs, or consequences.",
+        "tone": ["energetic", "humorous", "exaggerated"],
+        "topics": ["mass rollout", "spam notifications", "universal bugs", "global updates", "corporate 'perks'"],
+        "tags": ["distribution", "announcement", "reaction", "format_2panel"]
       },
       {
         "id": "27813981",
@@ -1389,7 +1546,11 @@
             "position": "bottom_center",
             "description": "Inner pain caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of an older man at a desk holding a mug, smiling stiffly with eyes that look subtly strained. The template expresses pretending to be fine or happy despite discomfort, sadness, or burnout, especially in professional or social contexts.",
+        "tone": ["bittersweet", "humorous", "resigned"],
+        "topics": ["work stress", "social masking", "burnout", "deadline crunch", "fake positivity"],
+        "tags": ["masking", "emotion", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "177682295",
@@ -1419,7 +1580,11 @@
             "position": "bottom_center",
             "description": "Surprised realization caption"
           }
-        ]
+        ],
+        "semantic_description": "Image of a man leaning forward with a confused, incredulous expression, commonly captioned with 'You guys are getting paid?'. The meme is used to highlight unfairness or exploitation, especially when someone realizes others are compensated while they are not.",
+        "tone": ["indignant", "humorous", "surprised"],
+        "topics": ["unpaid overtime", "intern exploitation", "open source labor", "unequal compensation"],
+        "tags": ["fairness", "reaction", "workplace", "format_2panel"]
       },
       {
         "id": "67452763",
@@ -1449,7 +1614,11 @@
             "position": "right_center",
             "description": "Fun activity caption"
           }
-        ]
+        ],
+        "semantic_description": "Shot from SpongeBob where Squidward looks sadly out his window while SpongeBob and Patrick play joyfully outside in the sun. The template embodies FOMO—watching others enjoy something while you remain left out or stuck inside.",
+        "tone": ["melancholic", "humorous", "wistful"],
+        "topics": ["missing events", "burnout vs social life", "working weekends", "excluded from launches", "introvert FOMO"],
+        "tags": ["fomo", "observation", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "55311130",
@@ -1479,7 +1648,11 @@
             "position": "bottom_center",
             "description": "Dog's statement caption"
           }
-        ]
+        ],
+        "semantic_description": "Comic panel of a little dog sitting calmly at a table with a mug while the entire room around it is engulfed in flames. The dog’s resigned expression and the line 'This is fine' capture coping through denial or forced calm in the middle of clear disaster.",
+        "tone": ["darkly humorous", "resigned", "anxious"],
+        "topics": ["production fires", "crunch culture", "climate crisis", "political chaos", "burnout"],
+        "tags": ["disaster", "coping", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "259237855",
@@ -1509,7 +1682,11 @@
             "position": "bottom_center",
             "description": "Leo's reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Still of Leonardo DiCaprio reclining in a chair with a drink and a cigarette, leaning forward and pointing at the TV while laughing. This template captures the moment of recognizing something on screen and mockingly laughing at it, ideal for 'calling out' relatable behavior.",
+        "tone": ["mocking", "playful", "nostalgic"],
+        "topics": ["calling yourself out", "recognizable tropes", "inside jokes", "cringe content", "bad UX patterns"],
+        "tags": ["reaction", "recognition", "mocking", "format_2panel"]
       },
       {
         "id": "195515965",
@@ -1557,7 +1734,11 @@
             "position": "bottom_right",
             "description": "Panel 4 final clown caption"
           }
-        ]
+        ],
+        "semantic_description": "Four sequential photos of a man gradually putting on clown makeup, wig, and outfit until he becomes a full clown. The meme is used to show how a series of decisions or rationalizations slowly turns someone into a clown—embarrassing themselves with each added step.",
+        "tone": ["self‑deprecating", "critical", "humorous"],
+        "topics": ["bad life choices", "over‑investing in bad ideas", "cope justifications", "toxic loyalty", "feature creep"],
+        "tags": ["self_sabotage", "progression", "reaction", "format_4panel", "critique"]
       },
       {
         "id": "234202281",
@@ -1587,7 +1768,11 @@
             "position": "right_center",
             "description": "Undertaker caption"
           }
-        ]
+        ],
+        "semantic_description": "Promotional shot from WWE where AJ Styles stands in the foreground while The Undertaker looms menacingly behind him in a dark, graveyard‑like setting. The template emphasizes a cocky or vulnerable figure being overshadowed by a terrifying, unstoppable opponent or consequence.",
+        "tone": ["dramatic", "humorous", "threatening"],
+        "topics": ["small vs huge problems", "junior vs senior", "underestimating challenges", "legacy systems vs new code"],
+        "tags": ["showdown", "power", "comparison", "reaction", "format_2panel"]
       },
       {
         "id": "166969924",
@@ -1626,7 +1811,11 @@
             "position": "bottom_center",
             "description": "Result caption"
           }
-        ]
+        ],
+        "semantic_description": "Infomercial clip where a man slaps a strip of Flex Tape onto a large tank spraying water, instantly stopping the leak. The template humorously depicts superficial, hacky, or rushed fixes applied to serious underlying problems.",
+        "tone": ["satirical", "humorous", "critical"],
+        "topics": ["tech debt patches", "hotfixes", "workarounds", "management 'solutions'", "PR spin"],
+        "tags": ["quick_fix", "hack", "reaction", "format_3panel", "critique"]
       },
       {
         "id": "1035805",
@@ -1674,7 +1863,11 @@
             "position": "bottom_center",
             "description": "Consequence caption"
           }
-        ]
+        ],
+        "semantic_description": "Four‑panel cartoon of a boss at the head of a table asking for ideas, employees offering suggestions, and the employee who gives the sensible idea being thrown out of a skyscraper window. It’s used to mock environments where constructive feedback or good ideas are punished instead of rewarded.",
+        "tone": ["satirical", "cynical", "humorous"],
+        "topics": ["toxic workplaces", "management decisions", "ignored feedback", "corporate culture", "product roadmaps"],
+        "tags": ["workplace", "decision", "story", "format_4panel", "critique"]
       },
       {
         "id": "77045868",
@@ -1704,7 +1897,11 @@
             "position": "bottom_center",
             "description": "Rick's lowball offer caption"
           }
-        ]
+        ],
+        "semantic_description": "Image of Rick Harrison behind the counter in Pawn Stars with a mildly unimpressed expression, commonly captioned 'Best I can do is…'. This meme template represents underwhelming offers, lowball negotiations, or companies refusing reasonable requests.",
+        "tone": ["dry", "humorous", "stingy"],
+        "topics": ["salary negotiations", "freelance rates", "discount requests", "scope creep vs pricing", "low offers"],
+        "tags": ["negotiation", "reaction", "offer", "format_2panel"]
       },
       {
         "id": "505705955",
@@ -1734,7 +1931,11 @@
             "position": "right_center",
             "description": "Absolute cinema caption"
           }
-        ]
+        ],
+        "semantic_description": "Template referencing the phrase 'absolute cinema,' typically contrasting mundane or low‑effort scenes with hyperbolic critical praise. It’s used to ironically elevate trivial, cringe, or everyday content as if it were high art.",
+        "tone": ["ironic", "playful", "exaggerated"],
+        "topics": ["overrated media", "mundane events", "dramatic overanalysis", "film nerd culture"],
+        "tags": ["critique", "irony", "meta", "reaction", "format_2panel"]
       },
       {
         "id": "284929871",
@@ -1764,7 +1965,11 @@
             "position": "bottom_center",
             "description": "Oblivious crowd caption"
           }
-        ]
+        ],
+        "semantic_description": "Simple cartoon of a person at a party holding a red cup, standing apart while thinking 'They don’t know…' about some niche fact or personal situation, as the other guests chat happily. The template encapsulates feeling isolated, underrated, or secretly proud of something others don’t notice.",
+        "tone": ["introspective", "humorous", "slightly melancholic"],
+        "topics": ["niche hobbies", "underrated skills", "secret side hustles", "impostor syndrome", "hidden struggles"],
+        "tags": ["introspection", "status", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "119139145",
@@ -1794,7 +1999,11 @@
             "position": "bottom_center",
             "description": "Button label caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up of a hand slamming down on a large, illuminated red button. The template is used to represent an instinctive or irresistible decision, often labeling the button with something impulsive or chaotic that someone just can’t resist doing.",
+        "tone": ["impulsive", "humorous", "exaggerated"],
+        "topics": ["self‑control fails", "doomscrolling", "rage posting", "feature toggles", "deploying risky code"],
+        "tags": ["decision", "impulse", "reaction", "format_2panel"]
       },
       {
         "id": "171305372",
@@ -1833,7 +2042,11 @@
             "position": "bottom_center",
             "description": "Protected child caption"
           }
-        ]
+        ],
+        "semantic_description": "Illustration of a soldier lying between a sleeping child and a barrage of knives, bullets, and weapons raining down from above, physically shielding the bed. This template symbolizes unseen protection and sacrifice, often used to show infra teams, parents, or boring processes protecting users from hostile forces.",
+        "tone": ["serious", "wholesome", "dramatic"],
+        "topics": ["backend vs frontend", "Ops shielding users", "parents protecting kids", "security teams", "moderation"],
+        "tags": ["protection", "sacrifice", "story", "format_3panel", "wholesome"]
       },
       {
         "id": "206151308",
@@ -1872,7 +2085,11 @@
             "position": "right_center",
             "description": "Spider-Man 3 caption"
           }
-        ]
+        ],
+        "semantic_description": "Variation on the Spider‑Man pointing meme featuring three Spider‑Men standing in a triangle, each pointing at the others. It is used to show three identical or highly similar groups accusing each other of the same behavior or trait.",
+        "tone": ["humorous", "accusatory", "self‑aware"],
+        "topics": ["similar products", "same bad practices", "political factions", "framework wars", "mutual blame"],
+        "tags": ["comparison", "hypocrisy", "reaction", "format_3label", "relatable"]
       },
       {
         "id": "533936279",
@@ -1911,7 +2128,11 @@
             "position": "right_center",
             "description": "High IQ side caption"
           }
-        ]
+        ],
+        "semantic_description": "Diagram of an IQ bell curve with a smug, simple character on the low end, a stressed nerd in the middle, and an enlightened robed figure on the high end, all labeled with different statements. The template shows how naive and very advanced perspectives can converge on a similar idea, while mid‑level understanding overcomplicates things.",
+        "tone": ["meta", "humorous", "slightly elitist"],
+        "topics": ["expert vs beginner intuition", "overengineering", "programming patterns", "philosophical takes", "learning curves"],
+        "tags": ["hierarchy", "knowledge", "meta", "comparison", "format_3label"]
       },
       {
         "id": "119215120",
@@ -1941,7 +2162,11 @@
             "position": "bottom_center",
             "description": "Fourth type caption"
           }
-        ]
+        ],
+        "semantic_description": "Medical diagram showing several heads with red highlighted areas representing different headache types (tension, migraine, cluster) and a final panel repurposed to illustrate a custom 'headache' caused by a modern annoyance. It’s used to visualize how one specific situation causes disproportionate mental pain.",
+        "tone": ["humorous", "exasperated", "relatable"],
+        "topics": ["annoying coworkers", "bug classes", "ticket systems", "meetings", "modern tech pain points"],
+        "tags": ["pain", "comparison", "reaction", "format_4panel", "relatable"]
       },
       {
         "id": "89370399",
@@ -1971,7 +2196,11 @@
             "position": "bottom_center",
             "description": "Clever loophole caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of a man in a leather jacket smirking and tapping his finger to his temple as if he’s had a clever thought. The template is used to mock flawed but self‑satisfied 'smart' logic, life hacks, or loopholes that only work technically.",
+        "tone": ["sarcastic", "playful", "self‑satisfied"],
+        "topics": ["loophole logic", "technicalities vs spirit", "lazy hacks", "gaming systems", "exploitative tactics"],
+        "tags": ["logic", "mocking", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "316466202",
@@ -2001,7 +2230,11 @@
             "position": "right_center",
             "description": "Missing element caption"
           }
-        ]
+        ],
+        "semantic_description": "Cartoonish template in which a character appears confused and is paired with the phrase 'where monkey,' used to humorously express confusion or disappointment that a particular expected element is missing from a situation.",
+        "tone": ["absurd", "playful", "confused"],
+        "topics": ["missing features", "absent characters", "cut content", "incomplete specs"],
+        "tags": ["confusion", "reaction", "meta", "format_2panel"]
       },
       {
         "id": "216523697",
@@ -2031,7 +2264,11 @@
             "position": "bottom_center",
             "description": "Hatred target caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of a group of young men posing in a neighborhood street, commonly captioned 'All my homies hate X.' This template expresses exaggerated group hatred or mutual disdain for a particular thing, trend, or person.",
+        "tone": ["aggressive", "humorous", "hyperbolic"],
+        "topics": ["universally disliked features", "annoying trends", "corporate buzzwords", "unpopular tools"],
+        "tags": ["collective", "hatred", "reaction", "format_2panel"]
       },
       {
         "id": "226297822",
@@ -2070,7 +2307,11 @@
             "position": "bottom_center",
             "description": "Second panic caption"
           }
-        ]
+        ],
+        "semantic_description": "Three‑panel meme of a stylized humanoid head that starts in a panic, then relaxes into a calm, composed version after some reassurance, and finally returns to an even more intense panic when the reassurance fails. It’s used to depict a brief, false sense of security before realizing the situation is actually worse.",
+        "tone": ["anxious", "humorous", "escalating"],
+        "topics": ["bug triage", "incident response", "exam results", "production issues", "false fixes"],
+        "tags": ["escalation", "reaction", "anxiety", "format_3panel", "relatable"]
       },
       {
         "id": "101956210",
@@ -2100,7 +2341,11 @@
             "position": "right_center",
             "description": "Goosebumps/reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Split image with one side showing someone whispering intimately into another person’s ear, and the other side showing skin with raised goosebumps. The meme template visualizes a statement so powerful, intense, or emotionally resonant that it literally gives someone goosebumps.",
+        "tone": ["intense", "romantic or hype", "dramatic"],
+        "topics": ["powerful quotes", "iconic lines", "hype announcements", "music drops", "epic reveals"],
+        "tags": ["emotion", "reaction", "impact", "format_2panel"]
       },
       {
         "id": "354700819",
@@ -2130,7 +2375,11 @@
             "position": "right_center",
             "description": "Optimistic person caption"
           }
-        ]
+        ],
+        "semantic_description": "Cartoon of two men sitting on opposite sides of a bus as it drives along a cliff: one stares sadly at a gray rock wall, while the other smiles at a bright, scenic valley view. This template is used to show how perspective or mindset changes the emotional experience of the same situation.",
+        "tone": ["reflective", "wholesome", "humorous"],
+        "topics": ["attitude vs circumstances", "mental health", "startup vs corporate", "optimism vs pessimism"],
+        "tags": ["perspective", "comparison", "reaction", "format_2panel", "wholesome"]
       },
       {
         "id": "208915813",
@@ -2160,7 +2409,11 @@
             "position": "bottom_center",
             "description": "Bush/reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Historic photo of George W. Bush in a classroom holding a children’s book while an aide whispers urgent news in his ear, his face showing strained composure. The template is used to portray someone trying to maintain calm or pretend nothing is wrong while receiving catastrophic information.",
+        "tone": ["awkward", "darkly humorous", "tense"],
+        "topics": ["PR disasters", "incident alerts", "leaders in denial", "crisis comms", "bad news mid‑meeting"],
+        "tags": ["disaster", "reaction", "leadership", "format_2panel"]
       },
       {
         "id": "99683372",
@@ -2190,7 +2443,11 @@
             "position": "right_center",
             "description": "Alert Shaq/alarm caption"
           }
-        ]
+        ],
+        "semantic_description": "Two images of Shaquille O’Neal: one shows him lying down with eyes closed, labeled with indifference to something, and the other shows his eyes artificially glowing bright, representing extreme alertness to something else. It’s used to contrast what people ignore versus what truly wakes them up.",
+        "tone": ["humorous", "slightly cynical", "exaggerated"],
+        "topics": ["misplaced priorities", "clickbait vs real news", "minor vs major issues", "what people care about online"],
+        "tags": ["comparison", "priority", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "137501417",
@@ -2220,7 +2477,11 @@
             "position": "right_center",
             "description": "New friendship caption"
           }
-        ]
+        ],
+        "semantic_description": "Heavily edited Pakistani friendship poster with one person’s face crossed out and a new friend highlighted alongside text like 'Friendship ended with X. Now Y is my best friend.' This template dramatizes switching allegiances from one thing to another.",
+        "tone": ["dramatic", "humorous", "petty"],
+        "topics": ["framework migrations", "tool switching", "brand loyalty flips", "friend group drama"],
+        "tags": ["loyalty", "switch", "announcement", "format_2panel", "relatable"]
       },
       {
         "id": "187102311",
@@ -2268,7 +2529,11 @@
             "position": "bottom_center",
             "description": "Bottom context caption"
           }
-        ]
+        ],
+        "semantic_description": "Fantasy illustration of a three‑headed dragon where two heads look fierce and intimidating, while the third has a goofy, derpy expression and droopy tongue. This template shows three options or members in a category where two are serious or powerful and one is laughably incompetent.",
+        "tone": ["mocking", "playful", "comparative"],
+        "topics": ["tier lists", "product lineups", "sports teams", "OS comparisons", "api versions"],
+        "tags": ["comparison", "tier", "reaction", "format_4panel", "relatable"]
       },
       {
         "id": "114585149",
@@ -2316,7 +2581,11 @@
             "position": "bottom_center",
             "description": "Panel 4 loudest caption"
           }
-        ]
+        ],
+        "semantic_description": "Four panels of a seagull perched on a railing: first neutrally standing, then leaning back to inhale, then stretching its neck and finally screaming with its beak wide open. The template is used to represent a phrase being repeated louder and more intensely, often escalating from a quiet thought to a full‑on screaming chant.",
+        "tone": ["loud", "exaggerated", "humorous"],
+        "topics": ["catchphrases", "chants", "marketing slogans", "fans yelling", "overemphasis"],
+        "tags": ["escalation", "volume", "reaction", "format_4panel"]
       },
       {
         "id": "371619279",
@@ -2346,7 +2615,11 @@
             "position": "bottom_center",
             "description": "Context/explanation caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up of Megamind leaning toward the viewer with narrowed eyes and a smug, mocking expression, popularly captioned with 'no bitches?' or similar roasts. It’s used as a harsh but humorous call‑out when someone’s behavior suggests social failure or cringe priorities.",
+        "tone": ["roasting", "mocking", "aggressive", "humorous"],
+        "topics": ["cringe hobbies", "nerd obsessions", "weird flexes", "misplaced pride"],
+        "tags": ["insult", "reaction", "roast", "format_2panel"]
       },
       {
         "id": "247113703",
@@ -2376,7 +2649,11 @@
             "position": "bottom_center",
             "description": "School bus/fragile target caption"
           }
-        ]
+        ],
+        "semantic_description": "Diagram‑like meme showing a massive train colliding violently with a small yellow school bus. The template is used to visualize an overwhelming force or trend smashing into a vulnerable target—like reality vs expectations, big tech vs indie devs, or deadlines vs mental health.",
+        "tone": ["dramatic", "darkly humorous", "exaggerated"],
+        "topics": ["overwhelming pressure", "large org vs small team", "crisis events", "market shocks"],
+        "tags": ["impact", "comparison", "story", "format_2panel", "disaster"]
       },
       {
         "id": "221578498",
@@ -2406,7 +2683,11 @@
             "position": "center",
             "description": "Grave/buried thing caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of actor Grant Gustin kneeling and posing cheerfully next to a gravestone, sometimes giving a peace sign, clearly celebrating in front of a grave. This template depicts reveling in the death or end of something—like a trend, feature, or competitor product.",
+        "tone": ["darkly humorous", "petty", "celebratory"],
+        "topics": ["feature deprecation", "end of trends", "competitor failures", "closing tickets", "removing old APIs"],
+        "tags": ["celebration", "end", "reaction", "format_2panel", "petty"]
       },
       {
         "id": "91545132",
@@ -2436,7 +2717,11 @@
             "position": "right_center",
             "description": "Policy/decision caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of Donald Trump seated at a desk holding up a signed document to the camera while officials stand behind him. The template is used to show someone proudly formalizing or taking responsibility for a policy, change, or rule—often something controversial or silly.",
+        "tone": ["mock‑serious", "political", "humorous"],
+        "topics": ["company policies", "terms changes", "feature launches", "bans and rules", "governance"],
+        "tags": ["announcement", "authority", "reaction", "format_2panel"]
       },
       {
         "id": "224514655",
@@ -2466,7 +2751,11 @@
             "position": "right_center",
             "description": "Terminator/threat caption"
           }
-        ]
+        ],
+        "semantic_description": "Composite image with an anime girl hiding fearfully behind a doorway while a Terminator‑like robot approaches from the other side. It’s used to show a fragile or vulnerable entity terrified of a relentless threat, such as small creators vs big platforms or fragile systems vs traffic spikes.",
+        "tone": ["dramatic", "humorous", "tense"],
+        "topics": ["overwhelming threats", "ops vs DDoS", "small vs corporate", "users vs TOS enforcement"],
+        "tags": ["threat", "comparison", "reaction", "format_2panel"]
       },
       {
         "id": "5496396",
@@ -2496,7 +2785,11 @@
             "position": "bottom_center",
             "description": "Leo's approval caption"
           }
-        ]
+        ],
+        "semantic_description": "Frame from The Great Gatsby where Leonardo DiCaprio, in a tuxedo, raises a champagne glass toward the camera with a knowing smile. This template is used to toast or congratulate something or someone, sometimes sincerely and sometimes with ironic distance.",
+        "tone": ["celebratory", "playful", "slightly smug"],
+        "topics": ["wins", "anniversaries", "shipping products", "inside jokes", "toasting chaos"],
+        "tags": ["celebration", "reaction", "recognition", "format_2panel"]
       },
       {
         "id": "61556",
@@ -2526,7 +2819,11 @@
             "position": "bottom_center",
             "description": "Grandma's misunderstanding caption"
           }
-        ]
+        ],
+        "semantic_description": "Photo of an elderly woman wearing glasses, seated at a laptop, peering at the screen with a bemused, slightly confused smile. The template is used to illustrate generational tech gaps, naive misunderstandings of online culture, or very basic questions about technology.",
+        "tone": ["light‑hearted", "gentle", "humorous"],
+        "topics": ["tech illiteracy", "user onboarding", "UX confusion", "parent tech support", "simple vs advanced users"],
+        "tags": ["tech", "confusion", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "155067746",
@@ -2565,7 +2862,11 @@
             "position": "bottom_center",
             "description": "Pikachu surprise caption"
           }
-        ]
+        ],
+        "semantic_description": "Zoomed‑in anime frame of Pikachu with its mouth slightly open and eyes wide, conveying mild surprise. The meme is used when someone is shocked by an outcome that was entirely predictable based on their actions.",
+        "tone": ["sarcastic", "humorous", "mocking"],
+        "topics": ["cause and effect", "ignored warnings", "bad planning", "technical debt payoff", "predictable failures"],
+        "tags": ["expectation_vs_reality", "reaction", "irony", "format_3panel"]
       },
       {
         "id": "61520",
@@ -2595,7 +2896,11 @@
             "position": "top_right",
             "description": "Second interpretation caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up of Fry from Futurama squinting with a suspicious, uncertain expression against a blue background. The template is used with 'Not sure if X or Y' to express ambiguity between two possible interpretations of a situation.",
+        "tone": ["skeptical", "humorous", "uncertain"],
+        "topics": ["ambiguous metrics", "unclear intentions", "weird user behavior", "bug vs feature"],
+        "tags": ["uncertainty", "reaction", "comparison", "format_2panel"]
       },
       {
         "id": "145139900",
@@ -2641,301 +2946,17 @@
             "width": 300,
             "height": 120,
             "position": "bottom_center",
-            "description": "Revealed culprit caption"
+            "description": "Final reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Scooby‑Doo style comic where a villain is tied up and Fred pulls off their mask to reveal their true identity underneath, often surprising the gang. The template is used to show that something blamed on one cause is actually due to another hidden factor.",
+        "tone": ["playful", "revealing", "humorous"],
+        "topics": ["root cause analysis", "blame shifting", "hidden culprits", "underlying issues"],
+        "tags": ["reveal", "story", "investigation", "format_4panel"]
       },
       {
-        "id": "72525473",
-        "name": "say the line bart! simpsons",
-        "url": "https://i.imgflip.com/176h0h.jpg",
-        "width": 395,
-        "height": 650,
-        "box_count": 3,
-        "captions": 30750,
-        "keywords": ["say the line", "forced repetition"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 50,
-            "width": 250,
-            "height": 120,
-            "position": "top_center",
-            "description": "Audience demands caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 250,
-            "width": 250,
-            "height": 120,
-            "position": "middle_center",
-            "description": "Bart reluctant caption"
-          },
-          {
-            "id": 3,
-            "x": 50,
-            "y": 450,
-            "width": 250,
-            "height": 120,
-            "position": "bottom_center",
-            "description": "Catchphrase/result caption"
-          }
-        ]
-      },
-      {
-        "id": "84341851",
-        "name": "Evil Kermit",
-        "url": "https://i.imgflip.com/1e7ql7.jpg",
-        "width": 700,
-        "height": 325,
-        "box_count": 2,
-        "captions": 159250,
-        "keywords": ["inner me", "evil me", "temptation"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 30,
-            "y": 50,
-            "width": 280,
-            "height": 150,
-            "position": "left_center",
-            "description": "Regular Kermit reasonable thought"
-          },
-          {
-            "id": 2,
-            "x": 330,
-            "y": 50,
-            "width": 280,
-            "height": 150,
-            "position": "right_center",
-            "description": "Evil Kermit temptation caption"
-          }
-        ]
-      },
-      {
-        "id": "558880671",
-        "name": "Squid Game",
-        "url": "https://i.imgflip.com/98qr33.jpg",
-        "width": 1546,
-        "height": 2385,
-        "box_count": 2,
-        "captions": 23750,
-        "keywords": ["Squid Game", "survival game", "stakes"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 300,
-            "width": 400,
-            "height": 300,
-            "position": "top_center",
-            "description": "Game/competition caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 900,
-            "width": 400,
-            "height": 300,
-            "position": "bottom_center",
-            "description": "Real world stakes caption"
-          }
-        ]
-      },
-      {
-        "id": "162372564",
-        "name": "Domino Effect",
-        "url": "https://i.imgflip.com/2oo7h0.jpg",
-        "width": 820,
-        "height": 565,
-        "box_count": 2,
-        "captions": 36750,
-        "keywords": ["small event big consequences", "cause and effect"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 150,
-            "width": 250,
-            "height": 120,
-            "position": "left_center",
-            "description": "Small initial event caption"
-          },
-          {
-            "id": 2,
-            "x": 320,
-            "y": 150,
-            "width": 250,
-            "height": 120,
-            "position": "right_center",
-            "description": "Massive outcome caption"
-          }
-        ]
-      },
-      {
-        "id": "29617627",
-        "name": "Look At Me",
-        "url": "https://i.imgflip.com/hmt3v.jpg",
-        "width": 300,
-        "height": 300,
-        "box_count": 2,
-        "captions": 68000,
-        "keywords": ["attention seeking", "I'm the captain now"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 30,
-            "width": 200,
-            "height": 100,
-            "position": "top_center",
-            "description": "Original situation caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 180,
-            "width": 200,
-            "height": 100,
-            "position": "bottom_center",
-            "description": "New control caption"
-          }
-        ]
-      },
-      {
-        "id": "101288",
-        "name": "Third World Skeptical Kid",
-        "url": "https://i.imgflip.com/265k.jpg",
-        "width": 426,
-        "height": 426,
-        "box_count": 2,
-        "captions": 193500,
-        "keywords": ["skeptical child", "doubt", "questioning"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 30,
-            "width": 300,
-            "height": 120,
-            "position": "top_center",
-            "description": "Naive statement caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 250,
-            "width": 300,
-            "height": 120,
-            "position": "bottom_center",
-            "description": "Skeptical child caption"
-          }
-        ]
-      },
-      {
-        "id": "135678846",
-        "name": "Who Killed Hannibal",
-        "url": "https://i.imgflip.com/28s2gu.jpg",
-        "width": 1280,
-        "height": 1440,
-        "box_count": 3,
-        "captions": 140000,
-        "keywords": ["blame shifting", "denial"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 100,
-            "width": 400,
-            "height": 150,
-            "position": "top_center",
-            "description": "Eric's action caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 350,
-            "width": 400,
-            "height": 150,
-            "position": "middle_center",
-            "description": "Camera turn caption"
-          },
-          {
-            "id": 3,
-            "x": 50,
-            "y": 600,
-            "width": 400,
-            "height": 150,
-            "position": "bottom_center",
-            "description": "Who killed question caption"
-          }
-        ]
-      },
-      {
-        "id": "20007896",
-        "name": "c'mon do something",
-        "url": "https://i.imgflip.com/bwu6w.jpg",
-        "width": 448,
-        "height": 519,
-        "box_count": 2,
-        "captions": 36000,
-        "keywords": ["poke with stick", "inactivity"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 100,
-            "width": 300,
-            "height": 100,
-            "position": "top_center",
-            "description": "Poking/urging caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 300,
-            "width": 300,
-            "height": 100,
-            "position": "bottom_center",
-            "description": "Stagnant thing caption"
-          }
-        ]
-      },
-      {
-        "id": "14371066",
-        "name": "Star Wars Yoda",
-        "url": "https://i.imgflip.com/8k0sa.jpg",
-        "width": 620,
-        "height": 714,
-        "box_count": 2,
-        "captions": 142750,
-        "keywords": ["Yoda wisdom", "cryptic advice"],
-        "caption_areas": [
-          {
-            "id": 1,
-            "x": 50,
-            "y": 30,
-            "width": 350,
-            "height": 150,
-            "position": "top_center",
-            "description": "Subject/topic caption"
-          },
-          {
-            "id": 2,
-            "x": 50,
-            "y": 350,
-            "width": 350,
-            "height": 150,
-            "position": "bottom_center",
-            "description": "Yoda wisdom caption"
-          }
-        ]
-      },
-      {
-        "id": "134797956",
-        "name": "American Chopper Argument",
+        "id": "2896ro",
+        "name": "Father and Son Screaming Match",
         "url": "https://i.imgflip.com/2896ro.jpg",
         "width": 640,
         "height": 1800,
@@ -2988,7 +3009,11 @@
             "position": "bottom_center",
             "description": "Resolution/final caption"
           }
-        ]
+        ],
+        "semantic_description": "Tall meme built from a reality TV show where an older man and a younger man scream at each other across a table, with escalating body language and anger. The template captures a back‑and‑forth argument that spirals out of control, often used for generational or hierarchical conflicts.",
+        "tone": ["angry", "chaotic", "humorous"],
+        "topics": ["dev vs management", "old vs new school", "feature fights", "internet debates"],
+        "tags": ["argument", "story", "escalation", "format_5panel"]
       },
       {
         "id": "50421420",
@@ -3018,7 +3043,11 @@
             "position": "right_center",
             "description": "Disappointed reality caption"
           }
-        ]
+        ],
+        "semantic_description": "Two‑frame reaction image of the same man: first smiling widely in delight, then abruptly looking blank and disappointed. The template is used to show expectations being raised and then immediately dashed by reality.",
+        "tone": ["humorous", "disappointed", "relatable"],
+        "topics": ["marketing vs product", "job posts vs reality", "trailer vs game", "spec vs implementation"],
+        "tags": ["expectation_vs_reality", "reaction", "comparison", "format_2panel"]
       },
       {
         "id": "129315248",
@@ -3048,7 +3077,11 @@
             "position": "bottom_center",
             "description": "Later acceptance caption"
           }
-        ]
+        ],
+        "semantic_description": "Two-panel drawing where a character holds a 'NO' sign with a stern expression, then flips it to 'YES' in the second panel with a resigned or changed attitude. It captures reluctant agreement or giving in after initially refusing.",
+        "tone": ["resigned", "humorous", "reluctant"],
+        "topics": ["scope changes", "feature acceptance", "peer pressure", "favors", "policy rollbacks"],
+        "tags": ["decision", "change", "reaction", "format_2panel"]
       },
       {
         "id": "6235864",
@@ -3087,7 +3120,11 @@
             "position": "bottom_center",
             "description": "Child's reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Scene from Finding Neverland with an adult gently explaining something serious to a child on a bench, while the child listens with a sad but accepting expression. The template is used when breaking difficult truths in a soft, emotional way.",
+        "tone": ["wholesome", "melancholic", "gentle"],
+        "topics": ["hard truths", "end of innocence", "reality checks", "explaining layoffs or failures"],
+        "tags": ["emotion", "story", "reaction", "format_3panel", "wholesome"]
       },
       {
         "id": "104893621",
@@ -3126,7 +3163,11 @@
             "position": "top_right",
             "description": "Third victim caption"
           }
-        ]
+        ],
+        "semantic_description": "Comic strip of the Grim Reaper walking down a corridor, leaving bloody doors behind as he knocks on the next one. The template is used to represent a sequence of people, apps, or trends that are being 'killed off' one after another by the same force.",
+        "tone": ["darkly humorous", "ominous", "satirical"],
+        "topics": ["outdated tech stacks", "dying memes", "regulation crackdowns", "monopolies eliminating competitors"],
+        "tags": ["sequence", "threat", "story", "format_3panel", "disaster"]
       },
       {
         "id": "21735",
@@ -3156,7 +3197,11 @@
             "position": "bottom_center",
             "description": "Shocking answer caption"
           }
-        ]
+        ],
+        "semantic_description": "Two‑panel meme with Dwayne 'The Rock' Johnson driving a car: first calmly looking at the road and speaking, then whipping his head around in shock at something the passenger says. It’s used for setups where a seemingly normal question gets an absurd or alarming answer.",
+        "tone": ["humorous", "surprised", "playful"],
+        "topics": ["unexpected opinions", "weird use cases", "bad requirements", "user stories gone wrong"],
+        "tags": ["conversation", "reaction", "twist", "format_2panel"]
       },
       {
         "id": "142009471",
@@ -3195,7 +3240,11 @@
             "position": "bottom_center",
             "description": "Question caption"
           }
-        ]
+        ],
+        "semantic_description": "Alternate cropping of the 'Is this a pigeon?' anime scene where the character misidentifies a butterfly, used to humorously depict mistaken classification or clueless labeling of concepts.",
+        "tone": ["mocking", "humorous", "critical"],
+        "topics": ["category errors", "wrong diagnoses", "incorrect tags", "media misunderstandings"],
+        "tags": ["misidentification", "logic", "reaction", "format_3panel"]
       },
       {
         "id": "309668311",
@@ -3234,7 +3283,11 @@
             "position": "right_center",
             "description": "Right path caption"
           }
-        ]
+        ],
+        "semantic_description": "Minimal cartoon showing a cloaked figure standing at a fork in a forested road where a single path splits into two distinctly labeled paths. The meme template encodes mutually exclusive choices or ideological splits, used to represent diverging approaches.",
+        "tone": ["serious or playful", "reflective"],
+        "topics": ["career paths", "tech stack decisions", "moral choices", "lifestyle forks"],
+        "tags": ["decision", "fork", "comparison", "format_3panel"]
       },
       {
         "id": "110133729",
@@ -3264,7 +3317,11 @@
             "position": "right_center",
             "description": "Second Spider-Man caption"
           }
-        ]
+        ],
+        "semantic_description": "Classic cartoon panel from Spider‑Man where two identically costumed Spider‑Men stand in an alley pointing accusingly at each other. This template is used to represent hypocrisy, projection, or identical entities accusing each other of the same behavior.",
+        "tone": ["humorous", "accusatory", "self‑aware"],
+        "topics": ["similar products", "pot calls kettle black", "mirror behavior", "identity confusion"],
+        "tags": ["comparison", "hypocrisy", "reaction", "format_2panel", "relatable"]
       },
       {
         "id": "360597639",
@@ -3294,7 +3351,11 @@
             "position": "bottom_center",
             "description": "Opponent/intimidation caption"
           }
-        ]
+        ],
+        "semantic_description": "Reaction meme contrasting a normal or underwhelming self with an opponent who appears absurdly strong, skilled, or intimidating. It encapsulates feeling outclassed or overwhelmed in a competition or comparison.",
+        "tone": ["self‑deprecating", "anxious", "humorous"],
+        "topics": ["imppostor syndrome", "job interviews", "competitive exams", "startup vs FAANG"],
+        "tags": ["comparison", "competition", "reaction", "format_2panel"]
       },
       {
         "id": "589636832",
@@ -3324,7 +3385,11 @@
             "position": "bottom_center",
             "description": "Confrontation caption"
           }
-        ]
+        ],
+        "semantic_description": "Close‑up screenshot of Sergeant Doakes from Dexter staring intensely with wide eyes and slightly open mouth, as if saying 'I knew it!' The meme is used to convey sudden confirmation of long‑held suspicion and confrontational energy.",
+        "tone": ["intense", "accusatory", "humorous"],
+        "topics": ["catching liars", "debugging breakthroughs", "exposing secrets", "calling out patterns"],
+        "tags": ["reveal", "reaction", "suspicion", "format_2panel"]
       },
       {
         "id": "123999232",
@@ -3354,7 +3419,11 @@
             "position": "right_center",
             "description": "Person's reaction caption"
           }
-        ]
+        ],
+        "semantic_description": "Cartoon of an adventurer discovering an ancient scroll labeled with some uncomfortable truth, reading it, then angrily throwing it away into a dark cave. It’s used to show people rejecting factual but inconvenient information.",
+        "tone": ["satirical", "critical", "humorous"],
+        "topics": ["data‑driven truths", "unpopular facts", "denial", "science vs opinion", "technical realities"],
+        "tags": ["truth", "denial", "story", "format_2panel", "critique"]
       },
       {
         "id": "342785297",
@@ -3393,7 +3462,11 @@
             "position": "bottom_center",
             "description": "Inferior other caption"
           }
-        ]
+        ],
+        "semantic_description": "Image of Gus Fring from Breaking Bad looking composed and professional, paired with text contrasting his high standards and discipline with someone else’s lower standards under the line 'We are not the same.' The template is used to flex superior habits, ethics, or quality.",
+        "tone": ["serious", "flexing", "humorous"],
+        "topics": ["work ethic", "clean code vs spaghetti", "fitness vs laziness", "craftsmanship vs shortcuts"],
+        "tags": ["comparison", "standards", "statement", "format_3panel"]
       },
       {
         "id": "92084495",
@@ -3423,7 +3496,11 @@
             "position": "right_center",
             "description": "Corkboard explanation caption"
           }
-        ]
+        ],
+        "semantic_description": "Scene from It’s Always Sunny in Philadelphia where Charlie stands in front of a corkboard covered with papers and red strings, furiously gesturing while explaining a convoluted theory. The template visualizes obsessive overanalysis, conspiracy‑style thinking, and absurdly complicated explanations.",
+        "tone": ["chaotic", "humorous", "paranoid"],
+        "topics": ["debugging rabbit holes", "fan theories", "overfitting explanations", "ten‑step reasoning for simple issues"],
+        "tags": ["conspiracy", "analysis", "reaction", "format_2panel", "meta"]
       }
     ]
   }
