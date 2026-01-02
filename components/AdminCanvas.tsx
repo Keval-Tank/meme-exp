@@ -2,6 +2,10 @@
 import { useRef, useEffect, useState } from 'react'
 import { Canvas, FabricImage, Rect, TPointerEvent } from 'fabric'
 import { supabase } from '@/lib/supabase/supabaseClient'
+import { generateEmbeddings, indexEnbeddedData } from '@/app/actions/index-data'
+import { generateText } from 'ai'
+import { groq } from '@/app/actions/index-data'
+
 
 interface CaptionArea {
     id: number
@@ -48,25 +52,25 @@ export default function MemeTemplateEditor({ imageUrl, id }: { imageUrl: string,
             canvas.clear()
 
             const img = await FabricImage.fromURL(imageUrl)
-            const scale = Math.min(
-                canvas.getWidth() / img.width!,
-                canvas.getHeight() / img.height!
-            )
-            const scaledWidth = img.width! * scale
-            const scaledHeight = img.height! * scale
-            const offsetX = (canvas.getWidth() - scaledWidth) / 2
-            const offsetY = (canvas.getHeight() - scaledHeight) / 2
+            // const scale = Math.min(
+            //     canvas.getWidth() / img.width!,
+            //     canvas.getHeight() / img.height!
+            // )
+            // const scaledWidth = img.width! * scale
+            // const scaledHeight = img.height! * scale
+            // const offsetX = (canvas.getWidth() - scaledWidth) / 2
+            // const offsetY = (canvas.getHeight() - scaledHeight) / 2
 
-            setImageScale(scale)
-            setImageOffset({ x: offsetX, y: offsetY })
+            // setImageScale(scale)
+            // setImageOffset({ x: offsetX, y: offsetY })
 
             img.set({
-                left: offsetX,
-                top: offsetY,
+                left: 0,
+                top: 0,
                 originX: 'left',
                 originY: 'top',
-                scaleX: scale,
-                scaleY: scale,
+                scaleX: canvas?.getWidth()! / img.width,
+                scaleY: canvas?.getHeight()!/ img.height,
                 selectable: false,
                 evented: false
             })
@@ -124,7 +128,7 @@ export default function MemeTemplateEditor({ imageUrl, id }: { imageUrl: string,
             canvas.renderAll()
         }
 
-        const handleMouseUp = () => {
+        const handleMouseUp = async() => {
             if (!isDrawing || !currentRect) return
             setIsDrawing(false)
 
@@ -133,17 +137,12 @@ export default function MemeTemplateEditor({ imageUrl, id }: { imageUrl: string,
             const canvasWidth = currentRect.width!
             const canvasHeight = currentRect.height!
 
-            const originalX = Math.round((canvasX - imageOffset.x) / imageScale)
-            const originalY = Math.round((canvasY - imageOffset.y) / imageScale)
-            const originalWidth = Math.round(canvasWidth / imageScale)
-            const originalHeight = Math.round(canvasHeight / imageScale)
-
             const newArea: CaptionArea = {
                 id: captionAreas.length + 1,
-                x: originalX,
-                y: originalY,
-                width: originalWidth,
-                height: originalHeight,
+                x: Math.round(canvasX),
+                y: Math.round(canvasY),
+                width: Math.round(canvasWidth),
+                height: Math.round(canvasHeight),
                 position: 'center_center',
                 description: `Caption area ${captionAreas.length + 1}`
             }
@@ -192,22 +191,34 @@ export default function MemeTemplateEditor({ imageUrl, id }: { imageUrl: string,
     const exportJSON = async () => {
         // console.log(captionAreas)
         // console.log("id -> ", id)
-        try{
-            const {data:dbData, error : dbError} = await supabase.from('templates').select().eq("id", id)
-            if(dbError){
+        try {
+            const { data: dbData, error: dbError } = await supabase.from('templates').select('*').eq("id", id)
+            if (dbError) {
                 throw dbError
-            }else{
+            } else {
                 console.log(dbData)
             }
-            const {error} = await supabase.from("templates").update({
-                caption_areas : captionAreas,
-                box_count : captionAreas.length,
-                url : imageUrl
+            console.log("data before update -> ", dbData)
+            const { error } = await supabase.from("templates").update({
+                caption_areas: captionAreas,
+                box_count: captionAreas.length,
+                url: imageUrl
             }).eq("id", id)
-            if(error){
+            if (error) {
                 throw error
             }
-        }catch(error){
+            const template_despcription = `
+            Meme Template : ${dbData[0].name}
+            Description : ${dbData[0].semantic_description}
+            Keywords : ${dbData[0].keywords.join(", ")}
+            Topics : ${dbData[0].topics.join(', ')}
+            Tags : ${dbData[0].tags.join(', ')}
+            Tone : ${dbData[0].tone.split(",").map((tone: string) => tone.trim()).join(',')}
+            `.trim()
+            const embeddings = await generateEmbeddings(template_despcription)
+            await indexEnbeddedData(embeddings, dbData[0].id)
+
+        } catch (error) {
             console.log("error -> ", error)
             return
         }
@@ -223,7 +234,7 @@ export default function MemeTemplateEditor({ imageUrl, id }: { imageUrl: string,
         //         console.log("updated successfully !")
         //         alert('Data updated!')
         //     }
-            
+
         // } else {
         //     const { data, error } = await supabase.from("templates").update({
         //         url: imageUrl, box_count: 1, caption_areas: [{

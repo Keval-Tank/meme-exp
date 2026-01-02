@@ -11,6 +11,7 @@ import {
     SelectValue,
 } from "@/components/ui/select"
 
+
 const colorPresets = [
     '#ffffff',  // white
     '#000000',  // black
@@ -76,51 +77,57 @@ export const FabricTemplateCanvas = ({ template }: any) => {
         fabricRef.current = canvas
         async function main() {
             const img = await FabricImage.fromURL(template.url)
-            const scale = Math.min((canvas.getWidth() / template.width), (canvas.getHeight() / template.height))
-            const scaledWidth = template.width * scale
-            const scaledHeight = template.height * scale
+            // const scale = Math.min((canvas.getWidth() / template.width), (canvas.getHeight() / template.height))
+            // const scaledWidth = template.width * scale
+            // const scaledHeight = template.height * scale
             img.set({
-                left: (canvas.getWidth() - scaledWidth)/2,
-                top: (canvas.getHeight() - scaledHeight)/2,
+                left: 0,
+                top: 0,
                 originX: 'left',
                 originY: 'top',
-                scaleX: scale,
-                scaleY: scale,
+                scaleX: canvas.getWidth() / img.width!,
+                scaleY: canvas.getHeight() / img.height!,
                 selectable: false
             })
             canvas.add(img)
             let start = 50
             // console.log("positions -> ", template.caption_areas)
             const caption_scale = Math.min(500/template.width, 500/template.height)
-            const offsetX = (500 - template.width * caption_scale)/2 
-            const offsetY = (500 - template.height * caption_scale)/2
+            const offsetX = (canvas.getWidth() - template.width * caption_scale)/2 
+            const offsetY = (canvas.getHeight() - template.height * caption_scale)/2
             template.meme_captions.forEach((caption: string, index:number) => {
                 const positions = template.caption_areas[index]
-                console.log("X -> ", positions.x)
-                console.log("Y -> ", positions.y)
-                console.log("width -> ", positions.width)
-                console.log("height -> ", positions.height)
+                // console.log("X -> ", positions.x)
+                // console.log("Y -> ", positions.y)
+                // console.log("width -> ", positions.width)
+                // console.log("height -> ", positions.height)
                 if(!positions){
                     console.log("caption areas not found for ", template.name)
                     return
                 }
-                const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2) 
                 
-                canvas.add(new FabricText(caption, {
-                    left: offsetX + positions.x * caption_scale,
-                    top: offsetY + positions.y * caption_scale,
-                    width : positions.width * scale,
-                    height : positions.height * scale,
+                const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2)
+                let fontSize =  Math.max(14, Math.min(maxFontSize, 40)) 
+                const textObj = new FabricText(caption, {
+                    left:  positions.x ,
+                    top:  positions.y ,
+                    width : positions.width,
+                    height : positions.height,
                     fill: '#ffffff',
-                    fontSize: Math.max(14, Math.min(maxFontSize, 40)),
+                    fontSize,
                     fontFamily: 'Impact',
                     stroke: 'black',
                     strokeWidth: 2,
                     textAlign: 'center',
-                    originX: positions.position.split("_")[0]  || "center",
+                    originX: 'center',
                     splitByGrapheme : true
-                }))
-                start += 50
+                })
+                // while((textObj.height > positions.height * caption_scale || textObj.width > positions.width * caption_scale) && fontSize > 10){
+                //     fontSize -= 1;
+                //     textObj.set("fontSize", fontSize)
+                // }
+                canvas.add(textObj)
+                // start += 50
             })
             canvas.renderAll()
         }

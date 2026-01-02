@@ -1,6 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { indexData } from "@/app/actions/index-data";
-import { groq } from "@ai-sdk/groq"
 
 export interface Template {
     id?: string,

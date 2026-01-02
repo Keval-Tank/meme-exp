@@ -9,7 +9,7 @@ import { createGroq } from "@ai-sdk/groq"
 
 
 const memeTemplates = JSON.parse(readFileSync("./data.json", "utf-8"))
-const groq = createGroq({
+export const groq = createGroq({
     apiKey: process.env.GROQ_API_KEY!
 })
 
@@ -39,6 +39,17 @@ export async function urlToBlob(url: string) {
     const result = await fetch(url)
     const blob = await result.blob()
     return await blob.arrayBuffer()
+}
+
+export async function indexEnbeddedData(embeddings : number[], id:string) {
+    try {
+        await pineconeIndex.upsert([{
+            id,
+            values: embeddings
+        }])
+    } catch (error) {
+        console.log("failed to index template data ->", error)
+    }
 }
 
 export async function indexData(user_prompt: string): Promise<Template[] | null | void> {
@@ -132,8 +143,8 @@ export async function indexData(user_prompt: string): Promise<Template[] | null 
         // })
         // UNCOMMENT FROM HERE
         const query = await generateEmbeddings(user_prompt)
-        const {text : context} = await generateText({
-            model : groq('openai/gpt-oss-120b'),
+        const { text: context } = await generateText({
+            model: groq('openai/gpt-oss-120b'),
             prompt: `You are an expert at analyzing text to extract emotional context, tone, and narrative intent. 
 Your job is to deconstruct user input and produce structured context that a meme caption writer can use to generate FUNNY, RELEVANT captions.
 
@@ -165,7 +176,7 @@ Analyze this step-by-step and output ONLY valid JSON with NO markdown, NO commen
         })
         // console.log("context -> ", context)
         const result = await pineconeIndex.query({
-            topK: 10,
+            topK: 5,
             vector: query,
             includeMetadata: true
         })
@@ -178,9 +189,13 @@ Analyze this step-by-step and output ONLY valid JSON with NO markdown, NO commen
                 console.log("Failed to fetch Data -> ", dbError)
                 break
             }
-            console.log(dbData[0])
+            if (!dbData[0] || dbData.length === 0) {
+                console.log("Failed to fetch Data -> ", dbError)
+                continue
+            }
+            // console.log(dbData)
             // const caption_blocks = dbData[0].box_count
-            const meme_captions: Array<string> = []
+            // const meme_captions: Array<string> = []
             const prompt = `You are an expert meme caption writer. Generate SHORT, PUNCHY captions that match the template's scenario and the user's context.
 
 RULES (CRITICAL - FOLLOW EXACTLY):
