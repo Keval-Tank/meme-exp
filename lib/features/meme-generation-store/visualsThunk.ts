@@ -1,3 +1,4 @@
+"use client"
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import Replicate from "replicate"
 import { groq } from "@/app/actions/index-data";
@@ -254,7 +255,22 @@ export const fetchVisualThunk = createAsyncThunk("generateVisualsThunk/generate"
 //             data : text
 //         }
         const data = await generateImagePrompt(prompt)
-        console.log(data?.text)
+        const generated_prompt = JSON.parse(data?.text as string) 
+        // console.log(generated_prompt)
+        const image_generation_prompt = `${generated_prompt.output.prompt}, and add these captions {${Object.values(generated_prompt.output.captions).map((caption) => `"${caption}"`)}} at right place in the image and make sure the captions MUST be readable and clear. and expressions on characters faces MUST be relevant to thier caption and tone.`
+        // console.log(image_generation_prompt)
+        const response = await fetch("api/generate-image", {
+            method : "POST",
+            body : JSON.stringify({image_generation_prompt:image_generation_prompt})
+        })
+        const output = await response.json()
+        // console.log("response output -> ", output)
+        return {
+            data : output.imageUrl[0],
+            success : true,
+            error : null
+        }
+
     }catch(error:any){
         return thunkAPI.rejectWithValue(error.message || "Failed to generate visual")
     }

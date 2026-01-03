@@ -180,11 +180,47 @@ Your task (STRICT):
 2. Create one clear, single-scene meme scenario that visually represents this context.
    - The entire scenario must fit into one cartoon-style image
    - Do NOT create multiple panels, timelines, or cuts
+   - If the scene requires a transition or something like shift from one state to another in that case use panels in an   image.
 
-3. MANDATORY CHARACTER SELECTION:
-   - Select 2–5 characters ONLY from above given character description
-   - Use their exact character_name
-   - Respect their personality, tone, behavioral traits, and aesthetic
+3. MANDATORY CHARACTER SELECTION (STRICT):
+
+- FIRST determine the MINIMUM number of characters required to clearly express the meme’s context, emotion, and humor in a single image.
+- Character count must be ONLY what is narratively sufficient:
+  - 1 character → if the humor is internal, observational, self-aware, or reaction-based
+  - 2 characters → if the humor is contrast, disagreement, call-out, or dialogue-based
+  - 3–5 characters → ONLY if the humor strictly requires group dynamics (crowd reaction, chaos, debate, social pressure)
+
+HARD RULES:
+- Use the LOWEST number of characters possible.
+- If the scene works with 1 character, DO NOT add more.
+- Adding extra characters without a clear narrative role is a FAILURE.
+- Every selected character must actively contribute to the joke, conflict, or reaction.
+- Do NOT select characters for “balance,” “variety,” or zodiac coverage.
+
+CHARACTER RELEVANCE FILTER (MANDATORY):
+
+Before selecting a character, verify ALL of the following:
+- The character’s zodiac_traits directly reinforce the scene’s core emotion
+- The character’s behavioral_traits naturally produce the meme’s action or reaction
+- The character’s tone matches the meme’s humor style (dry, aggressive, soft, dramatic, etc.)
+
+If a character fails ANY of the above, they MUST NOT be selected.
+
+ANTI-REDUNDANCY RULE:
+
+- If two characters serve the same narrative role (e.g., both reacting, both mocking, both agreeing),
+  keep ONLY the stronger or more archetypal fit.
+- Never include more than one character with overlapping reactions unless the contrast itself is the joke.
+
+FINAL SELF-CHECK (INTERNAL — DO NOT OUTPUT):
+
+- Can this meme be fully understood if one character is removed?
+  - If YES → remove that character.
+- Does each character have a distinct, necessary function?
+  - If NO → remove extras.
+- Is the humor clearer with fewer characters?
+  - If YES → reduce cast.
+
 
 4. Create a single compact image-generation prompt that:
    - explicitly names each selected character
@@ -210,7 +246,7 @@ OUTPUT FORMAT (STRICT — no extra text):
 
 {
   "output": {
-    "prompt": "<single cartoonish image-generation prompt that explicitly includes the selected characters>",
+    "prompt": "<single cartoonish detailed image-generation prompt that explicitly includes the selected characters>",
     "captions": {
       "<character_name>": "<short caption>",
       "<character_name>": "<short caption>"

@@ -92,43 +92,42 @@ export const FabricTemplateCanvas = ({ template }: any) => {
             canvas.add(img)
             let start = 50
             // console.log("positions -> ", template.caption_areas)
-            const caption_scale = Math.min(500/template.width, 500/template.height)
-            const offsetX = (canvas.getWidth() - template.width * caption_scale)/2 
-            const offsetY = (canvas.getHeight() - template.height * caption_scale)/2
-            template.meme_captions.forEach((caption: string, index:number) => {
-                const positions = template.caption_areas[index]
-                // console.log("X -> ", positions.x)
-                // console.log("Y -> ", positions.y)
-                // console.log("width -> ", positions.width)
-                // console.log("height -> ", positions.height)
-                if(!positions){
-                    console.log("caption areas not found for ", template.name)
-                    return
-                }
-                
-                const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2)
-                let fontSize =  Math.max(14, Math.min(maxFontSize, 40)) 
-                const textObj = new FabricText(caption, {
-                    left:  positions.x ,
-                    top:  positions.y ,
-                    width : positions.width,
-                    height : positions.height,
-                    fill: '#ffffff',
-                    fontSize,
-                    fontFamily: 'Impact',
-                    stroke: 'black',
-                    strokeWidth: 2,
-                    textAlign: 'center',
-                    originX: 'center',
-                    splitByGrapheme : true
+            if (template.meme_captions && template.meme_captions.length > 0) {
+                template.meme_captions.forEach((caption: string, index:number) => {
+                    const positions = template.caption_areas?.[index]
+                    // console.log("X -> ", positions.x)
+                    // console.log("Y -> ", positions.y)
+                    // console.log("width -> ", positions.width)
+                    // console.log("height -> ", positions.height)
+                    if(!positions){
+                        console.log("caption areas not found for ", template.name)
+                        return
+                    }
+                    
+                    const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2)
+                    let fontSize =  Math.max(14, Math.min(maxFontSize, 50)) 
+                    const textObj = new FabricText(caption, {
+                        left:  positions.x ,
+                        top:  positions.y ,
+                        width : positions.width,
+                        height : positions.height,
+                        fill: '#ffffff',
+                        fontSize,
+                        fontFamily: 'Impact',
+                        stroke: 'black',
+                        strokeWidth: 1,
+                        textAlign: 'center',
+                        originX: 'center',
+                        splitByGrapheme : true
+                    })
+                    // while((textObj.height > positions.height * caption_scale || textObj.width > positions.width * caption_scale) && fontSize > 10){
+                    //     fontSize -= 1;
+                    //     textObj.set("fontSize", fontSize)
+                    // }
+                    canvas.add(textObj)
+                    // start += 50
                 })
-                // while((textObj.height > positions.height * caption_scale || textObj.width > positions.width * caption_scale) && fontSize > 10){
-                //     fontSize -= 1;
-                //     textObj.set("fontSize", fontSize)
-                // }
-                canvas.add(textObj)
-                // start += 50
-            })
+            }
             canvas.renderAll()
         }
         main()
@@ -182,7 +181,7 @@ export const FabricTemplateCanvas = ({ template }: any) => {
         return () => {
             canvas.dispose()
         }
-    }, [template.url]);
+    }, [template.url, template.meme_captions]);
 
     useEffect(() => {
         const canvas = fabricRef.current

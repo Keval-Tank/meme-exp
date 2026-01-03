@@ -14,9 +14,10 @@ import {
     FormMessage,
 } from "@/components/ui/form"
 import { Input } from "@/components/ui/input"
-import { useDispatch } from 'react-redux'
-import { AppDispatch } from '@/lib/store'
+import { useDispatch, useSelector } from 'react-redux'
+import { AppDispatch, RootState } from '@/lib/store'
 import { fetchVisualThunk } from '@/lib/features/meme-generation-store/visualsThunk'
+import Image from 'next/image'
 
 
 
@@ -26,6 +27,7 @@ const formSchema = z.object({
 
 
 const VisualsInput = () => {
+    const {loading, error, data} = useSelector((state : RootState) => state.generateMeme)
     const dispatch = useDispatch<AppDispatch>()
     // 1. Define your form.
     const form = useForm<z.infer<typeof formSchema>>({
@@ -62,6 +64,17 @@ const VisualsInput = () => {
                     <Button type="submit">Submit</Button>
                 </form>
             </Form>
+            <div>
+                {
+                    loading && "data loading"
+                }
+                {
+                    error && "Error occured"
+                }
+                {
+                    !loading && data && <Image src={data} alt='text-to-visuals meme' height={300} width={300}/>
+                }
+            </div>
         </div>
     )
 }
