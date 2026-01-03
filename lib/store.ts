@@ -1,12 +1,14 @@
 import { configureStore } from '@reduxjs/toolkit'
 import memeTemplatesReducers from "./features/memes-templates-store/memesSlice"
 import visualSliceReducers from './features/meme-generation-store/visualsSlice'
+import queryReducers from './features/query-store/querySlice'
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
       fetchTemplates : memeTemplatesReducers,
-      generateMeme : visualSliceReducers
+      generateMeme : visualSliceReducers,
+      generateQuery : queryReducers
     }
   })
 }

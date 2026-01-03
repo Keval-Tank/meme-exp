@@ -90,6 +90,23 @@ export const FabricTemplateCanvas = ({ template }: any) => {
                 selectable: false
             })
             canvas.add(img)
+            
+            // Add watermark at bottom right
+            const watermark = new FabricText('name.ai', {
+                left: canvas.getWidth(),
+                top: canvas.getHeight(),
+                fontSize: 12,
+                fontFamily: 'Impact, sans-serif',
+                fill: '#ffffff',
+                stroke: '#000000',
+                strokeWidth: 1,
+                originX: 'right',
+                originY: 'bottom',
+                selectable: false,
+                opacity: 1
+            })
+            canvas.add(watermark)
+            
             let start = 50
             // console.log("positions -> ", template.caption_areas)
             if (template.meme_captions && template.meme_captions.length > 0) {
