@@ -107,7 +107,7 @@ export const FabricTemplateCanvas = ({ template }: any) => {
             })
             canvas.add(watermark)
             
-            let start = 50
+            // let start = 50
             // console.log("positions -> ", template.caption_areas)
             if (template.meme_captions && template.meme_captions.length > 0) {
                 template.meme_captions.forEach((caption: string, index:number) => {
@@ -123,7 +123,8 @@ export const FabricTemplateCanvas = ({ template }: any) => {
                     
                     const maxFontSize = Math.min(positions.width / caption.length * 2, positions.height / 2)
                     let fontSize =  Math.max(14, Math.min(maxFontSize, 50)) 
-                    const textObj = new FabricText(caption, {
+                    const defaultFontSize = fontSize
+                    const textObj = new FabricIText(caption, {
                         left:  positions.x ,
                         top:  positions.y ,
                         width : positions.width,
@@ -132,7 +133,7 @@ export const FabricTemplateCanvas = ({ template }: any) => {
                         fontSize,
                         fontFamily: 'Impact',
                         stroke: 'black',
-                        strokeWidth: 1,
+                        strokeWidth: 2,
                         textAlign: 'center',
                         originX: 'center',
                         splitByGrapheme : true
@@ -182,6 +183,10 @@ export const FabricTemplateCanvas = ({ template }: any) => {
             if (obj && (obj?.type === 'i-text' || obj?.type === 'textbox')) {
                 const textObj = obj as FabricIText
                 setActiveText(textObj.text)
+                setFontColor('white')
+                setFontBorderColor('black')
+                setFontSize(fontSize)
+                setFontStyle('Impact')
             }
         })
         canvas.on("selection:updated", () => {

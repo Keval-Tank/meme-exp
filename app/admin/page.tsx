@@ -24,8 +24,8 @@ import { Label } from "@/components/ui/label"
 
 const formSchema = z.object({
     name: z.string().min(2),
-    width : z.coerce.number().min(1),
-    height : z.coerce.number().min(1),
+    width : Number(z.coerce.number().min(1)),
+    height : Number(z.coerce.number().min(1)),
     tags : z.string().min(2),
     description : z.string().min(2),
     keywords : z.string().min(2),
@@ -42,8 +42,8 @@ const page = () => {
         resolver: zodResolver(formSchema),
         defaultValues: {
             name: "",
-            width : 0,
-            height : 0,
+            width : 0 as number,
+            height : 0 as number,
             tags : "",
             description : "",
             keywords : "",

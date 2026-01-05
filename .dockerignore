@@ -1,0 +1,11 @@
+node_modules
+npm-debug.log
+.git
+.gitignore
+README.md
+.env              # ← Exclude secrets
+.env.local        # ← Exclude secrets
+.env.*.local      # ← Exclude secrets
+.next
+out
+.DS_Store

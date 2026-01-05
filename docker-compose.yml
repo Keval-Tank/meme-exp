@@ -1,0 +1,11 @@
+version : '3.9'
+
+services:
+   nginx:
+    build:
+      context : .
+      dockerfile : DockerFile
+    container_name: meme_exp_nginx
+    ports :
+      - "80:80"
+    restart : unless-stopped

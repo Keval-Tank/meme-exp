@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { indexData } from "@/app/actions/index-data";
+import { getTemplateData } from "@/app/actions/get-template-data";
 
 export interface Template {
     id?: string,
@@ -20,13 +20,13 @@ export interface Template {
 
 export const fetchTemplates = createAsyncThunk("fetchTemplateThunk/fetch", async (prompt: string, thunkAPI): Promise<any> => {
     try {
-        const result = await indexData(prompt);
+        const result = await getTemplateData(prompt);
         if (!result) {
             console.log("Results not found")
             return thunkAPI.rejectWithValue("Results not found")
         }
         return result
     } catch (error) {
-        return thunkAPI.rejectWithValue("Error ocurred while fetching result")
+        return thunkAPI.rejectWithValue("Error occurred while fetching result")
     }
 })

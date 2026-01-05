@@ -14,6 +14,7 @@ import { NextResponse } from "next/server"
 
 export async function POST(req: Request) {
     try {
+        console.log("Request from -> ",req.url)
         const {image_generation_prompt} = await req.json()
         const replicate = new Replicate({
             auth: process.env.REPLICATE_API_TOKEN!,

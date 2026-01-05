@@ -8,6 +8,7 @@ import { supabase } from "@/lib/supabase/supabaseClient";
 import { createGroq } from "@ai-sdk/groq"
 
 
+
 const memeTemplates = JSON.parse(readFileSync("./data.json", "utf-8"))
 export const groq = createGroq({
     apiKey: process.env.GROQ_API_KEY!
