@@ -70,8 +70,8 @@ export default async function middleware(req: NextRequest) {
     // console.log("rate limit -> ", register);
     // register.set(urlKey, { visited: visited + 1, requestDate: currentDate, hour: currentHour });
     // return NextResponse.next();
-    const clientIp = req.headers.get("x-forwarded-for") ?? "unknown";
-    const ip = clientIp.split(":")[clientIp.split(":").length - 1];
+    // const clientIp = req.headers.get("x-forwarded-for") ?? "unknown";
+    // const ip = clientIp.split(":")[clientIp.split(":").length - 1];
     // console.log("client ip -> ", clientIp)
     // console.log("Client IP -> ", ip);
     // const response = await fetch("/api/check-can-make-request", {
@@ -85,15 +85,24 @@ export default async function middleware(req: NextRequest) {
     // if (!data.can) {
     //     return NextResponse.redirect("/too-many-requests");
     // }
-    const response = NextResponse.next();
-    response.headers.set("X-Client-IP", ip);
-    return response;
+    // const response = NextResponse.next();
+    // response.headers.set("X-Client-IP", ip);
+    // return response;
+    if(!req.headers.get('sid')){
+        console.log('sid -> ', req.headers.get('sid'))
+        return NextResponse.redirect(new URL('/auth/login', req.url))
+    }
+    return NextResponse.next()
 }
 
 export const config = {
     matcher: [
-        '/',
+        '/search-template/:path*',
+        '/text-to-meme',
+        '/text-to-visuals',
+        '/api/:path*',
+        '/admin/:path*',
+        '/actions/:path*',
         '/api/templates/:path*',
-        "/((?!_next/static|_next/image|favicon.ico).*)"
     ]
 }

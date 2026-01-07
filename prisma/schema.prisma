@@ -28,3 +28,23 @@ model Templates {
   caption_areas  Json         @db.JsonB
   @@map("templates")
 }
+
+enum Subscription {
+  FREE
+  PRO
+  BYOK
+}
+
+model User {
+  id            Int       @id @default(autoincrement())
+  name          String
+  email         String    @unique
+  password      String    
+  sessionId     String    
+  accessToken   String
+  refreshToken  String
+  role          String
+  subscription  Subscription @default(FREE)
+
+  @@map("users")
+}
