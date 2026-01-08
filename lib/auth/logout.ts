@@ -24,6 +24,7 @@ export async function logout(): Promise<LogoutResponse> {
         if (!secret) {
             // clear cookie if server misconfigured
             cookieStore.delete("token")
+            cookieStore.delete("ssid")
             return {
                 success: false,
                 error: "Server configuration error: missing JWT secret"
@@ -36,6 +37,7 @@ export async function logout(): Promise<LogoutResponse> {
         } catch (jwtError) {
             // invalid token — clear cookie and return
             cookieStore.delete("token")
+            cookieStore.delete("ssid")
             return {
                 success: false,
                 error: "Invalid token"
@@ -48,6 +50,7 @@ export async function logout(): Promise<LogoutResponse> {
         if (!userId || !sessionId) {
             // malformed payload — clear cookie and return
             cookieStore.delete("token")
+            cookieStore.delete("ssid")
             return {
                 success: false,
                 error: "Token payload missing required fields"
@@ -76,6 +79,7 @@ export async function logout(): Promise<LogoutResponse> {
 
         // Remove token cookie
         cookieStore.delete("token")
+        cookieStore.delete("ssid")
 
         return {
             success: true,
@@ -83,7 +87,9 @@ export async function logout(): Promise<LogoutResponse> {
     } catch (error) {
         console.error("Logout error:", error)
         try {
-            (await cookies()).delete("token")
+            const cookieStore = await cookies()
+            cookieStore.delete('token')
+            cookieStore.delete('ssid')
         } catch {}
         return {
             success: false,

@@ -15,18 +15,21 @@ interface LoginData {
 interface LoginResponse {
     success: boolean
     userEmail?: number | string
-    name? : string
-    role? : string
-    subscription? : string
+    name?: string
+    role?: string
+    subscription?: string
     sessionId?: string
     error?: string
-    sud? : string
+    sud?: string
 }
 
-export async function setCookies(name:string, value:string, path:string) {
+export async function setCookies(name: string, value: string, path: string) {
     (await cookies()).set(name, value, {
-        httpOnly : false,
-        path
+        httpOnly: true,
+        path,
+        maxAge : 60*60*24,
+        secure : false,
+        sameSite : 'lax' 
     })
 }
 
@@ -45,9 +48,9 @@ export async function login(data: LoginData): Promise<LoginResponse> {
         const user = await prisma.user.findUnique({
             where: { email },
             select: {
-                id : true,
-                email : true,
-                password : true
+                id: true,
+                email: true,
+                password: true
             }
         })
 
@@ -76,49 +79,48 @@ export async function login(data: LoginData): Promise<LoginResponse> {
         }
         const accessTokenSecret = process.env.JWT_ACCESS_TOKEN_SECRET!
         const accessToken = jwt.sign(payload, accessTokenSecret, {
-            expiresIn : '1m'
+            expiresIn: '1m'
         })
         const refreshToken = uuidv4()
 
         // Update user with new session ID
         const userSessionData = await prisma.session.create({
-            data : {
-                id : sessionId,
+            data: {
+                id: sessionId,
                 accessToken,
-                userId : user.id,
+                userId: user.id,
                 refreshToken
             }
         })
 
         const updatedUserData = await prisma.user.update({
-            where : {
-                id : user.id
+            where: {
+                id: user.id
             },
-            data : {
+            data: {
                 sessionId
             },
-            select:{
-                id : true,
-                name : true,
-                subscription : true,
-                role : true,
-                sessionId : true
+            select: {
+                id: true,
+                name: true,
+                subscription: true,
+                role: true,
+                sessionId: true
             }
         })
-    
+
         const redis = await getRedisClient();
-        await redis.setEx(updatedUserData.id.toString(), 60*60*24, JSON.stringify({
-            subscription : updatedUserData.subscription,
-            role : updatedUserData.subscription,
+        await redis.setEx(updatedUserData.id.toString(), 60 * 60 * 24, JSON.stringify({
+            subscription: updatedUserData.subscription,
+            role: updatedUserData.role,
             sessionId,
-            refreshToken : userSessionData.refreshToken 
+            refreshToken: userSessionData.refreshToken
         }))
         redis.destroy()
-        // const sessionIdSecret = process.env.JWT_SESSION_ID_SECRET!
-        // const signedSessionId = jwt.sign({sessionId}, sessionIdSecret)
+        const sessionIdSecret = process.env.JWT_SESSION_ID_SECRET!
+        const signedSessionId = jwt.sign({ sessionId }, sessionIdSecret)
         // console.log("updated data -> ", updated)
         // set cookies
-        // await setCookies('sid', signedSessionId, '/')
         // const dataSecret = process.env.JWT_USER_DATA_SECRET!
         // const signedUserData = jwt.sign({
         //     userEmail: user.email,
@@ -127,14 +129,15 @@ export async function login(data: LoginData): Promise<LoginResponse> {
         //     subscription : updatedUserData.subscription,
         //     sessionId
         // }, dataSecret)
+        await setCookies('ssid', signedSessionId, '/')
         await setCookies('token', accessToken, '/')
 
         return {
             success: true,
             userEmail: user.email,
-            name : updatedUserData.name,
-            role : updatedUserData.role,
-            subscription : updatedUserData.subscription,
+            name: updatedUserData.name,
+            role: updatedUserData.role,
+            subscription: updatedUserData.subscription,
             sessionId,
         }
     } catch (error) {

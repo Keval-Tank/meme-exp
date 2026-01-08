@@ -1,6 +1,9 @@
 import { NextRequest, NextResponse } from "next/server"
-import jwt from "jsonwebtoken"
+import jwt, { JwtPayload, TokenExpiredError } from "jsonwebtoken"
 import { prisma } from "@/lib/prisma"
+import { JWTExpired } from "jose/errors"
+import { cookies } from "next/headers"
+import { refreshTokens } from "@/app/actions/refresh-tokens"
 
 export async function GET(req: NextRequest) {
   try {
@@ -12,7 +15,49 @@ export async function GET(req: NextRequest) {
     try {
       payload = jwt.verify(tokenCookie, secret) as { id: number; sessionId: string }
     } catch (err) {
-      return NextResponse.json({ success: false }, { status: 401 })
+      if (err instanceof TokenExpiredError) {
+        const cookieStore = await cookies()
+        const sessionIdCookie = cookieStore.get('ssid')
+        if (!sessionIdCookie) {
+          return NextResponse.json({
+            success: false,
+            error: 'sessionId not found'
+          })
+        }
+        const sessionIdSecret = process.env.JWT_SESSION_ID_SECRET!
+        const sessionId = jwt.verify(sessionIdCookie.value as string, sessionIdSecret) as JwtPayload
+        const renewal = await refreshTokens(sessionId.sessionId)
+        if (renewal.success) {
+          const userData = await prisma.session.findFirst({
+            where: {
+              id: sessionId.sessionId
+            },
+            include: {
+              user: {
+                select: {
+                  name: true,
+                  email: true,
+                  role: true,
+                  subscription: true,
+                  sessionId: true
+                }
+              }
+            }
+          })
+          return NextResponse.json({
+            success: true,
+            user: {
+              name: userData?.user.name,
+              email: userData?.user.email,
+              role: userData?.user.role,
+              subscription: userData?.user.subscription,
+              sessionId: userData?.user.sessionId
+            }
+          })
+        }
+      } else {
+        return NextResponse.json({ success: false }, { status: 401 })
+      }
     }
 
     const session = await prisma.session.findUnique({

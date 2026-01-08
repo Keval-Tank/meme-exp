@@ -23,6 +23,7 @@ export const userThunk = createAsyncThunk(
         return thunkAPI.rejectWithValue(err)
       }
       const data = await res.json()
+      console.log("data -> ", data)
       return data.user // { id, name, email, role, subscription, sessionId }
     } catch (e) {
       return thunkAPI.rejectWithValue({ error: "Network error" })

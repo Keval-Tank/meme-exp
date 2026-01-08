@@ -1,5 +1,8 @@
 import { type NextRequest, NextResponse } from "next/server";
-import {jwtVerify} from 'jose'
+import { jwtVerify } from 'jose'
+// Note: checkCanVisit uses jsonwebtoken and redis which require Node.js APIs
+// These are not available in Edge Runtime. Use jose for JWT verification in middleware.
+// import { checkCanVisit } from "./app/actions/check-can-visit";
 // import { getRedisClient } from "./lib/redis";
 
 // const register = new Map<string, { visited: number, requestDate: Date, hour: number }>();
@@ -91,11 +94,24 @@ export default async function middleware(req: NextRequest) {
     // return response;
     // 
 
-    // const authSessionId = req.cookies.get('sid')
+    const authSessionId = req.cookies.get('ssid')
     const authToken = req.cookies.get('token')
-    if(!authToken?.value){
+    if(!authToken?.value || !authSessionId?.value){
         return NextResponse.redirect(new URL('/auth/login', req.url))
     }
+    if(req.url.includes('/admin')){
+        const adminCheckResponse = await fetch(`${process.env.BASE_URL}/api/verify-tokens`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ token: authToken.value, checkAdmin: true })
+        })
+        const adminData = await adminCheckResponse.json()
+        if(!adminData.success || !adminData.isAdmin){
+            return NextResponse.redirect(new URL('/unauthorized', req.url))
+        }
+        return NextResponse.next()
+    }
+    
     const response = await fetch(`${process.env.BASE_URL}/api/verify-tokens`, {
         method : 'POST',
         headers : {

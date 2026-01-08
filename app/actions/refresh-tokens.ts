@@ -7,7 +7,7 @@ import { cookies } from "next/headers"
 
 export async function refreshTokens(sessionId : string){
     try{
-        console.log("sessionId -> ", sessionId)
+        // console.log("sessionId -> ", sessionId)
         const sessionData = await prisma.session.findFirst({
             where : {
                 id : sessionId
