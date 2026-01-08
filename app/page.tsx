@@ -29,6 +29,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import RouteSwitcher from "@/components/RouteSwitcher"
 // import TemplateCanvas from "@/components/TemplateCanvas";
 // import FabricTemplateCanvas from "@/components/FabricTemplateCanvas";
 // import MemeChat from "@/components/MemeChat";
@@ -197,6 +198,7 @@ export default function Home() {
   // );
   return (
     <div>
+      <RouteSwitcher/>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
           <FormField

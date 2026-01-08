@@ -17,6 +17,7 @@ import { useSelector } from "react-redux"
 import { useDispatch } from "react-redux"
 import { AppDispatch, RootState } from "@/lib/store"
 import Image from "next/image"
+import RouteSwitcher from "@/components/RouteSwitcher"
 
 const formSchema = z.object({
   search: z.string(),
@@ -38,6 +39,7 @@ export default function SearchTemplate() {
 
   return (
     <div>
+      <RouteSwitcher/>
       <h1>Search Template</h1>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">

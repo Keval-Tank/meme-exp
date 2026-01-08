@@ -43,16 +43,13 @@ export async function signUp(data: SignUpData): Promise<SignUpResponse> {
 
         // Hash password
         const hashedPassword = await bcrypt.hash(password, 10)
-        const sessionId = uuidv4()
+        // const sessionId = uuidv4()
         // Create user
         const user = await prisma.user.create({
             data: {
                 name,
                 email,
                 password: hashedPassword,
-                sessionId,
-                accessToken:' ',
-                refreshToken:' ',
                 role : 'User' 
             }
         })

@@ -40,11 +40,20 @@ model User {
   name          String
   email         String    @unique
   password      String    
-  sessionId     String    
-  accessToken   String
-  refreshToken  String
   role          String
   subscription  Subscription @default(FREE)
-
+  sessionId     String?
+  sessions      Session[]
   @@map("users")
+}
+
+model Session {
+  id            String         @id
+  accessToken   String 
+  refreshToken  String 
+  userId        Int         
+  user          User          @relation(fields:[userId], references:[id], onDelete:Cascade)
+  createdAt     DateTime      @default(now())
+
+  @@map("sessions")
 }

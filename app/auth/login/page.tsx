@@ -18,6 +18,8 @@ import { useDispatch } from "react-redux"
 import { AppDispatch } from "@/lib/store"
 import { userThunk } from "@/lib/features/user-store/userThunk"
 import { login } from "@/lib/auth/login"
+import { setUserState } from "@/lib/features/user-store/userSlice"
+import RouteSwitcher from "@/components/RouteSwitcher"
 
 export const loginSchema = z.object({
   email: z.string().email("Please enter a valid email"),
@@ -83,12 +85,45 @@ export default function LoginPage() {
     // })
     // const data = await response.json()
     // console.log("login request data -> ", data)
-    const response = await login(values)
-    console.log(response)
+setLoading(true)
+    setError(null)
+
+    try {
+      const response = await login(values)
+
+      if (!response.success) {
+        throw new Error(response.error || "Login failed")
+      }
+
+      // Dispatch setUserState with user data
+      if (response) {
+        dispatch(setUserState({
+          name: response.name as string,
+          email: response.userEmail as string,
+          role: response.role as string,
+          subscription: response.subscription as "FREE" | "PRO" | "BYOK",
+          sessionId : response.sessionId as string
+        }))
+      }
+
+      localStorage.setItem('isLoggedIn' , "true")
+      localStorage.setItem('email', response.userEmail as string)
+      localStorage.setItem('sessionId', response.sessionId as string)
+
+      // Redirect to home on success
+      router.push("/")
+    } catch (err) {
+      setError(err instanceof Error ? err.message : "Something went wrong")
+    } finally {
+      setLoading(false)
+    }
+    // console.log(response)
+
   }
 
   return (
     <div className="flex items-center justify-center min-h-screen p-4 bg-gray-50">
+      <RouteSwitcher/>
       <div className="w-full max-w-md space-y-6 bg-white p-8 rounded-lg shadow-md">
         <div className="text-center">
           <h1 className="text-2xl font-bold">Login</h1>

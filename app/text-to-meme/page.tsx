@@ -35,6 +35,7 @@ import {
   AlertDialogTitle,
   AlertDialogTrigger,
 } from "@/components/ui/alert-dialog"
+import RouteSwitcher from "@/components/RouteSwitcher";
 
 
 
@@ -126,6 +127,7 @@ export default function Home() {
 
     // </div>
     <div className="w-full">
+      <RouteSwitcher/>
       <Form {...form}>
         <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-8">
           <FormField

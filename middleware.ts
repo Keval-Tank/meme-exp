@@ -1,4 +1,5 @@
 import { type NextRequest, NextResponse } from "next/server";
+import {jwtVerify} from 'jose'
 // import { getRedisClient } from "./lib/redis";
 
 // const register = new Map<string, { visited: number, requestDate: Date, hour: number }>();
@@ -88,11 +89,44 @@ export default async function middleware(req: NextRequest) {
     // const response = NextResponse.next();
     // response.headers.set("X-Client-IP", ip);
     // return response;
-    if(!req.headers.get('sid')){
-        console.log('sid -> ', req.headers.get('sid'))
+    // 
+
+    // const authSessionId = req.cookies.get('sid')
+    const authToken = req.cookies.get('token')
+    if(!authToken?.value){
         return NextResponse.redirect(new URL('/auth/login', req.url))
     }
-    return NextResponse.next()
+    const response = await fetch(`${process.env.BASE_URL}/api/verify-tokens`, {
+        method : 'POST',
+        headers : {
+            'Content-Type' : 'application/json'
+        },
+        body : JSON.stringify({token : authToken.value})
+    })
+    const data = await response.json()
+    if(data.success){
+        return NextResponse.next()
+    }
+    // console.log("repsonse data -> ", data.success)
+    // if(!data.success){
+    //     return NextResponse.redirect(new URL('/auth/login', req.url))
+    // }
+    // const data = await response.json()
+    // console.log("response from token vewrification -> ", data)
+    // console.log("sid -> ", authCookie)
+    // const sessionSecret = process.env.JWT_SESSION_ID_SECRET!
+    // const tokenSecret = process.env.JWT_ACCESS_TOKEN_SECRET!
+    // const sessionSecretEncoded = new TextEncoder().encode(
+    //     process.env.JWT_SESSION_ID_SECRET!
+    // )
+    // const tokenSecretEncoded = new TextEncoder().encode(
+    //     process.env.JWT_ACCESS_TOKEN_SECRET!
+    // )
+    // const sessionId = await jwtVerify(authSessionId.value, sessionSecretEncoded)
+    // const payload = await jwtVerify(authToken.value, tokenSecretEncoded)
+    // console.log("sessionId -> ", sessionId)
+    // console.log("payload -> ", payload)
+    return NextResponse.redirect(new URL('/auth/login', req.url))
 }
 
 export const config = {
@@ -100,7 +134,7 @@ export const config = {
         '/search-template/:path*',
         '/text-to-meme',
         '/text-to-visuals',
-        '/api/:path*',
+        // '/api/:path*',
         '/admin/:path*',
         '/actions/:path*',
         '/api/templates/:path*',
