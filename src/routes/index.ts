@@ -1,9 +1,8 @@
 import { Router } from "express";
-import { auth } from "../lib/auth";
-import { toNodeHandler } from "better-auth/node";
+import { handleAuth } from "../controller/auth.controller";
 
 const router = Router()
 
-router.all('/auth/*', toNodeHandler(auth))
+router.all('/auth/:splat(*)', handleAuth)
 
 export default router

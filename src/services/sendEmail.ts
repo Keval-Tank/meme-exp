@@ -8,7 +8,7 @@ type SendEmailResponse = {
 
 export const sendSignInEmail = async(to:string, otp:string) : Promise<SendEmailResponse> => {
     const {data, error} = await resend.emails.send({
-        from : 'Team MemeGPT',
+        from : 'Acme <onboarding@resend.dev>',
         to,
         subject : "Sign In using OTP",
         html : `<h1>${otp}</h1>`
