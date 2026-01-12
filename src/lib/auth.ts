@@ -80,7 +80,7 @@ export const auth = betterAuth({
     },
     plugins: [
         emailOTP({
-            async sendVerificationOTP({ email, otp }: { email: string, otp: string }) {
+            async sendVerificationOTP({ email, otp, type}: { email: string, otp: string, type:string }) {
                 const response = await sendSignInEmail(email, otp)
                 if (!response.success) {
                     console.log("Failed to send email")
