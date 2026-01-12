@@ -4,6 +4,10 @@ import apiRoutes from './routes'
 import { errorHandler, notFoundHandler } from "./middleware/errorHandler"
 import { toNodeHandler } from "better-auth/node"
 import { auth } from "./lib/auth"
+import dotenv from 'dotenv'
+import cors from 'cors'
+
+dotenv.config()
 
 
 const app = express()
@@ -11,11 +15,9 @@ const PORT = process.env.PORT
 
 app.use(corsOptions)
 app.use(express.json())
-app.use(express.urlencoded({extended : true}))
 
-
-// app.use('/api', apiRoutes)
 app.all("/api/auth/{*any}", toNodeHandler(auth))
+
 
 app.use(notFoundHandler)
 app.use(errorHandler)
