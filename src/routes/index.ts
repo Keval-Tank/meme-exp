@@ -3,6 +3,6 @@ import { handleAuth } from "../controller/auth.controller";
 
 const router = Router()
 
-router.all('/auth/:splat(*)', handleAuth)
+router.all('/auth/{*any}', handleAuth)
 
 export default router

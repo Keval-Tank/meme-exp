@@ -3,6 +3,9 @@ import { prisma } from "./prisma";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import {emailOTP} from 'better-auth/plugins'
 import { sendSignInEmail } from "../services/sendEmail";
+import dotenv from 'dotenv'
+
+dotenv.config()
 
 export const auth = betterAuth({
     baseURL : process.env.BACKEND_URL,
