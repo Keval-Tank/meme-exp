@@ -1,7 +1,6 @@
 import {rateLimit} from 'express-rate-limit'
 import { getRedisClient } from '../lib/redis'
 import {RedisStore} from 'rate-limit-redis'
-import { NextFunction } from 'express'
 
 const redis = await getRedisClient()
 
