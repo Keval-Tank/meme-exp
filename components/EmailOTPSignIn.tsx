@@ -7,24 +7,46 @@ import { redirect, useRouter } from "next/navigation";
 const Page = () => {
   const [email, setEmail] = useState("");
   const [otp, setOtp] = useState("");
-  const [step, setStep] = useState<"email" | "otp">("email");
+  const [step, setStep] = useState<"email" | "otp" >("email");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [rateLimited, setRateLimited] = useState(false);
   const router = useRouter();
 
   const handleSendOTP = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
+  setLoading(true);
+  setError("");
+  setRateLimited(false);
 
     try {
-      await authClient.emailOtp.sendVerificationOtp({
+      const response = await authClient.emailOtp.sendVerificationOtp({
         email,
         type: "sign-in",
       });
+      if(response.error){
+        const message = response.error.message || "Too many requests. Please try again in 1 minute.";
+        if (
+          response.error.status === 429 ||
+          response.error.code === "too_many_requests" ||
+          message.toLowerCase().includes("rate")
+        ) {
+          setRateLimited(true);
+          setError("Too many requests. Please try again in 1 minute.");
+        } else {
+          setError(message);
+        }
+        return;
+      }
       setStep("otp");
     } catch (err: any) {
-      setError(err.message || "Failed to send OTP");
+      const message = err?.message || "Too many requests. Please try again in 1 minute.";
+      if (message.toLowerCase().includes("rate")) {
+        setRateLimited(true);
+        setError("Too many requests. Please try again in 1 minute.");
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
@@ -32,8 +54,9 @@ const Page = () => {
 
   const handleVerifyOTP = async (e: React.FormEvent) => {
     e.preventDefault();
-    setLoading(true);
-    setError("");
+  setLoading(true);
+  setError("");
+  setRateLimited(false);
 
     try {
       await signIn.emailOtp({
@@ -42,7 +65,13 @@ const Page = () => {
       });
       redirect('http://localhost:3000/dashboard')
     } catch (err: any) {
-      setError(err.message || "Invalid OTP");
+      const message = err?.message || "Invalid OTP";
+      if (message.toLowerCase().includes("rate")) {
+        setRateLimited(true);
+        setError("Too many requests. Please try again in 1 minute.");
+      } else {
+        setError(message);
+      }
     } finally {
       setLoading(false);
     }
@@ -55,7 +84,13 @@ const Page = () => {
           {step === "email" ? "Sign In" : "Verify OTP"}
         </h1>
 
-        {error && (
+        {rateLimited && (
+          <div className="mb-4 p-3 bg-yellow-100 border border-yellow-400 text-yellow-800 rounded">
+            Too many requests. Please try again in 1 minute.
+          </div>
+        )}
+
+        {error && !rateLimited && (
           <div className="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded">
             {error}
           </div>
