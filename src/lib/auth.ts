@@ -5,7 +5,7 @@ import {emailOTP} from 'better-auth/plugins'
 import { sendSignInEmail } from "../services/sendEmail";
 
 export const auth = betterAuth({
-    baseURL : 'http://localhost:5000',
+    baseURL : process.env.BACKEND_URL,
     basePath : '/api/auth',
     database:prismaAdapter(prisma, {
         provider: "postgresql", // or "mysql", "postgresql", ...etc
