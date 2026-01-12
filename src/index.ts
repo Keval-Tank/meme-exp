@@ -5,7 +5,7 @@ import { errorHandler, notFoundHandler } from "./middleware/errorHandler"
 import { toNodeHandler } from "better-auth/node"
 import { auth } from "./lib/auth"
 import dotenv from 'dotenv'
-import cors from 'cors'
+import { generalRateLimiter } from "./middleware/rateLimiter"
 
 dotenv.config()
 
@@ -13,10 +13,13 @@ dotenv.config()
 const app = express()
 const PORT = process.env.PORT
 
+
 app.use(corsOptions)
 app.use(express.json())
 
 app.all("/api/auth/{*any}", toNodeHandler(auth))
+
+app.use(generalRateLimiter)
 
 
 app.use(notFoundHandler)
