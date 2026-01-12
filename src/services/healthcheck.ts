@@ -1,8 +1,9 @@
 import { timeStamp } from "node:console";
 import { prisma } from "../lib/prisma";
 import { getRedisClient } from "../lib/redis";
+import { HealthCheckResponse } from "../types";
 
-export async function healthCheck() {
+export async function healthCheck() : Promise<HealthCheckResponse> {
     try {
         // Check database
         await prisma.$queryRaw`SELECT 1`;
