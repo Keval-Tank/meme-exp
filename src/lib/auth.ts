@@ -3,6 +3,7 @@ import { prisma } from "./prisma";
 import { prismaAdapter } from "better-auth/adapters/prisma";
 import dotenv from 'dotenv'
 import { getRedisClient } from "./redis";
+import { custom_prisma_adapter } from "./customAdapter";
 
 dotenv.config()
 
@@ -11,9 +12,7 @@ const redis = await getRedisClient()
 export const auth = betterAuth({
     baseURL: process.env.BACKEND_URL,
     basePath: '/api/auth',
-    database: prismaAdapter(prisma, {
-        provider: "postgresql",
-    }),
+    database: custom_prisma_adapter(),
     trustedOrigins: [process.env.FRONTEND_URL!],
     secret: process.env.BETTER_AUTH_SECRET,
     emailAndPassword: {
