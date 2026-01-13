@@ -2,8 +2,19 @@ import { auth } from "../lib/auth";
 import { toNodeHandler } from "better-auth/node";
 import { type Request, type Response } from "express";
 
-const authHandler = toNodeHandler(auth)
 
 export const handleAuth = (req : Request, res : Response) => {
-    return authHandler(req, res)
+    try {
+        const response = await auth.handler.
+        return res.json({
+            success : true,
+            response
+        })
+        
+    } catch (error) {
+        return {
+            success : false,
+            error
+        }
+    }
 }
