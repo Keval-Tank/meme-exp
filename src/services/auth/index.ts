@@ -47,3 +47,15 @@ export async function signOutService() {
         throw error;
     }
 }
+
+export async function tokenExchange(code : string){
+    try{
+        const {data, error} = await supabase.auth.exchangeCodeForSession(code)
+        if(error){
+            throw error
+        }
+        return data
+    }catch(error){
+        throw error;
+    }
+}
