@@ -31,6 +31,8 @@ model User {
   password      String
   emailVerified Boolean   @default(false)
   image         String?
+  provider      String?
+  providerId    String?
   subscription  SubscriptionType @default(FREE)
   role          Role      @default(USER)
   createdAt     DateTime  @default(now())
