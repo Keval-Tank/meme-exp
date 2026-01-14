@@ -8,4 +8,9 @@ if(!supabase_project_url || !supabase_publishable_key){
     throw new Error("Supabase credentials are missing")
 }
 
-export const supabase = createClient(supabase_project_url, supabase_publishable_key)
+export const supabase = createClient(supabase_project_url, supabase_publishable_key, {
+    auth : {
+        autoRefreshToken : false,
+        persistSession : false
+    }
+})
