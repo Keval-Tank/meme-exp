@@ -5,7 +5,7 @@ const router = Router()
 
 router.post("/signup", signUpController)
 router.post("/signin", signInController)
-router.post("/signout", signOutController)
+router.get("/signout", signOutController)
 router.get("/callback", tokenExchangeController)
 
 export default router

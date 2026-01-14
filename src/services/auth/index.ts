@@ -6,7 +6,7 @@ export async function signUpService(userData : {fullName : string, email:string,
         const {email, password, fullName} = userData
         if(!email || !password || !fullName){
             throw new AppError("Missing input data", 400)
-        }
+        }   
         const {data : signUpData, error} = await supabase.auth.signUp({
             email,
             password,
@@ -18,8 +18,12 @@ export async function signUpService(userData : {fullName : string, email:string,
             console.log("Failed to signup -> ", error)
             throw error
         }
-        return signUpData
+        const session = signUpData.session
+        return {
+            session
+        }
     } catch (error) {
+        console.log("sign up error -> ", error)
         throw error
     }
 }
@@ -38,17 +42,10 @@ export async function signInService(data: { email: string; password: string }) {
             console.log("Failed to login -> ", error)
             throw error
         }
-        return signInData;
-    } catch (error) {
-        throw error;
-    }
-}
-
-export async function signOutService() {
-    try {
-        const { error } = await supabase.auth.signOut();
-        if (error) throw error;
-        return { message: "Signed out successfully" };
+        const session = signInData.session
+        return {
+          session
+        };
     } catch (error) {
         throw error;
     }
@@ -60,8 +57,24 @@ export async function tokenExchange(code : string){
         if(error){
             throw error
         }
-        return data
+        const session = data.session
+        return {
+            session
+        }
     }catch(error){
+        throw error;
+    }
+}
+
+export async function signOutService() {
+    try {
+        const { error } = await supabase.auth.signOut();
+        if (error) {
+            console.log("Failed to sign out -> ", error)
+            throw error
+        }
+        return { message: "Signed out successfully" };
+    } catch (error) {
         throw error;
     }
 }
