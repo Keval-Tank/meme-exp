@@ -13,6 +13,7 @@ datasource db {
   provider = "postgresql"
 }
 
+<<<<<<< HEAD
 model User {
   id            String    @id
   name          String
@@ -23,6 +24,33 @@ model User {
   updatedAt     DateTime  @updatedAt
   sessions      Session[]
   accounts      Account[]
+=======
+enum SubscriptionType{
+  FREE
+  PRO
+  BYOK
+}
+
+enum Role{
+  ADMIN
+  USER
+}
+
+model User {
+  id            String    @id @default(cuid())
+  name          String
+  email         String
+  password      String
+  emailVerified Boolean   @default(false)
+  image         String?
+  provider      String?
+  providerId    String?
+  subscription  SubscriptionType @default(FREE)
+  role          Role      @default(USER)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  sessions      Session[]
+>>>>>>> 3080ae572aecd514efd8c8e6a1bc45ee3cfb33eb
 
   @@unique([email])
   @@map("user")
@@ -31,7 +59,11 @@ model User {
 model Session {
   id        String   @id
   expiresAt DateTime
+<<<<<<< HEAD
   token     String
+=======
+  token     String // shared as cookie
+>>>>>>> 3080ae572aecd514efd8c8e6a1bc45ee3cfb33eb
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   ipAddress String?
@@ -44,6 +76,7 @@ model Session {
   @@map("session")
 }
 
+<<<<<<< HEAD
 model Account {
   id                    String    @id
   accountId             String
@@ -75,3 +108,5 @@ model Verification {
   @@index([identifier])
   @@map("verification")
 }
+=======
+>>>>>>> 3080ae572aecd514efd8c8e6a1bc45ee3cfb33eb

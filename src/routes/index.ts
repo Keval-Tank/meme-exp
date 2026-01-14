@@ -1,10 +1,10 @@
 import { Router } from "express";
-import { handleAuth } from "../controller/auth.controller";
+import authRouter from './auth'
 import { healthCheckController } from "../controller/healthCheck.controller";
 
 const router = Router()
 
-// router.all('/auth/{*any}', handleAuth)
+router.use("/auth", authRouter)
 router.get('/health', healthCheckController)
 
 export default router

@@ -1,10 +1,9 @@
 import { betterAuth } from "better-auth";
 import { prisma } from "./prisma";
 import { prismaAdapter } from "better-auth/adapters/prisma";
-import { emailOTP } from 'better-auth/plugins'
-import { sendSignInEmail } from "../services/sendEmail";
 import dotenv from 'dotenv'
 import { getRedisClient } from "./redis";
+import { custom_prisma_adapter } from "./customAdapter";
 
 dotenv.config()
 
@@ -13,11 +12,15 @@ const redis = await getRedisClient()
 export const auth = betterAuth({
     baseURL: process.env.BACKEND_URL,
     basePath: '/api/auth',
-    database: prismaAdapter(prisma, {
-        provider: "postgresql",
-    }),
+    database: custom_prisma_adapter(),
     trustedOrigins: [process.env.FRONTEND_URL!],
     secret: process.env.BETTER_AUTH_SECRET,
+    emailAndPassword: {
+        enabled: true,
+        requireEmailVerification: false,
+        minPasswordLength: 8,
+        maxPasswordLength: 128
+    },
     rateLimit: {
         enabled: true,
         window: 60,
@@ -77,19 +80,5 @@ export const auth = betterAuth({
             clientSecret: process.env.GOOGLE_CLIENT_SECRET,
             redirectURI: `${process.env.BACKEND_URL}/api/auth/callback/google`
         }
-    },
-    plugins: [
-        emailOTP({
-            async sendVerificationOTP({ email, otp, type}: { email: string, otp: string, type:string }) {
-                const response = await sendSignInEmail(email, otp)
-                if (!response.success) {
-                    console.log("Failed to send email")
-                    throw new Error(response.error || "Failed to send OTP")
-                }
-                console.log(`Sign in email sent : ${response.id}`)
-            },
-            otpLength: 6,
-            expiresIn: 300
-        })
-    ]
+    }
 });
