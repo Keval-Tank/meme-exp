@@ -9,6 +9,7 @@ if(!supabase_project_url || !supabase_publishable_key){
 
 export const supabase = createClient(supabase_project_url, supabase_publishable_key, {
     auth : {
+        flowType : 'pkce',
         autoRefreshToken : false,
         persistSession : false,
     }

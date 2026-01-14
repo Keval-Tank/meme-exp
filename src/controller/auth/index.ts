@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { signUpService, signInService, signOutService, tokenExchange } from "../../services/auth";
+import { signUpService, signInService, signOutService, tokenExchange, signInWithGoogle} from "../../services/auth";
 import { AppError } from "../../utils/error";
 import { status } from 'http-status'
 
@@ -79,13 +79,26 @@ export async function signOutController(req: Request, res: Response) {
     }
 }
 
+// sign in with google
+export async function signInWithGoogleController(req : Request, res : Response){
+    try {
+        const response = await signInWithGoogle()
+        if(!response.url){
+            return res.status(status.INTERNAL_SERVER_ERROR).json({error : "Failed to continue with google"})
+        }
+        res.redirect(response.url)
+    } catch (error: any) {
+        console.log("Failed to login with google", error)
+        const errorStatus = error instanceof AppError ? error.statusCode : status.INTERNAL_SERVER_ERROR;
+        res.status(errorStatus).json({ success: false, error: error.message || "Internal Server Error" });
+    }
+}
+
 // for token exchange
 export async function tokenExchangeController(req: Request, res: Response) {
     try {
-        console.log("token exchange called")
         const { code, next, error } = req.query
         if (typeof code !== 'string') {
-            console.log("code not found")
             return res.redirect(`${process.env.FRONTEND_URL}/error?reason=missing_code`);
         }else{
             console.log("found code -> ", code)
@@ -96,13 +109,10 @@ export async function tokenExchangeController(req: Request, res: Response) {
         }
         const data = await tokenExchange(code as string)
         if (!data.session) {
-            console.log("session not found")
             return res.status(status.INTERNAL_SERVER_ERROR).json({ error: "failed to exchange token" })
         }
         const accessToken = data.session.access_token
         const refreshToken = data.session.refresh_token
-        console.log("access-token -> ", accessToken)
-        console.log("refresh-token -> ", refreshToken)
         res.cookie('sb-access-token', accessToken , {
             httpOnly : true,
             secure : false,

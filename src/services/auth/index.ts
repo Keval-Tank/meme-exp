@@ -1,20 +1,20 @@
 import { supabase } from "../../lib/supabaseClient";
 import { AppError } from "../../utils/error";
 
-export async function signUpService(userData : {fullName : string, email:string, password:string}){
+export async function signUpService(userData: { fullName: string, email: string, password: string }) {
     try {
-        const {email, password, fullName} = userData
-        if(!email || !password || !fullName){
+        const { email, password, fullName } = userData
+        if (!email || !password || !fullName) {
             throw new AppError("Missing input data", 400)
-        }   
-        const {data : signUpData, error} = await supabase.auth.signUp({
+        }
+        const { data: signUpData, error } = await supabase.auth.signUp({
             email,
             password,
-            options : {
-                data : {full_name : fullName}
+            options: {
+                data: { full_name: fullName }
             }
         })
-        if (error){
+        if (error) {
             console.log("Failed to signup -> ", error)
             throw error
         }
@@ -31,37 +31,57 @@ export async function signUpService(userData : {fullName : string, email:string,
 export async function signInService(data: { email: string; password: string }) {
     const { email, password } = data;
     try {
-        if(!email || !password){
+        if (!email || !password) {
             throw new AppError("Missing input data", 400)
         }
         const { data: signInData, error } = await supabase.auth.signInWithPassword({
             email,
             password
         });
-        if (error){
+        if (error) {
             console.log("Failed to login -> ", error)
             throw error
         }
         const session = signInData.session
         return {
-          session
+            session
         };
     } catch (error) {
         throw error;
     }
 }
 
-export async function tokenExchange(code : string){
-    try{
-        const {data, error} = await supabase.auth.exchangeCodeForSession(code)
-        if(error){
+export async function signInWithGoogle() {
+    try {
+        const { data, error } = await supabase.auth.signInWithOAuth({
+            provider: 'google',
+            options: {
+                redirectTo: `${process.env.BACKEND_URL}/api/auth/callback`
+            }
+        })
+        if (error || !data.url) {
+            console.log("failed to get url -> ", error)
+            throw error
+        }
+        return {
+            url: data.url
+        }
+    } catch (error) {
+        throw error
+    }
+}
+
+export async function tokenExchange(code: string) {
+    try {
+        const { data, error } = await supabase.auth.exchangeCodeForSession(code)
+        if (error) {
             throw error
         }
         const session = data.session
         return {
             session
         }
-    }catch(error){
+    } catch (error) {
         throw error;
     }
 }
