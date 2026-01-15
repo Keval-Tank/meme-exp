@@ -147,22 +147,10 @@ export async function renewalController(req: Request, res: Response) {
         }
         const newAccessToken = data.session.access_token
         const newRefreshToken = data.session.refresh_token
-        res.clearCookie('sb-access-token')
-        res.clearCookie('sb-refresh-token')
-        res.cookie('sb-access-token', newAccessToken, {
-            httpOnly: true,
-            secure: false,
-            sameSite: 'lax',
-            maxAge: data.session.expires_in * 1000,
-        })
-        res.cookie('sb-refresh-token', newRefreshToken, {
-            httpOnly: true,
-            secure: false,
-            sameSite: 'lax',
-            maxAge: 1000 * 60 * 60 * 24
-        })
         return res.json({
             success : true,
+            newAccessToken,
+            newRefreshToken,
             message : 'Token renewed successfully'
         })
     }
