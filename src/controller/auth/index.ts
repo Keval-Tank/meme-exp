@@ -151,6 +151,7 @@ export async function renewalController(req: Request, res: Response) {
             success : true,
             newAccessToken,
             newRefreshToken,
+            expiresIn : data.session.expires_in,
             message : 'Token renewed successfully'
         })
     }
