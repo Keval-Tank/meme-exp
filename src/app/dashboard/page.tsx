@@ -1,5 +1,5 @@
 "use client"
-import SignOutButton from "@/src/components/SignOutButton";
+import SignOutButton from "@/components/SignOutButton";
 
 const page = () => {
   return (

@@ -1,9 +1,10 @@
 "use client"
-import SignUpForm from "@/src/components/SignUpForm";
-import LoginForm from "@/src/components/LoginForm";
-import SignInWithGoogleButton from "@/src/components/SignInWithGoogleButton";
+import SignUpForm from "@/components/SignUpForm";
+import LoginForm from "@/components/LoginForm";
+import SignInWithGoogleButton from "@/components/SignInWithGoogleButton";
 import { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
+
 
 export default function AuthPage() {
   const searchParams = useSearchParams()
