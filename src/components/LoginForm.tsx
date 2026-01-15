@@ -36,7 +36,7 @@ export default function LoginForm() {
       if (!res.ok) {
         setError(data.error || "Login failed");
       } else {
-        window.location.href = "/dashboard";
+        window.location.href = "/text-to-meme";
       }
     } catch (err: any) {
       setError(err.message || "Something went wrong");

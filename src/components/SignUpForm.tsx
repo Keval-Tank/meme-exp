@@ -41,7 +41,7 @@ export default function SignUpForm() {
         setError(data.error || "Sign up failed");
       } else {
         setSuccess("Sign up successful");
-        window.location.href="/dashboard"
+        window.location.href="/text-to-meme"
         form.reset();
       }
     } catch (err: any) {

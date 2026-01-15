@@ -14,7 +14,7 @@ export async function proxy(req: NextRequest) {
   const pathname = req.nextUrl.pathname
   console.log("middleware called on request -> ", pathname)
   // Protected routes
-  const protectedRoutes = ['/dashboard', '/template']
+  const protectedRoutes = ['/dashboard', '/text-to-meme','/search-templates', '/settings']
   const isProtected = protectedRoutes.some((route: string) =>
     pathname.startsWith(route)
   )

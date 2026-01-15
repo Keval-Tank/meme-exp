@@ -1,3 +1,4 @@
+"use client"
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import { AppSidebar } from "@/components/app-sidebar";
 
@@ -8,7 +9,7 @@ export default function DashBoardLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="">
         <SidebarProvider>
           <AppSidebar />
           <SidebarTrigger />

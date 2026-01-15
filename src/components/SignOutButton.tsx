@@ -16,7 +16,7 @@ export default function SignOutButton() {
             method: "GET", 
             credentials : 'include' 
         });
-    window.location.href = "/"; 
+    window.location.href = "/text-to-meme"; 
   };
 
   return (
