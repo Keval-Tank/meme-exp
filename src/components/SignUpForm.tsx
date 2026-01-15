@@ -40,7 +40,8 @@ export default function SignUpForm() {
         console.log("res -> ", res)
         setError(data.error || "Sign up failed");
       } else {
-        setSuccess("Sign up successful! Please check your email.");
+        setSuccess("Sign up successful");
+        window.location.href="/dashboard"
         form.reset();
       }
     } catch (err: any) {
