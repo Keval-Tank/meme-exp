@@ -17,7 +17,7 @@ export async function signUpController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in,
+            maxAge: data.session.expires_in * 12, //expires_in=3600
         })
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
@@ -46,8 +46,10 @@ export async function signInController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in,
+            maxAge: data.session.expires_in * 12,
         })
+        console.log("expires in -> ", data.session.expires_in)
+        console.log("expires at -> ", data.session.expires_at)
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
             secure: false,
@@ -117,7 +119,7 @@ export async function tokenExchangeController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in,
+            maxAge: data.session.expires_in * 12,
         })
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
@@ -150,7 +152,7 @@ export async function renewalController(req: Request, res: Response) {
             success : true,
             newAccessToken,
             newRefreshToken,
-            expiresIn : data.session.expires_in,
+            expiresIn : data.session.expires_in * 12,
             message : 'Token renewed successfully'
         })
     }
