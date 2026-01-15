@@ -1,7 +1,5 @@
 "use client";
 import { Button } from "@/src/components/ui/button";
-import GoogleLogo from '@/public/google.svg'
-import Image from "next/image";
 
 export default function SignInWithGoogleButton() {
   const BackendURL = process.env.NEXT_PUBLIC_BACKEND_URL
