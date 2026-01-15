@@ -105,7 +105,7 @@ export async function tokenExchangeController(req: Request, res: Response) {
         } else {
             console.log("found code -> ", code)
         }
-        const redirectPath = typeof next === 'string' ? next : 'http://localhost:3000/dashboard'
+        const redirectPath = typeof next === 'string' ? next : `${process.env.FRONTEND_URL}/text-to-meme`
         if (error) {
             return res.redirect(`${process.env.FRONTEND_URL}/error?reason=${error}`);
         }
