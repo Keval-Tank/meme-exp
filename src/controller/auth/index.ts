@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { signUpService, signInService, signOutService, tokenExchange, signInWithGoogle} from "../../services/auth";
+import { signUpService, signInService, signOutService, tokenExchange, signInWithGoogle, tokenRenewal } from "../../services/auth";
 import { AppError } from "../../utils/error";
 import { status } from 'http-status'
 
@@ -80,11 +80,11 @@ export async function signOutController(req: Request, res: Response) {
 }
 
 // sign in with google
-export async function signInWithGoogleController(req : Request, res : Response){
+export async function signInWithGoogleController(req: Request, res: Response) {
     try {
         const response = await signInWithGoogle()
-        if(!response.url){
-            return res.status(status.INTERNAL_SERVER_ERROR).json({error : "Failed to continue with google"})
+        if (!response.url) {
+            return res.status(status.INTERNAL_SERVER_ERROR).json({ error: "Failed to continue with google" })
         }
         res.redirect(response.url)
     } catch (error: any) {
@@ -100,7 +100,7 @@ export async function tokenExchangeController(req: Request, res: Response) {
         const { code, next, error } = req.query
         if (typeof code !== 'string') {
             return res.redirect(`${process.env.FRONTEND_URL}/error?reason=missing_code`);
-        }else{
+        } else {
             console.log("found code -> ", code)
         }
         const redirectPath = typeof next === 'string' ? next : 'http://localhost:3000/dashboard'
@@ -113,21 +113,56 @@ export async function tokenExchangeController(req: Request, res: Response) {
         }
         const accessToken = data.session.access_token
         const refreshToken = data.session.refresh_token
-        res.cookie('sb-access-token', accessToken , {
-            httpOnly : true,
-            secure : false,
-            sameSite : 'lax',
-            maxAge : data.session.expires_in * 1000,
+        res.cookie('sb-access-token', accessToken, {
+            httpOnly: true,
+            secure: false,
+            sameSite: 'lax',
+            maxAge: data.session.expires_in * 1000,
         })
         res.cookie('sb-refresh-token', refreshToken, {
-            httpOnly : true,
-            secure : false,
-            sameSite : 'lax',
-            maxAge : 1000*60*60*24
+            httpOnly: true,
+            secure: false,
+            sameSite: 'lax',
+            maxAge: 1000 * 60 * 60 * 24
         })
         return res.redirect(redirectPath)
     } catch (error: any) {
         console.log("token exchange error", error)
+        const errorStatus = error instanceof AppError ? error.statusCode : status.INTERNAL_SERVER_ERROR;
+        res.status(errorStatus).json({ success: false, error: error.message || "Internal Server Error" });
+    }
+}
+
+// for token renewal
+export async function renewalController(req: Request, res: Response) {
+    try {
+        const refreshToken = req.cookies['sb-refresh-token']
+        if (!refreshToken) {
+            return res.status(status.UNAUTHORIZED).json({ error: "Unauthorized, refresh token not found" })
+        }
+        const data = await tokenRenewal(refreshToken)
+        if (!data.session) {
+            return res.status(status.INTERNAL_SERVER_ERROR).json({ error: "Failed to renew tokens" })
+        }
+        const newAccessToken = data.session.access_token
+        const newRefreshToken = data.session.refresh_token
+        res.clearCookie('sb-access-token')
+        res.clearCookie('sb-refresh-token')
+        res.cookie('sb-access-token', newAccessToken, {
+            httpOnly: true,
+            secure: false,
+            sameSite: 'lax',
+            maxAge: data.session.expires_in * 1000,
+        })
+        res.cookie('sb-refresh-token', newRefreshToken, {
+            httpOnly: true,
+            secure: false,
+            sameSite: 'lax',
+            maxAge: 1000 * 60 * 60 * 24
+        })
+    }
+    catch (error : any) {
+        console.log("token renewal error -> ", error)
         const errorStatus = error instanceof AppError ? error.statusCode : status.INTERNAL_SERVER_ERROR;
         res.status(errorStatus).json({ success: false, error: error.message || "Internal Server Error" });
     }

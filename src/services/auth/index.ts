@@ -86,6 +86,21 @@ export async function tokenExchange(code: string) {
     }
 }
 
+export async function tokenRenewal(refreshToken : string) {
+    try {
+        const {data, error} = await supabase.auth.refreshSession()
+        if(error){
+            throw error
+        }
+        const session = data.session
+        return {
+            session
+        }
+    } catch (error) {
+        throw error
+    }
+}
+
 export async function signOutService() {
     try {
         const { error } = await supabase.auth.signOut();
