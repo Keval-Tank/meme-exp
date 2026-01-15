@@ -2,7 +2,6 @@ import { Request, Response } from "express";
 import { signUpService, signInService, signOutService, tokenExchange, signInWithGoogle, tokenRenewal } from "../../services/auth";
 import { AppError } from "../../utils/error";
 import { status } from 'http-status'
-import { success } from "better-auth/*";
 
 // Sign Up Controller
 export async function signUpController(req: Request, res: Response) {
@@ -18,7 +17,7 @@ export async function signUpController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in * 1000,
+            maxAge: data.session.expires_in,
         })
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
@@ -47,7 +46,7 @@ export async function signInController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in * 1000,
+            maxAge: data.session.expires_in,
         })
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
@@ -118,7 +117,7 @@ export async function tokenExchangeController(req: Request, res: Response) {
             httpOnly: true,
             secure: false,
             sameSite: 'lax',
-            maxAge: data.session.expires_in * 1000,
+            maxAge: data.session.expires_in,
         })
         res.cookie('sb-refresh-token', refreshToken, {
             httpOnly: true,
