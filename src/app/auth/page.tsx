@@ -2,10 +2,19 @@
 import SignUpForm from "@/src/components/SignUpForm";
 import LoginForm from "@/src/components/LoginForm";
 import SignInWithGoogleButton from "@/src/components/SignInWithGoogleButton";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function AuthPage() {
+  const searchParams = useSearchParams()
+  const type = searchParams.get("type")
   const [mode, setMode] = useState<"login" | "signup">("login");
+
+  useEffect(() => {
+    if(type === "signup" || type === "login"){
+      setMode(type)
+    }
+  }, [type]);
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gray-50">
