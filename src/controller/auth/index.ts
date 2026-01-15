@@ -2,6 +2,7 @@ import { Request, Response } from "express";
 import { signUpService, signInService, signOutService, tokenExchange, signInWithGoogle, tokenRenewal } from "../../services/auth";
 import { AppError } from "../../utils/error";
 import { status } from 'http-status'
+import { success } from "better-auth/*";
 
 // Sign Up Controller
 export async function signUpController(req: Request, res: Response) {
@@ -159,6 +160,10 @@ export async function renewalController(req: Request, res: Response) {
             secure: false,
             sameSite: 'lax',
             maxAge: 1000 * 60 * 60 * 24
+        })
+        return res.json({
+            success : true,
+            message : 'Token renewed successfully'
         })
     }
     catch (error : any) {
